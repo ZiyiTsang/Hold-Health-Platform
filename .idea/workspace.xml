@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbb80a9f-608b-466f-906a-f29a42e050ba" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="273a1dac-66ab-4a2d-9010-7c12d3f4411f" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +15,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="29TOjzVUPKoeOMg4J5iYotXg3tm" />
+  <component name="ProjectId" id="29asHCqbtikZ4VMXB3kVqvbsE2e" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -25,51 +25,26 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/eclipse/eclipse_workplace/Assignment/.project",
     "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="23302552-e0d3-45b2-b2c6-f0072f40610c" name="变更" comment="" />
-      <created>1653133756274</created>
+      <changelist id="273a1dac-66ab-4a2d-9010-7c12d3f4411f" name="变更" comment="" />
+      <created>1653362448281</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1653133756274</updated>
-      <workItem from="1653133758310" duration="4138000" />
-      <workItem from="1653359947148" duration="187000" />
+      <updated>1653362448281</updated>
+      <workItem from="1653362451165" duration="48000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
