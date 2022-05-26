@@ -10,6 +10,8 @@ import java.io.IOException;
 /**
  * Servlet implementation class firstPage
  */
+
+@WebServlet("/fp")
 public class firstPage extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

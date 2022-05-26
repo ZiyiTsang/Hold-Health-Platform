@@ -9,9 +9,9 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>firstPage</display-name>
+  <!-- <servlet>
+  
+  <display-name>firstPage</display-name>
     <servlet-name>firstPage</servlet-name>
     <servlet-class>com.servlet.firstPage</servlet-class>
   </servlet>
@@ -19,4 +19,5 @@
     <servlet-name>firstPage</servlet-name>
     <url-pattern>/firstPage</url-pattern>
   </servlet-mapping>
+   --> 
 </web-app>
