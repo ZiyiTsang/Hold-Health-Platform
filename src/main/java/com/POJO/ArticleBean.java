@@ -1,6 +1,6 @@
 package com.POJO;
 
-public class articleBean {
+public class ArticleBean {
     public String getTitle() {
         return title;
     }

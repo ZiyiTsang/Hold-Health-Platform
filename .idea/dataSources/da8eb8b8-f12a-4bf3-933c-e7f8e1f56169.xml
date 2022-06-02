@@ -901,30 +901,63 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <column id="279" parent="278" name="id">
+    <table id="279" parent="276" name="user">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="280" parent="278" name="id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="280" parent="278" name="title">
+    <column id="281" parent="278" name="title">
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="281" parent="278" name="content">
+    <column id="282" parent="278" name="content">
       <DataType>varchar(500)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="282" parent="278" name="time">
+    <column id="283" parent="278" name="time">
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="283" parent="278" name="PRIMARY">
+    <key id="284" parent="278" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
+    </key>
+    <column id="285" parent="279" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="286" parent="279" name="username">
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="287" parent="279" name="password">
+      <DataType>varchar(200)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="288" parent="279" name="table_name_id_uindex">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="289" parent="279" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <key id="290" parent="279" name="table_name_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>table_name_id_uindex</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
