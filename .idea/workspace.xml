@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="Merge remote-tracking branch 'origin/main'">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/POJO/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/ArticleMapper.java" afterDir="false" />
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="article JDBC">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/UserMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/articleDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/articleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/ArticleBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mybatis/mybatisIntro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/MybatisIntro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/articleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/ArticleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/ArticleBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/MybatisIntro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/MybatisIntro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/articleMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.com.test.MybatisIntro" />
+        <item itemvalue="应用程序.MybatisIntro" />
       </list>
     </recent_temporary>
   </component>
@@ -109,6 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654155195334</updated>
       <workItem from="1654155197087" duration="9167000" />
+      <workItem from="1654223999944" duration="1485000" />
     </task>
     <task id="LOCAL-00001" summary="add maven framwork">
       <created>1654155289588</created>
@@ -152,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654169640561</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="article JDBC">
+      <created>1654179997751</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654179997752</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +191,8 @@
     <MESSAGE value="web folder delete" />
     <MESSAGE value="mybatis framework" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="article JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="article JDBC" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -15,7 +15,7 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="com/mapper/ArticleMapper.xml"/>
-
+<!--        <mapper resource="com/mapper/ArticleMapper.xml"/>-->
+        <package name="com.mapper"/>
     </mappers>
 </configuration>

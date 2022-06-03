@@ -3,6 +3,7 @@ package com.test;
 import com.POJO.ArticleBean;
 import com.POJO.UserBean;
 import com.mapper.ArticleMapper;
+import com.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -19,10 +20,13 @@ public class MybatisIntro {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlsession=sqlSessionFactory.openSession();
 //        List<ArticleBean> articles=sqlsession.selectList("article.selectAll");
+
         ArticleMapper am=sqlsession.getMapper(ArticleMapper.class);
         List<ArticleBean> articles=am.selectById(1);
-        System.out.print(articles);
-
+        UserMapper um=sqlsession.getMapper(UserMapper.class);
+        UserBean users=um.selectByUserName("999");
+        System.out.println(articles);
+        System.out.println(users.getPassword());
         sqlsession.close();
     }
 }

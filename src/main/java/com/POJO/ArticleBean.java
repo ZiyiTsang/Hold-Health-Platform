@@ -20,8 +20,8 @@ public class ArticleBean {
         return time;
     }
 
-    private Integer id;
-    private String time;
+    public Integer id;
+    public String time;
     public String title;
     public String content;
 

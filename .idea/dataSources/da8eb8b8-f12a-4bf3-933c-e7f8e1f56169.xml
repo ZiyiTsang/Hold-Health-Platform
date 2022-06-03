@@ -906,6 +906,7 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="280" parent="278" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -950,12 +951,16 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="289" parent="279" name="PRIMARY">
+    <index id="289" parent="279" name="user_username_index">
+      <ColNames>username</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="290" parent="279" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="290" parent="279" name="table_name_id_uindex">
+    <key id="291" parent="279" name="table_name_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>table_name_id_uindex</UnderlyingIndexName>
     </key>
