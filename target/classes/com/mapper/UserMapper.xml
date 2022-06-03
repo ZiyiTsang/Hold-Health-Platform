@@ -12,4 +12,8 @@
     <select id="selectByUserName" resultType="com.POJO.UserBean">
         select * from user where username=#{username};
     </select>
+    <insert id="addUser"  keyProperty="id">
+        insert into user(username, password)
+        VALUES (#{username},#{password});
+    </insert>
 </mapper>

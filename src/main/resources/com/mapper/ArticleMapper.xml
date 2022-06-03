@@ -9,4 +9,7 @@
     <select id="selectById" resultType="com.POJO.ArticleBean">
         select * from article where id=#{id};
     </select>
+    <select id="selectBetweenId" resultType="com.POJO.ArticleBean">
+        select * from article where id between #{idFirst} and #{idLast};
+    </select>
 </mapper>

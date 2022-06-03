@@ -18,15 +18,18 @@ public class MybatisIntro {
         String resource = "mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession sqlsession=sqlSessionFactory.openSession();
+        SqlSession sqlsession=sqlSessionFactory.openSession(true);
 //        List<ArticleBean> articles=sqlsession.selectList("article.selectAll");
 
         ArticleMapper am=sqlsession.getMapper(ArticleMapper.class);
-        List<ArticleBean> articles=am.selectById(1);
+        List<ArticleBean> articles=am.selectBetweenId(0,3);
         UserMapper um=sqlsession.getMapper(UserMapper.class);
         UserBean users=um.selectByUserName("999");
-        System.out.println(articles);
-        System.out.println(users.getPassword());
+        int id=um.addUser("xiaotong","7979");
+//        sqlsession.commit();
+//        System.out.println(articles);
+//        System.out.println(users.getPassword());
+        System.out.println(id);
         sqlsession.close();
     }
 }
