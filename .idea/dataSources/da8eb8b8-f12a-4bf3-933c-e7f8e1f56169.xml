@@ -926,41 +926,50 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="284" parent="278" name="PRIMARY">
+    <index id="284" parent="278" name="article_id_uindex">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="285" parent="278" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="285" parent="279" name="id">
+    <key id="286" parent="278" name="article_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>article_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="287" parent="279" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="286" parent="279" name="username">
+    <column id="288" parent="279" name="username">
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="287" parent="279" name="password">
+    <column id="289" parent="279" name="password">
       <DataType>varchar(200)|0s</DataType>
       <Position>3</Position>
     </column>
-    <index id="288" parent="279" name="table_name_id_uindex">
+    <index id="290" parent="279" name="table_name_id_uindex">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="289" parent="279" name="user_username_index">
+    <index id="291" parent="279" name="user_username_index">
       <ColNames>username</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="290" parent="279" name="PRIMARY">
+    <key id="292" parent="279" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="291" parent="279" name="table_name_id_uindex">
+    <key id="293" parent="279" name="table_name_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>table_name_id_uindex</UnderlyingIndexName>
     </key>

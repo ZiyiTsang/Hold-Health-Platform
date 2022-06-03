@@ -10,4 +10,5 @@ public interface UserMapper {
     UserBean selectById(int id);
     UserBean selectByUserName(String username);
     int addUser(@Param("username") String username,@Param("password") String password);
+    int updatePassword(@Param("username") String username,@Param("password") String password);
 }

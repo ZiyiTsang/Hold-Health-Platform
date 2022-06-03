@@ -25,11 +25,12 @@ public class MybatisIntro {
         List<ArticleBean> articles=am.selectBetweenId(0,3);
         UserMapper um=sqlsession.getMapper(UserMapper.class);
         UserBean users=um.selectByUserName("999");
-        int id=um.addUser("xiaotong","7979");
+        um.updatePassword("xiaotong","9999");
+//        int id=um.addUser("xiaotong","7979");
 //        sqlsession.commit();
 //        System.out.println(articles);
 //        System.out.println(users.getPassword());
-        System.out.println(id);
+//        System.out.println(id);
         sqlsession.close();
     }
 }

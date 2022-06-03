@@ -16,4 +16,9 @@
         insert into user(username, password)
         VALUES (#{username},#{password});
     </insert>
+    <update id="updatePassword">
+        update user
+        set password=#{password}
+        where username=#{username}
+    </update>
 </mapper>

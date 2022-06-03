@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ArticleMapper {
     List<ArticleBean> selectAll();
-    List<ArticleBean> selectById(int id);
+    ArticleBean selectById(int id);
     List<ArticleBean> selectBetweenId(@Param("idFirst") int idFirst,@Param("idLast") int idLast);
 
 }
