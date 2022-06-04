@@ -12,4 +12,14 @@
     <select id="selectBetweenId" resultType="com.POJO.ArticleBean">
         select * from article where id between #{idFirst} and #{idLast};
     </select>
+    <select id="selectTitleById" resultType="com.POJO.ArticleBean">
+        select title from article where id=#{id};
+    </select>
+    <insert id="addArticle"  keyProperty="id">
+        insert into article(title,content,time)
+        VALUES (#{title},#{content},#{time});
+    </insert>
+    <delete id="deleteById">
+        delete from article where id=#{id}
+    </delete>
 </mapper>
