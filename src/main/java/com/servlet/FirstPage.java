@@ -12,13 +12,13 @@ import java.io.IOException;
  */
 
 @WebServlet("/fp")
-public class firstPage extends HttpServlet {
+public class FirstPage extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor. 
      */
-    public firstPage() {
+    public FirstPage() {
         // TODO Auto-generated constructor stub
     }
 

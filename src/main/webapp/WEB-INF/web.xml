@@ -13,7 +13,7 @@
   
   <display-name>firstPage</display-name>
     <servlet-name>firstPage</servlet-name>
-    <servlet-class>com.servlet.firstPage</servlet-class>
+    <servlet-class>com.servlet.FirstPage</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>firstPage</servlet-name>

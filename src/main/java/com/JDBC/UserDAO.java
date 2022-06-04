@@ -21,7 +21,7 @@ public class UserDAO extends BaseDAO {
     public UserBean getUserById(int id){
         return mapper.selectById(id);
     }
-    private UserBean getUserByUsername(String username){
+    public UserBean getUserByUsername(String username){
         return mapper.selectByUserName(username);
     }
     public Boolean validation(String username,String password){

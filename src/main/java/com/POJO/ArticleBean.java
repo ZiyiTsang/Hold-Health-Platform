@@ -10,20 +10,14 @@ public class ArticleBean {
     public Integer getId() {
         return id;
     }
-    public void setId(String id) {
-        this.id = Integer.valueOf(id);
-    }
-    public void setTime(String time) {
-        this.time = time;
-    }
     public String getTime() {
         return time;
     }
 
-    public Integer id;
-    public String time;
-    public String title;
-    public String content;
+    private Integer id;
+    private String time;
+    private String title;
+    private String content;
 
     @Override
     public String toString() {

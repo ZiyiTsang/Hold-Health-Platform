@@ -54,4 +54,5 @@ public class ArticleDAO extends BaseDAO {
     public void FlushRedis(){
         redis.flushAll();
     }
+
 }

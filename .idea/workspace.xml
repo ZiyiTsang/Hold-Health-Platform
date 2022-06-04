@@ -9,28 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="database/redis logic update3">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Assignment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/redis_clients_jedis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/testRedis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="new file 2022/6/4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/ArticleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/ArticleDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/baseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/BaseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/ArticleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/ArticleBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/firstPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/FirstPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +187,7 @@
       <workItem from="1654223999944" duration="12821000" />
       <workItem from="1654239666076" duration="1966000" />
       <workItem from="1654244956082" duration="4707000" />
-      <workItem from="1654311888234" duration="11759000" />
+      <workItem from="1654311888234" duration="17818000" />
     </task>
     <task id="LOCAL-00001" summary="add maven framwork">
       <created>1654155289588</created>
@@ -273,7 +259,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654237983958</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="database/redis logic update3">
+      <created>1654324388032</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654324388032</updated>
+    </task>
+    <task id="LOCAL-00012" summary="new file 2022/6/4">
+      <created>1654324468527</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1654324468527</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +314,8 @@
     <MESSAGE value="database logic update" />
     <MESSAGE value="database logic update2" />
     <MESSAGE value="database/redis logic update3" />
-    <option name="LAST_COMMIT_MESSAGE" value="database/redis logic update3" />
+    <MESSAGE value="new file 2022/6/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="new file 2022/6/4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
