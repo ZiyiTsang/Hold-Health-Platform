@@ -901,75 +901,156 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="279" parent="276" name="user">
+    <table id="279" parent="276" name="comment">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="280" parent="278" name="id">
-      <AutoIncrement>2</AutoIncrement>
+    <table id="280" parent="276" name="user">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="281" parent="278" name="id">
+      <AutoIncrement>4</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="281" parent="278" name="title">
+    <column id="282" parent="278" name="title">
       <DataType>varchar(30)|0s</DataType>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="282" parent="278" name="content">
+    <column id="283" parent="278" name="content">
       <DataType>varchar(500)|0s</DataType>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="283" parent="278" name="time">
+    <column id="284" parent="278" name="time">
       <DataType>varchar(50)|0s</DataType>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="284" parent="278" name="article_id_uindex">
+    <column id="285" parent="278" name="tag">
+      <DataType>varchar(20)|0s</DataType>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
+      <Position>5</Position>
+    </column>
+    <column id="286" parent="278" name="author">
+      <DataType>varchar(20)|0s</DataType>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
+      <Position>6</Position>
+    </column>
+    <column id="287" parent="278" name="abstract_">
+      <DataType>varchar(100)|0s</DataType>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
+      <Position>7</Position>
+    </column>
+    <column id="288" parent="278" name="view">
+      <DataType>int|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <index id="289" parent="278" name="article_id_uindex">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="285" parent="278" name="PRIMARY">
+    <index id="290" parent="278" name="tag_index">
+      <ColNames>tag</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="291" parent="278" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="286" parent="278" name="article_id_uindex">
+    <key id="292" parent="278" name="article_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>article_id_uindex</UnderlyingIndexName>
     </key>
-    <column id="287" parent="279" name="id">
+    <column id="293" parent="279" name="comment_id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="294" parent="279" name="author">
+      <DataType>varchar(15)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="295" parent="279" name="content">
+      <DataType>varchar(50)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="296" parent="279" name="like_">
+      <DataType>int|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="297" parent="279" name="time">
+      <DataType>varchar(50)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="298" parent="279" name="article_id">
+      <DataType>bigint|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="299" parent="279" name="comment_article_id_fk">
+      <ColNames>article_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>article</RefTableName>
+    </foreign-key>
+    <index id="300" parent="279" name="comment_comment_id_uindex">
+      <ColNames>comment_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="301" parent="279" name="comment_article_id_fk">
+      <ColNames>article_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="302" parent="279" name="PRIMARY">
+      <ColNames>comment_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <key id="303" parent="279" name="comment_comment_id_uindex">
+      <ColNames>comment_id</ColNames>
+      <UnderlyingIndexName>comment_comment_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="304" parent="280" name="id">
       <AutoIncrement>13</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="288" parent="279" name="username">
+    <column id="305" parent="280" name="username">
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="289" parent="279" name="password">
+    <column id="306" parent="280" name="password">
       <DataType>varchar(200)|0s</DataType>
       <Position>3</Position>
     </column>
-    <index id="290" parent="279" name="table_name_id_uindex">
+    <index id="307" parent="280" name="table_name_id_uindex">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="291" parent="279" name="user_username_index">
+    <index id="308" parent="280" name="user_username_index">
       <ColNames>username</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="292" parent="279" name="PRIMARY">
+    <key id="309" parent="280" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="293" parent="279" name="table_name_id_uindex">
+    <key id="310" parent="280" name="table_name_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>table_name_id_uindex</UnderlyingIndexName>
     </key>

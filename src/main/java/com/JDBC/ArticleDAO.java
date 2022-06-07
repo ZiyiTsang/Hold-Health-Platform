@@ -33,6 +33,11 @@ public class ArticleDAO extends BaseDAO {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return mapper.addArticle(title,content,sdf.format(date));
     }
+    public  int addArticleComplete(ArticleBean article){
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return mapper.addArticleComplete(sdf.format(date), article.getTitle(),article.getContent(), article.getTag(), article.getAuthor(), article.getAbstract());
+    }
     public void deleteById(int id){
         mapper.deleteById(id);
     }
@@ -51,8 +56,21 @@ public class ArticleDAO extends BaseDAO {
         System.out.printf("id:%s in redis,return value directly\n",id);
         return redisRes;
     }
+    public void FlushTable(){
+        mapper.deleteAll();
+    }
     public void FlushRedis(){
         redis.flushAll();
     }
 
+    public List<ArticleBean> getArticleByAuthor(String author){
+        return mapper.selectByAuthor(author);
+    }
+    public List<ArticleBean> getArticleByTag(String tag){
+        return mapper.selectByTag(tag);
+    }
+
+    public void moreViewByArticleID(int id) {
+        mapper.moreView(id);
+    }
 }

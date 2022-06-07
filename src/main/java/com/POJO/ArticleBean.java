@@ -1,6 +1,18 @@
 package com.POJO;
 
 public class ArticleBean {
+    public ArticleBean() {
+    }
+
+    public ArticleBean(String title, String content, String tag, String abstract_, String author) {
+        this.title = title;
+        this.content = content;
+        this.tag = tag;
+        this.abstract_ = abstract_;
+        this.author = author;
+    }
+
+
     public String getTitle() {
         return title;
     }
@@ -19,13 +31,34 @@ public class ArticleBean {
     private String title;
     private String content;
 
-    @Override
-    public String toString() {
-        return "articleBean{" +
-                "id=" + id +
-                ", time='" + time + '\'' +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                '}';
+    private int view;
+
+    private String tag;
+    private String abstract_;
+    private String author;
+    public String getIntro() {
+        if (this.content==null){
+            return "ERR:content is empty";
+        }
+        return this.content.substring(0,20);
+    }
+    public String getTag() {
+        return tag;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getAbstract() {
+        return abstract_;
+    }
+
+    public int getView() {
+        return view;
+    }
+
+    public String getAbstract_() {
+        return abstract_;
     }
 }

@@ -13,5 +13,10 @@ public interface ArticleMapper {
     int addArticle(@Param("title") String title,@Param("content") String content,@Param("time") String time);
     void deleteById(int id);
     ArticleBean selectTitleById(int id);
+    int addArticleComplete(@Param("time") String time,@Param("title") String title,@Param("content") String content,@Param("tag") String tag,@Param("author") String author,@Param("abstract_") String abstract_ );
+    void deleteAll();
+    List<ArticleBean> selectByAuthor(String author);
+    List<ArticleBean> selectByTag(String tag);
+    void moreView(int id);
 
 }

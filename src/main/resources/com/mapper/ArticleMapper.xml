@@ -15,11 +15,32 @@
     <select id="selectTitleById" resultType="com.POJO.ArticleBean">
         select title from article where id=#{id};
     </select>
+    <select id="selectByAuthor" resultType="com.POJO.ArticleBean">
+        select title from article where author=#{author};
+    </select>
+    <select id="selectByTag" resultType="com.POJO.ArticleBean">
+        select title from article where tag=#{tag};
+    </select>
+
     <insert id="addArticle"  keyProperty="id">
         insert into article(title,content,time)
         VALUES (#{title},#{content},#{time});
     </insert>
+    <insert id="addArticleComplete"  keyProperty="id">
+        insert into article(title,content,time,tag,author,abstract_,view)
+        VALUES (#{title},#{content},#{time},#{tag},#{author},#{abstract_},0);
+    </insert>
+<!--    @Param("id")Integer id,@Param("time") String time,@Param("title") String title,@Param("content") String content,@Param("tag") String tag,@Param("author") String author,@Param("abstract_") String abstract_-->
     <delete id="deleteById">
         delete from article where id=#{id}
     </delete>
+    <delete id="deleteAll">
+        delete from article
+    </delete>
+    <update id="moreView">
+        update article
+        set view=view+1
+        where id=#{id}
+    </update>
+
 </mapper>
