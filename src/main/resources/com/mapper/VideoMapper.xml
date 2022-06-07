@@ -9,6 +9,12 @@
     <select id="selectByTag" resultType="com.POJO.VideoBean">
         select * from video where tag=#{tag};
     </select>
+    <select id="selectByAuthor" resultType="com.POJO.VideoBean">
+        select * from video where author=#{author};
+    </select>
+    <select id="selectByTitle" resultType="com.POJO.VideoBean">
+        select * from video where title=#{title};
+    </select>
     <insert id="addVideo"  keyProperty="video_id">
         insert into video(title, link,author,tag,abstract_)
         VALUES (#{title},#{link},#{author},#{tag},#{abstract_});

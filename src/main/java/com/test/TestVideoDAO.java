@@ -9,6 +9,6 @@ public class TestVideoDAO {
     public static void main(String[] args) throws IOException {
         VideoDAO videoDAO=new VideoDAO();
         VideoBean videoBean=new VideoBean("title2", "link", "author", "tag", "abstract_");
-        System.out.println(videoDAO.getVideoByTag("tag"));
+        System.out.println(videoDAO.getVideoByAuthor("title"));
     }
 }

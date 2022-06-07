@@ -10,4 +10,8 @@ public interface VideoMapper {
     List<VideoBean> selectByTag(String Tag);
     List<VideoBean> selectAll();
 
+    List<VideoBean> selectByAuthor(String author);
+    List<VideoBean> selectByTitle(String Title);
+
+
 }
