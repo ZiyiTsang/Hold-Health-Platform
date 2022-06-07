@@ -1077,23 +1077,27 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
     </column>
     <column id="315" parent="281" name="title">
       <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="316" parent="281" name="link">
       <DataType>varchar(100)|0s</DataType>
-      <DefaultExpression>&apos;-1&apos;</DefaultExpression>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <Position>3</Position>
     </column>
     <column id="317" parent="281" name="author">
       <DataType>varchar(20)|0s</DataType>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <Position>4</Position>
     </column>
     <column id="318" parent="281" name="tag">
       <DataType>varchar(10)|0s</DataType>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <Position>5</Position>
     </column>
     <column id="319" parent="281" name="abstract_">
       <DataType>varchar(100)|0s</DataType>
+      <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <Position>6</Position>
     </column>
     <index id="320" parent="281" name="vedio_vedio_id_uindex">
@@ -1101,24 +1105,20 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="321" parent="281" name="vedio_title_index">
-      <ColNames>title</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="322" parent="281" name="vedio_author_index">
+    <index id="321" parent="281" name="vedio_author_index">
       <ColNames>author</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="323" parent="281" name="vedio_tag_index">
+    <index id="322" parent="281" name="vedio_tag_index">
       <ColNames>tag</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="324" parent="281" name="PRIMARY">
+    <key id="323" parent="281" name="PRIMARY">
       <ColNames>video_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="325" parent="281" name="vedio_vedio_id_uindex">
+    <key id="324" parent="281" name="vedio_vedio_id_uindex">
       <ColNames>video_id</ColNames>
       <UnderlyingIndexName>vedio_vedio_id_uindex</UnderlyingIndexName>
     </key>
