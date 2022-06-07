@@ -36,6 +36,7 @@ public class ArticleBean {
     private String tag;
     private String abstract_;
     private String author;
+    private int comment_cnt;
     public String getIntro() {
         if (this.content==null){
             return "ERR:content is empty";
@@ -60,5 +61,9 @@ public class ArticleBean {
 
     public String getAbstract_() {
         return abstract_;
+    }
+
+    public int getComment_cnt() {
+        return comment_cnt;
     }
 }

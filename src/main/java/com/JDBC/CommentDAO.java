@@ -13,7 +13,7 @@ import java.util.List;
 
 import static com.JDBC.BaseDAO.getSqlSession;
 
-public class CommentDAO {
+public class CommentDAO extends BaseDAO{
     private final CommentMapper mapper;
     private final SqlSession sqlSession;
 
