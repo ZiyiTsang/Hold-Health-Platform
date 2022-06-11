@@ -8,25 +8,35 @@ import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 
-@WebServlet("/register")
+@WebServlet("/registerServlet")
 public class Register extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
-        System.out.println("login page666");
+        System.out.println("registerServlet exec");
+        request.setCharacterEncoding("UTF-8");
         String username=request.getParameter("username");
         String password=request.getParameter("password");
-        UserDAO ud=new UserDAO();
-        if(ud.validation(username,password)){
-            UserBean ub=ud.getUserByUsername(username);
-            HttpSession session= request.getSession();
-            session.setAttribute("user",ub);
-            response.sendRedirect(request.getContextPath()+"/workouts.jsp");
-        }else{
-            request.setAttribute("loginMsg","用户名或密码错误");
+        String passwordRepeat=request.getParameter("passwordRepeat");
+        if(username==null||password==null||passwordRepeat==null){
+            request.setAttribute("Msg","不得出现放空现象");
             request.getRequestDispatcher("register.jsp").forward(request,response);
         }
-
+        if (!passwordRepeat.equals(password)){
+            request.setAttribute("Msg","两次输入不一致");
+            request.getRequestDispatcher("register.jsp").forward(request,response);
+        }
+        if (passwordRepeat.length()<5){
+            request.setAttribute("Msg","密码不够长");
+            request.getRequestDispatcher("register.jsp").forward(request,response);
+        }
+        UserDAO ud=new UserDAO();
+        if(ud.getUserByUsername(username)!=null){
+            request.setAttribute("Msg","已存在相关用户");
+            request.getRequestDispatcher("register.jsp").forward(request,response);
+        }
+        ud.newUser(username,password);
+        response.sendRedirect(request.getContextPath()+"/homepage.html");
     }
 
     @Override

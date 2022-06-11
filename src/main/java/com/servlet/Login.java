@@ -13,7 +13,7 @@ public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
-        System.out.println("login page666");
+        System.out.println("registerServlet exec");
         String username=request.getParameter("username");
         String password=request.getParameter("password");
         UserDAO ud=new UserDAO();

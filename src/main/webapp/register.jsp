@@ -9,7 +9,7 @@
 <html lang="en">
 
 <head>
-    <title>login</title>
+    <title>register</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -20,11 +20,11 @@
 
     <div class="blog-post bg-white p-5 rounded shadow mb-4">
 
-        <h3 class="mb-5 text-center">Login</h3>
+        <h3 class="mb-5 text-center">register</h3>
 
 
-        <form action="<%= request.getContextPath()%>/loginServlet" method="post">
-            <div>${loginMsg}</div>
+        <form action="<%= request.getContextPath()%>/registerServlet" method="post">
+            <div>${Msg}</div>
             <div class="form-group row mb-3">
                 <label for="name" class="col-md-4 col-form-label text-md-right">姓名</label>
                 <div class="col-md-6">
@@ -37,6 +37,12 @@
                 <label for="password" class="col-md-4 col-form-label text-md-right">密码</label>
                 <div class="col-md-6">
                     <input id="password" type="password" class="form-control" name="password" required="">
+                </div>
+            </div>
+            <div class="form-group row mb-3">
+                <label for="password" class="col-md-4 col-form-label text-md-right">确认密码</label>
+                <div class="col-md-6">
+                    <input id="passwordRepeat" type="password" class="form-control" name="passwordRepeat" required="">
                 </div>
             </div>
 
