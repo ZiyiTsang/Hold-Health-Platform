@@ -13,11 +13,12 @@ public class GoodBean {
 
     private int monthlySales;
 
-    public GoodBean(String goodName, int price, String introduction, String image) {
+    public GoodBean(String goodName, int price, String introduction, String image,int monthlySales) {
         this.goodName = goodName;
         this.price = price;
         this.introduction = introduction;
         this.image = image;
+        this.monthlySales=monthlySales;
     }
 
     public GoodBean() {
