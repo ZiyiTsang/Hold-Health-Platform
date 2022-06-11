@@ -12,6 +12,7 @@ public class TestUserDAO {
 //        ud.newUser("aofan","aofan7777");
 //        ud.newUser("yanghang","yanghang7777");
 //        ud.newUser("xianglong","xianglong7777");
-        System.out.println(ud.validation("ziyi","ziyi7778"));
+        System.out.println(ud.validation("ziyi","0000"));
+//        ud.updateUser("ziyi","0000");
     }
 }

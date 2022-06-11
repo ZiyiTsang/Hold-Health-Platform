@@ -28,6 +28,23 @@ public class RedisOps {
         jedis.close();
         return t;
     }
+    public void setUserNameAndPassword(String username, String password){
+        Jedis jedis=pool.getResource();
+        jedis.hset("user",username,password);
+        jedis.close();
+
+    }
+    public String getUserNameAndPassword(String username){
+        Jedis jedis=pool.getResource();
+        String t=jedis.hget("user", username);
+        jedis.close();
+        return t;
+    }
+    public void deleteUser(String username){
+        Jedis jedis=pool.getResource();
+        jedis.hdel("user", username);
+        jedis.close();
+    }
     public void flushAll(){
         Jedis jedis=pool.getResource();
         jedis.flushAll();

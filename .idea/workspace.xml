@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="some login update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/GoodDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/TestGoodDAO.java" afterDir="false" />
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="Video DB logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/GoodBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/GoodBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/GoodMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/GoodMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testRedis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
       <recent name="E:\eclipse\eclipse_workplace\PE_Assinment\src\main\resources\com\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestGoodDAO">
+  <component name="RunManager" selected="应用程序.TestUserDAO">
     <configuration name="TestGoodDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.TestGoodDAO" />
       <module name="Assignment" />
@@ -182,10 +182,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.TestGoodDAO" />
         <item itemvalue="应用程序.TestUserDAO" />
-        <item itemvalue="应用程序.testArticleDao" />
         <item itemvalue="应用程序.testRedis" />
+        <item itemvalue="应用程序.TestGoodDAO" />
+        <item itemvalue="应用程序.testArticleDao" />
         <item itemvalue="应用程序.testComment" />
       </list>
     </recent_temporary>
@@ -382,7 +382,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="ziyi" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
