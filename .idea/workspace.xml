@@ -9,13 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="Video DB logic">
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="Video DB logic update complete">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/VideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/VideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/VideoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestVideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/VideoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/VideoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +37,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -73,6 +91,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
@@ -82,7 +101,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/eclipse/eclipse_workplace/PE_Assinment/src/main/webapp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facet&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;工件&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.25172412&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
@@ -99,13 +118,13 @@
       <recent name="E:\eclipse\eclipse_workplace\PE_Assinment\src\main\resources\com\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestVideoDAO">
-    <configuration name="RedisOps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.redis.RedisOps" />
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat">
+    <configuration name="TestUserDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.TestUserDAO" />
       <module name="Assignment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.redis.*" />
+          <option name="PATTERN" value="com.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,19 +186,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat 服务器.Tomcat" />
+      <item itemvalue="应用程序.TestUserDAO" />
       <item itemvalue="应用程序.TestVideoDAO" />
       <item itemvalue="应用程序.testComment" />
-      <item itemvalue="应用程序.RedisOps" />
       <item itemvalue="应用程序.testRedis" />
       <item itemvalue="应用程序.testArticleDao" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.TestVideoDAO" />
+        <item itemvalue="应用程序.TestUserDAO" />
         <item itemvalue="应用程序.testArticleDao" />
-        <item itemvalue="应用程序.testComment" />
         <item itemvalue="应用程序.testRedis" />
-        <item itemvalue="应用程序.RedisOps" />
+        <item itemvalue="应用程序.testComment" />
+        <item itemvalue="应用程序.TestVideoDAO" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +218,15 @@
       <workItem from="1654501376861" duration="7413000" />
       <workItem from="1654585663393" duration="18065000" />
       <workItem from="1654634711678" duration="3069000" />
+      <workItem from="1654640392297" duration="1250000" />
+      <workItem from="1654697136011" duration="2939000" />
+      <workItem from="1654700163294" duration="754000" />
+      <workItem from="1654762625568" duration="3924000" />
+      <workItem from="1654770584882" duration="2949000" />
+      <workItem from="1654849025907" duration="579000" />
+      <workItem from="1654924965979" duration="3085000" />
+      <workItem from="1654928156522" duration="46000" />
+      <workItem from="1654928523041" duration="6865000" />
     </task>
     <task id="LOCAL-00001" summary="add maven framwork">
       <created>1654155289588</created>
@@ -333,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654619383536</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Video DB logic update complete">
+      <created>1654639810332</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1654639810332</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +385,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="ziyi" />
                       </list>
                     </value>
                   </entry>
@@ -380,7 +415,8 @@
     <MESSAGE value="article Logic update" />
     <MESSAGE value="maven correction" />
     <MESSAGE value="add VideoBean" />
-    <option name="LAST_COMMIT_MESSAGE" value="add VideoBean" />
+    <MESSAGE value="Video DB logic update complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Video DB logic update complete" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

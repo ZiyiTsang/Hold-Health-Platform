@@ -26,9 +26,13 @@ public class UserDAO extends BaseDAO {
     }
     public Boolean validation(String username,String password){
         UserBean user=getUserByUsername(username);
-        String passwdHashInside=user.getPassword();
-        String passwordHashOutside=SHA(password,"MD5");
-        return passwdHashInside.equals(passwordHashOutside);
+        if (user!=null){
+            String passwdHashInside=user.getPassword();
+            String passwordHashOutside=SHA(password,"MD5");
+            return passwdHashInside.equals(passwordHashOutside);
+        }
+        return false;
+
     }
     public List<UserBean> getAllUser(){
         return mapper.selectAll();

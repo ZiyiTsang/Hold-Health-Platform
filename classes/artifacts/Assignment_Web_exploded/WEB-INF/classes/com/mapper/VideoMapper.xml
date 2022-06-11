@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.VideoMapper">
+    <select id="selectAll" resultType="com.POJO.VideoBean">
+        select * from video;
+    </select>
+    <select id="selectByTag" resultType="com.POJO.VideoBean">
+        select * from video where tag=#{tag};
+    </select>
+    <select id="selectByAuthor" resultType="com.POJO.VideoBean">
+        select * from video where author=#{author};
+    </select>
+    <select id="selectByTitle" resultType="com.POJO.VideoBean">
+        select * from video where title=#{title};
+    </select>
+    <insert id="addVideo"  keyProperty="video_id">
+        insert into video(title, link,author,tag,abstract_)
+        VALUES (#{title},#{link},#{author},#{tag},#{abstract_});
+    </insert>
+</mapper>
