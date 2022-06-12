@@ -1,5 +1,10 @@
+<%@ page import="com.JDBC.ArticleDAO" %>
+<%@ page import="com.POJO.ArticleBean" %>
+<%@ page import="java.util.List" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,9 +48,9 @@
 					<div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
 						<nav>
 							<ul style="display:inline-block;">
-								<li style="display:inline-block;"><a href="">Workouts</a></li>
-								<li style="display:inline-block;"><a href="">Health</a></li>
-								<li style="display:inline-block;"><a href="">Shop</a></li>
+								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
+								<li style="display:inline-block;"><a href="article.jsp">Article</a></li>
+								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
 								<li style="display:inline-block;"><a href="">login</a></li>
 							</ul>
 						</nav>
@@ -57,6 +62,10 @@
 </header>
 <!-- header end -->
 
+<%
+    ArticleDAO ad=new ArticleDAO();
+    List<ArticleBean> articles = ad.getAllArticle();
+%>
 
 <!-- article start -->
         <div class="article-area">
@@ -65,7 +74,7 @@
                 	<div>
 					<h2 class="page-heading" style="margin-top: 40px;">
 						<span class="cat-name">Articles</span>
-						<span class="heading-counter">There are 6 articles.</span>
+						<span class="heading-counter">There are <%=articles.size()%> articles.</span>
 					</h2>
 					<div class="shop-page-bar">
 						<div>	

@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: 曾子懿
   Date: 2022/6/11
@@ -32,17 +32,28 @@
                 </div>
             </div>
 
-
             <div class="form-group row mb-3">
                 <label for="password" class="col-md-4 col-form-label text-md-right">密码</label>
-                <div class="col-md-6">
+                <div class="col-md">
                     <input id="password" type="password" class="form-control" name="password" required="">
                 </div>
             </div>
             <div class="form-group row mb-3">
-                <label for="password" class="col-md-4 col-form-label text-md-right">确认密码</label>
-                <div class="col-md-6">
+                <label for="passwordRepeat" class="col-md-4 col-form-label text-md-right">确认密码</label>
+                <div class="col-md">
                     <input id="passwordRepeat" type="password" class="form-control" name="passwordRepeat" required="">
+                </div>
+            </div>
+            <div class="form-group row mb-3">
+                <label for="code" class="col-md-3 col-form-label text-md-right">验证码</label>
+                <div class="col-md">
+                    <input id="code" type="text" class="form-control" name="code" required="">
+                </div>
+                <div class="col-md">
+                    <img src="${pageContext.request.contextPath}/CodeServlet" id="checkcodeimg"></img>
+                </div>
+                <div class="col-md">
+                    <a href="#" id="change" onclick="">看不清</a>
                 </div>
             </div>
 
@@ -67,6 +78,11 @@
     <a href="${pageContext.request.contextPath}/" class="text-sm text-muted float-right"><small>登录</small></a>
 </div>
 <script src="./js/bootstrap.min.js"></script>
+<script>
+    document.getElementById("change").onclick=function () {
+        document.getElementById("checkcodeimg").src="${pageContext.request.contextPath}/CodeServlet?"+Math.ceil(Math.random()*10000);
+    }
+</script>
 
 
 </body>
