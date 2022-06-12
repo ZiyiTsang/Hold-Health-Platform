@@ -17,17 +17,17 @@ public class Register extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String username=request.getParameter("username");
         String password=request.getParameter("password");
+        String code = request.getParameter("code");
         String passwordRepeat=request.getParameter("passwordRepeat");
         if(username==null||password==null||passwordRepeat==null){
             request.setAttribute("Msg","不得出现放空现象");
             request.getRequestDispatcher("register.jsp").forward(request,response);
         }
-        if (!passwordRepeat.equals(password)){
-            request.setAttribute("Msg","两次输入不一致");
-            request.getRequestDispatcher("register.jsp").forward(request,response);
-        }
-        if (passwordRepeat.length()<5){
-            request.setAttribute("Msg","密码不够长");
+        HttpSession session = request.getSession();
+        String code1 = (String) session.getAttribute("code");
+
+        if (!code1.equals(code)){
+            request.setAttribute("Msg","验证码错误❌");
             request.getRequestDispatcher("register.jsp").forward(request,response);
         }
         UserDAO ud=new UserDAO();
@@ -35,7 +35,18 @@ public class Register extends HttpServlet {
             request.setAttribute("Msg","已存在相关用户");
             request.getRequestDispatcher("register.jsp").forward(request,response);
         }
+        if (!passwordRepeat.equals(password)){
+            request.setAttribute("Msg","两次输入不一致");
+            request.getRequestDispatcher("register.jsp").forward(request,response);
+        }
+        if (passwordRepeat.length()<5){
+            request.setAttribute("Msg","密码不够长，请确保大于5位");
+            request.getRequestDispatcher("register.jsp").forward(request,response);
+        }
+
         ud.newUser(username,password);
+        request.setAttribute("Msg","注册成功，请登录");
+        request.getRequestDispatcher("login.jsp").forward(request,response);
         response.sendRedirect(request.getContextPath()+"/homepage.html");
     }
 
