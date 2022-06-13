@@ -9,29 +9,79 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="update local file">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" afterDir="false" />
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="workouts some data import">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_whvcse_easy_captcha_1_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_whvcse_easy_captcha_1_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_19_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_19_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_5_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_5_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jsp_jakarta_servlet_jsp_api_3_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jsp_jakarta_servlet_jsp_api_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_29.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_29.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_11_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_11_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20211205.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20211205.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_4_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_4_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/ArticleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/ArticleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/ArticleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/CommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/VideoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/article-page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/article.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/articles-details.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/Shop_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/core.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/nivo-slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/pe-icon-7-stroke.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/plugins/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/plugins/meanmenu.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/Pe-icon-7-stroke.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/Pe-icon-7-stroke.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/Pe-icon-7-stroke.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/homepage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/Shop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/bilibili.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/cart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/home1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/home2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/pic1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/pic2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/slide.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/jquery.nivo.slider.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/vendor/jquery-1.12.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/vendor/modernizr-2.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/shop.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/workout-page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/workouts.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <list id="ffca96c5-4a3d-47b5-81a0-c2941f786e64" name="tanqianqian 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,8 +130,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Users\曾子懿\.m2\repository" />
-        <option name="userSettingsFile" value="C:\Users\曾子懿\.m2\settings.xml" />
+        <option name="userSettingsFile" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -106,11 +155,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/eclipse/eclipse_workplace/PE_Assinment/src/main/webapp",
+    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment",
     "project.structure.last.edited": "库",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.25172412",
-    "settings.editor.selected.configurable": "reference.settings.project.statistic.project.settings"
+    "settings.editor.selected.configurable": "MavenSettings"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -138,8 +187,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGoodDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.TestGoodDAO" />
+    <configuration name="MybatisIntro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.MybatisIntro" />
       <module name="Assignment" />
       <extension name="coverage">
         <pattern>
@@ -192,19 +241,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat 服务器.Tomcat" />
+      <item itemvalue="应用程序.MybatisIntro" />
       <item itemvalue="应用程序.CheckCodeUtil" />
-      <item itemvalue="应用程序.TestGoodDAO" />
       <item itemvalue="应用程序.TestUserDAO" />
       <item itemvalue="应用程序.testRedis" />
       <item itemvalue="应用程序.testArticleDao" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.testArticleDao" />
+        <item itemvalue="应用程序.MybatisIntro" />
+        <item itemvalue="应用程序.testRedis" />
         <item itemvalue="应用程序.CheckCodeUtil" />
         <item itemvalue="应用程序.TestUserDAO" />
-        <item itemvalue="应用程序.testRedis" />
-        <item itemvalue="应用程序.TestGoodDAO" />
-        <item itemvalue="应用程序.testArticleDao" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +286,7 @@
       <workItem from="1654958344949" duration="3878000" />
       <workItem from="1655020025146" duration="4823000" />
       <workItem from="1655130770758" duration="2744000" />
+      <workItem from="1655139183640" duration="5296000" />
     </task>
     <task id="LOCAL-00001" summary="add maven framwork">
       <created>1654155289588</created>
@@ -423,7 +473,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -458,7 +508,8 @@
     <MESSAGE value="redis user logic" />
     <MESSAGE value="Register logic update" />
     <MESSAGE value="update local file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update local file" />
+    <MESSAGE value="workouts some data import" />
+    <option name="LAST_COMMIT_MESSAGE" value="workouts some data import" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

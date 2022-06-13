@@ -5,6 +5,7 @@ import com.POJO.ArticleBean;
 import com.redis.RedisOps;
 
 import java.io.IOException;
+import java.util.List;
 
 public class testArticleDao {
     public static void main(String[] args) throws IOException {
@@ -14,6 +15,8 @@ public class testArticleDao {
 //        ArticleBean ab1=new ArticleBean("title1","content2","tag3","abstract4","author");
 //        System.out.println(ad.addArticleComplete(ab));
 //        System.out.println(ad.addArticleComplete(ab1));
+        List<ArticleBean> articles = ad.getAllArticle();
+        System.out.println(articles.size());
 
 
 
