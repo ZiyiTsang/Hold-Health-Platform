@@ -10,6 +10,12 @@
     <select id="getAllCommentByArticleId" resultType="com.POJO.CommentBean">
         select * from comment where article_id=#{article_id};
     </select>
+
+    <update id="addLikes">
+        update comment
+        set like_=like_+1
+        where comment_id=#{id}
+    </update>
 <!--    <select id="selectById" resultType="com.POJO.UserBean">-->
 <!--        select * from user where id=#{id};-->
 <!--    </select>-->

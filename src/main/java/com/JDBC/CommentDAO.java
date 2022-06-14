@@ -30,4 +30,8 @@ public class CommentDAO extends BaseDAO{
         return mapper.getAllCommentByArticleId(article_id);
     }
 
+    public void addLikes(int id) {
+        mapper.addLikes(id);
+    }
+
 }

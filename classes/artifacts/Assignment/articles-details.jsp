@@ -122,8 +122,10 @@
 					<div class="artDe-com-details">
 						<h5><%=comments.get(i).getContent()%></h5>
 						<p><%=comments.get(i).getTime()%>
-						<a href="#" style="margin-left:10px;"><i class="pe-7s-like"></i></a>
-						 <%=comments.get(i).getLike()%>
+							<astyle="margin-left:10px;">
+								<i class="pe-7s-like"></i>
+							</a>
+							<%=comments.get(i).getLike()%>
 						</p>
 					</div>
 				</div>
