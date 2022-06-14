@@ -10,78 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="workouts some data import">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/VideoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/VideoBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/ArticleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/CommentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/VideoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/article-page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/article.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/articles-details.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/Shop_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/core.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/nivo-slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/pe-icon-7-stroke.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/plugins/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/plugins/meanmenu.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/Pe-icon-7-stroke.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/Pe-icon-7-stroke.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/Pe-icon-7-stroke.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/homepage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/Shop.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/bilibili.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/home1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/home2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/pic1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/pic2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/slide.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/youtube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/jquery.nivo.slider.pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/vendor/jquery-1.12.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/vendor/modernizr-2.8.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/shop.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/workout-page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/workouts.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <list id="ffca96c5-4a3d-47b5-81a0-c2941f786e64" name="tanqianqian 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +220,7 @@
       <workItem from="1654958344949" duration="3878000" />
       <workItem from="1655020025146" duration="4823000" />
       <workItem from="1655130770758" duration="2744000" />
-      <workItem from="1655139183640" duration="5296000" />
+      <workItem from="1655139183640" duration="9745000" />
     </task>
     <task id="LOCAL-00001" summary="add maven framwork">
       <created>1654155289588</created>
@@ -456,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655046589307</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="workouts some data import">
+      <created>1655145543622</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1655145543622</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

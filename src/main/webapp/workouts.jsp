@@ -47,10 +47,10 @@
 					<div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
 						<nav>
 							<ul style="display:inline-block;">
-								<li style="display:inline-block;"><a href="">Workouts</a></li>
-								<li style="display:inline-block;"><a href="">Health</a></li>
-								<li style="display:inline-block;"><a href="">Shop</a></li>
-								<li style="display:inline-block;"><a href="">login</a></li>
+								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
+								<li style="display:inline-block;"><a href="article.jsp">Health</a></li>
+								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
 							</ul>
 						</nav>
 					</div>				
@@ -63,13 +63,19 @@
 
 
 <%
+	String tag = null;
+	tag = request.getParameter("tag");
 	VideoDAO vd = new VideoDAO();
-	List<VideoBean> videos = vd.getAllVideo();
+	List<VideoBean> videos;
+	if (tag == null) {
+		videos = vd.getAllVideo();
+	}
+	else{
+		videos = vd.getVideoByTag(tag);
+	}
+	//videos = vd.getAllVideo();
 	int total = videos.size();
-	boolean status = false;
 %>
-	<div id="fitness">
-
 	</div>
 	<!-- display start -->
 	<div class="workouts-area" style="padding-top: 100px;">
@@ -98,22 +104,25 @@
 
 				<div>
 					<div class="col-md-3 col-sm-3">
-						<div style="position:fixed;">
+						<div>
 						<h3 class="menu1">Catalog</h3>
 						<!--initiate accordion-->
 						<div class="box1">
 							<ul class="box1_list">
-								<li><a href="#fitness">Fitness Dance</a></li>
-								<li><a href="#ab">ab Workout</a></li>
-								<li><a href="#dumbbell">Dumbbell Workout</a></li>
-								<li><a href="#leg">Leg training</a></li>
-								<li><a href="#warm">Warm Up</a></li>
-								<li><a href="#gym">gym Equipment</a></li>
-								<li><a href="#hiit">HIIT</a></li>
-								<li><a href="#yoga">Yoga</a></li>
-								<li><a href="#pilates">Pilates</a></li>
+								<li><a href="workouts.jsp?tag=Fitness Dance">Fitness Dance</a></li>
+								<li><a href="workouts.jsp?tag=ab Workout">ab Workout</a></li>
+								<li><a href="workouts.jsp?tag=Dumbbell Workout">Dumbbell Workout</a></li>
+								<li><a href="workouts.jsp?tag=Leg training">Leg training</a></li>
+								<li><a href="workouts.jsp?tag=Warm Up">Warm Up</a></li>
+								<li><a href="workouts.jsp?tag=gym Equipment">gym Equipment</a></li>
+								<li><a href="workouts.jsp?tag=HIIT">HIIT</a></li>
+								<li><a href="workouts.jsp?tag=Yoga">Yoga</a></li>
+								<li><a href="workouts.jsp?tag=Pilates">Pilates</a></li>
 							</ul>
 						</div>
+							<ul class="box2_list">
+								<li><a href="workouts.jsp">Display All Videos</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>

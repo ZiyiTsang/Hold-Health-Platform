@@ -31,6 +31,7 @@ public class VideoBean {
         return link;
     }
 
+
     public String getAuthor() {
         return author;
     }
