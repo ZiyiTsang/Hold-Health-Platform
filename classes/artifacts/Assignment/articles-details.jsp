@@ -1,3 +1,8 @@
+<%@ page import="com.JDBC.ArticleDAO" %>
+<%@ page import="com.POJO.ArticleBean" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.POJO.CommentBean" %>
+<%@ page import="com.JDBC.CommentDAO" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -57,63 +62,65 @@
 </header>
 <!-- header end -->
 
+<%
+	String id = null;
+	id = request.getParameter("id");
+	int num_id = -1;
+	try {
+		num_id = Integer.parseInt(id);
+	} catch (NumberFormatException e) {
+		e.printStackTrace();
+	}
+	ArticleDAO ad = new ArticleDAO();
+	ad.moreViewByArticleID(num_id);
+	ArticleBean article = ad.getArticleById(num_id);
+%>
+
 <div class="container">
 	<div class="artDe-area row">
 		<div class="row">
-			<h3 class="artDe-title">这里是标题</h3>
+			<h3 class="artDe-title"><%=article.getTitle()%></h3>
 			<div class="artDe-author">
-				<p><img src="img/bilibili.png">这里是作者姓名</p>
-			</div>
-			
-			<div class="artDe-intro">
-				<p>高考结束报考了飞行员，刻苦训练进入航天队，首次航天归
-				来时继续攻读学位，还是两个孩子的母亲。她代表中国女性，这
-				也是和西方反华女权争话语权她代表中国女性，这也是和西方反
-				华女权争话语权.高考结束报考了飞行员，刻苦训练进入航天队，首次航天归
-				来时继续攻读学位，还是两个孩子的母亲。她代表中国女性，这
-				也是和西方反华女权争话语权她代表中国女性，这也是和西方反
-				华女权争话语权.</p>
-			</div>
-			
-			<div class="section-title text-center">
-				<h2>小标题</h2>
+				<p><img src="img/bilibili.png"><%=article.getAuthor()%></p>
 			</div>
 			
 			<div class="artDe-text">
-				<p>高考结束报考了飞行员，刻苦训练进入航天队，首次航天归
-				来时继续攻读学位，还是两个孩子的母亲。她代表中国女性，这
-				也是和西方反华女权争话语权她代表中国女性，这也是和西方反
-				华女权争话语权.高考结束报考了飞行员，刻苦训练进入航天队，首次航天归
-				来时继续攻读学位，还是两个孩子的母亲。她代表中国女性，这
-				也是和西方反华女权争话语权她代表中国女性，这也是和西方反
-				华女权争话语权.</p>
-				<img src="img/pic1.jpeg" style="display: inline-block;"><p style="text-align:center;">图片描述</p>
+				<p><%=article.getContent()%></p>
 			</div>
-
 		</div>
 		
 		<div class="row">
 			<div class="artDe-comment-area">
 				<ul style="list-style: none;">
 					<li style="font-weight:600; font-size:20px;float:left;">Comments</li>
-					<li style="font-size:15px; padding-left:30px;float:left;">(1)</li>
+					<li style="font-size:15px; padding-left:30px;float:left;">(<%=article.getComment_cnt()%>)</li>
 				</ul><br>
+				<%
+					CommentDAO cd = new CommentDAO();
+					List<CommentBean> comments = cd.getCommentByArticleId(num_id);
+				%>
 			
 				<div class="make-comment">
 					<img src="img/bilibili.png" class="artDe-userPhoto">
 					<textarea rows="" cols="" placeholder="make a comment here ~ ~"></textarea>
 					<button type="submit">submit</button>
 				</div>	
-				
+
+				<%
+					for(int i = 0; i  < comments.size(); i++){
+				%>
 				<div class="artDe-commentor1">
-					<p><img src="img/bilibili.png" class="artDe-userPhoto">举个比方打个例子吧</p>
+					<p><img src="img/bilibili.png" class="artDe-userPhoto"><%=comments.get(i).getAuthor()%></p>
 					<div class="artDe-com-details">
-						<h5>大哥开头的笑容就像人工智能一样</h5>
-						<p>2022-05-29 18:53   
+						<h5><%=comments.get(i).getContent()%></h5>
+						<p><%=comments.get(i).getTime()%>
 						<a href="#" style="margin-left:10px;"><i class="pe-7s-like"></i></a>
-						 12</p>
+						 <%=comments.get(i).getLike()%></p>
 					</div>
 				</div>
+				<%
+					}
+				%>
 			</div>
 		</div>
 	</div>
