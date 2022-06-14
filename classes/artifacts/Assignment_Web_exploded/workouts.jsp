@@ -61,6 +61,30 @@
 </header>
 <!-- header end -->
 
+<!-- slider-container start -->
+<div class="slider-container">
+	<!-- Slider Image -->
+	<div id="mainSlider">
+		<img src="img/workouts_fontIMG.jpeg" style="width: 100%;">
+	</div>
+
+	<div id="text">
+		<div class="container">
+			<div class="slide-text">
+				<div class="middle-text">
+					<div class="cap-dec cap-1 wow bounceInRight" data-wow-duration="0.9s" data-wow-delay="0s">
+						<h2>Workouts</h2>
+					</div>
+					<div class="cap-dec cap-2 wow bounceInRight" data-wow-duration="1.2s" data-wow-delay="0.2s">
+						<h2 style="color:white;font-size:30px;">Start your workouts with the videos!</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- slider-container end -->
+
 
 <%
 	String tag = null;
