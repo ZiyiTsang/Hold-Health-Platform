@@ -9,20 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="comments function is done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/commentLike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/articles-details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/CommentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/articles-details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/CommentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/CommentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/CommentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/CommentMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="addLikes() works" />
     <list id="ffca96c5-4a3d-47b5-81a0-c2941f786e64" name="tanqianqian 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -586,7 +573,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655215831892</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="addLikes() works">
+      <created>1655218770379</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1655218770379</updated>
+    </task>
+    <task id="LOCAL-00033" summary="addLikes() works">
+      <created>1655218962658</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1655218962658</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +618,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add maven framwork" />
     <MESSAGE value="maven customize" />
     <MESSAGE value="web folder delete" />
     <MESSAGE value="mybatis framework" />
@@ -642,7 +642,8 @@
     <MESSAGE value="article tmp_1" />
     <MESSAGE value="tmp" />
     <MESSAGE value="comments function is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments function is done" />
+    <MESSAGE value="addLikes() works" />
+    <option name="LAST_COMMIT_MESSAGE" value="addLikes() works" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
