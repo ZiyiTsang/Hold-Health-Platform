@@ -19,7 +19,7 @@
         select title from article where author=#{author};
     </select>
     <select id="selectByTag" resultType="com.POJO.ArticleBean">
-        select title from article where tag=#{tag};
+        select * from article where tag=#{tag};
     </select>
 
     <insert id="addArticle"  keyProperty="id">

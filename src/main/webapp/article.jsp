@@ -169,15 +169,15 @@
                                 <a href="#"><img alt="" src="img/pic1.jpeg"></a>
                             </div>
                             <div class="article-info">
-                                <h3><a href="#"><%=articles.get(0).getTitle()%></a></h3>
+                                <h3><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><%=articles.get(0).getTitle()%></a></h3>
                                 <div class="article-meta article-large">
-                                    <span><a href="#"><i class="fa fa-tags" aria-hidden="true"></i> <%=articles.get(0).getTag()%></a></span>
-                                    <span><a href="#"><i class="fa fa-comment" aria-hidden="true"></i><%=articles.get(0).getComment_cnt()%> comments</a></span>
-                                    <span><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <%=articles.get(0).getView()%> views</a></span>
+                                    <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-tags" aria-hidden="true"></i> <%=articles.get(0).getTag()%></a></span>
+                                    <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-comment" aria-hidden="true"></i><%=articles.get(0).getComment_cnt()%> comments</a></span>
+                                    <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-eye" aria-hidden="true"></i> <%=articles.get(0).getView()%> views</a></span>
                                 </div>
                                 <p><%=articles.get(0).getAbstract()%></p>
                                 <div class="read-more">
-                                    <a href="#">Read More </a>
+                                    <a href="articles-details.jsp?id=<%=articles.get(0).getId()%>">Read More </a>
                                 </div>
                             </div>
                         </div>
@@ -197,15 +197,15 @@
                                 <a href="#"><img alt="" src="img/pic1.jpeg"></a>
                             </div>
                             <div class="article-info">
-                                <h3><a href="#"><%=articles.get(i).getTitle()%></a></h3>
+                                <h3><a href="articles-details.jsp?id=<%=articles.get(i).getId()%>"><%=articles.get(i).getTitle()%></a></h3>
                                 <div class="article-meta article-large">
-                                    <span><a href="#"><i class="fa fa-tags" aria-hidden="true"></i> <%=articles.get(i).getTag()%></a></span>
-                                    <span><a href="#"><i class="fa fa-comment" aria-hidden="true"></i><%=articles.get(i).getComment_cnt()%> comments</a></span>
-                                    <span><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <%=articles.get(i).getView()%> views</a></span>
+                                    <span><a href="articles-details.jsp?id=<%=articles.get(i).getId()%>"><i class="fa fa-tags" aria-hidden="true"></i> <%=articles.get(i).getTag()%></a></span>
+                                    <span><a href="articles-details.jsp?id=<%=articles.get(i).getId()%>"><i class="fa fa-comment" aria-hidden="true"></i><%=articles.get(i).getComment_cnt()%> comments</a></span>
+                                    <span><a href="articles-details.jsp?id=<%=articles.get(i).getId()%>"><i class="fa fa-eye" aria-hidden="true"></i> <%=articles.get(i).getView()%> views</a></span>
                                 </div>
                                 <p><%=articles.get(i).getAbstract()%></p>
                                 <div class="read-more">
-                                    <a href="#">Read More </a>
+                                    <a href="articles-details.jsp?id=<%=articles.get(i).getId()%>">Read More </a>
                                 </div>
                             </div>
                         </div>
