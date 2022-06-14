@@ -22,7 +22,6 @@
 
         <h3 class="mb-5 text-center">Login</h3>
 
-
         <form action="<%= request.getContextPath()%>/loginServlet" method="post">
             <div>${loginMsg}${Msg}</div>
             <div class="form-group row mb-3">

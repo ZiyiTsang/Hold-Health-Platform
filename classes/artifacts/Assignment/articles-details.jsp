@@ -100,11 +100,16 @@
 					List<CommentBean> comments = cd.getCommentByArticleId(num_id);
 				%>
 			
-				<div class="make-comment">
+
+				<form class="make-comment" action="<%= request.getContextPath()%>/commentServlet" method="post">
+					<div>${addCommentMsg}${Msg}</div>
 					<img src="img/bilibili.png" class="artDe-userPhoto">
-					<textarea rows="" cols="" placeholder="make a comment here ~ ~"></textarea>
+					<textarea id="content" rows="" cols="" name="content" placeholder="make a comment here ~ ~"></textarea>
+					<%
+						session.setAttribute("article id", id);
+					%>
 					<button type="submit">submit</button>
-				</div>	
+				</form>
 
 				<%
 					for(int i = 0; i  < comments.size(); i++){

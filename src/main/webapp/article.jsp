@@ -68,7 +68,7 @@
 <div class="slider-container">
     <!-- Slider Image -->
     <div id="mainSlider">
-        <img src="img/workouts_fontIMG.jpeg" style="width: 100%;">
+        <img src="img/articles_page.png" style="width: 100%;">
     </div>
 
     <div id="text">
