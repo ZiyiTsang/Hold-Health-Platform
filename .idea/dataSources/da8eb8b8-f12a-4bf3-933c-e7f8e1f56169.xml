@@ -1050,119 +1050,125 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <DataType>varchar(20)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="310" parent="280" name="price">
-      <DataType>int|0s</DataType>
+    <column id="310" parent="280" name="tag">
+      <DataType>varchar(50)|0s</DataType>
+      <DefaultExpression>&apos;-99&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="311" parent="280" name="introduction">
-      <DataType>varchar(100)|0s</DataType>
+    <column id="311" parent="280" name="price">
+      <DataType>int|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="312" parent="280" name="image">
-      <DataType>varchar(50)|0s</DataType>
+    <column id="312" parent="280" name="introduction">
+      <DataType>varchar(100)|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="313" parent="280" name="monthlySales">
-      <DataType>int|0s</DataType>
+    <column id="313" parent="280" name="image">
+      <DataType>varchar(50)|0s</DataType>
       <Position>6</Position>
     </column>
-    <index id="314" parent="280" name="goods_id_uindex">
+    <column id="314" parent="280" name="monthlySales">
+      <DataType>int|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <index id="315" parent="280" name="goods_id_uindex">
       <ColNames>goodId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="315" parent="280" name="PRIMARY">
+    <key id="316" parent="280" name="PRIMARY">
       <ColNames>goodId</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="316" parent="280" name="goods_id_uindex">
+    <key id="317" parent="280" name="goods_id_uindex">
       <ColNames>goodId</ColNames>
       <UnderlyingIndexName>goods_id_uindex</UnderlyingIndexName>
     </key>
-    <column id="317" parent="281" name="id">
+    <column id="318" parent="281" name="id">
       <AutoIncrement>24</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="318" parent="281" name="username">
+    <column id="319" parent="281" name="username">
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="319" parent="281" name="password">
+    <column id="320" parent="281" name="password">
       <DataType>varchar(200)|0s</DataType>
       <Position>3</Position>
     </column>
-    <index id="320" parent="281" name="table_name_id_uindex">
+    <index id="321" parent="281" name="table_name_id_uindex">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="321" parent="281" name="user_username_index">
+    <index id="322" parent="281" name="user_username_index">
       <ColNames>username</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="322" parent="281" name="PRIMARY">
+    <key id="323" parent="281" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="323" parent="281" name="table_name_id_uindex">
+    <key id="324" parent="281" name="table_name_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>table_name_id_uindex</UnderlyingIndexName>
     </key>
-    <column id="324" parent="282" name="video_id">
+    <column id="325" parent="282" name="video_id">
       <AutoIncrement>16</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="325" parent="282" name="title">
+    <column id="326" parent="282" name="title">
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="326" parent="282" name="link">
+    <column id="327" parent="282" name="link">
       <DataType>varchar(200)|0s</DataType>
       <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <Position>3</Position>
     </column>
-    <column id="327" parent="282" name="author">
+    <column id="328" parent="282" name="author">
       <DataType>varchar(20)|0s</DataType>
       <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <Position>4</Position>
     </column>
-    <column id="328" parent="282" name="tag">
+    <column id="329" parent="282" name="tag">
       <DataType>varchar(50)|0s</DataType>
       <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <Position>5</Position>
     </column>
-    <column id="329" parent="282" name="abstract_">
+    <column id="330" parent="282" name="abstract_">
       <DataType>varchar(1000)|0s</DataType>
       <DefaultExpression>&apos;-999&apos;</DefaultExpression>
       <Position>6</Position>
     </column>
-    <index id="330" parent="282" name="vedio_vedio_id_uindex">
+    <index id="331" parent="282" name="vedio_vedio_id_uindex">
       <ColNames>video_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="331" parent="282" name="vedio_author_index">
+    <index id="332" parent="282" name="vedio_author_index">
       <ColNames>author</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="332" parent="282" name="vedio_tag_index">
+    <index id="333" parent="282" name="vedio_tag_index">
       <ColNames>tag</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="333" parent="282" name="PRIMARY">
+    <key id="334" parent="282" name="PRIMARY">
       <ColNames>video_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="334" parent="282" name="vedio_vedio_id_uindex">
+    <key id="335" parent="282" name="vedio_vedio_id_uindex">
       <ColNames>video_id</ColNames>
       <UnderlyingIndexName>vedio_vedio_id_uindex</UnderlyingIndexName>
     </key>
