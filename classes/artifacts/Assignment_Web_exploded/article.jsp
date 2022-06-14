@@ -25,6 +25,8 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="workout-page.css">
 <link rel="stylesheet" href="article-page.css">
+    <!-- this page css -->
+    <link rel="stylesheet" href="css/Shop_style.css">
 <!-- Modernizr JS -->
 <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -67,6 +69,20 @@
     List<ArticleBean> articles = ad.getAllArticle();
 %>
 
+<%
+    String tag = null;
+    tag = request.getParameter("tag");
+    ArticleDAO vd = new ArticleDAO();
+    List<ArticleBean> Article;
+    if (tag == null) {
+        Article = vd.getAllArticle();
+    }
+    else{
+        Article = vd.getArticleByTag(tag);
+    }
+    int total = Article.size();
+%>
+
 <!-- article start -->
         <div class="article-area">
             <div class="container">
@@ -74,7 +90,7 @@
                 	<div>
 					<h2 class="page-heading" style="margin-top: 40px;">
 						<span class="cat-name">Articles</span>
-						<span class="heading-counter">There are <%=articles.size()%> articles.</span>
+						<span class="heading-counter">There are <%=total%> articles.</span>
 					</h2>
 					<div class="shop-page-bar">
 						<div>	
@@ -88,77 +104,97 @@
 					</div>
 				</div>
                     <div class="col-md-3 col-sm-3">
-                        <div class="column" style="position:fixed;">
-                            <div class="title-block left-nav">
-                            <h2 >Catalog</h2>
-                            			
-                            <div class="sidebar-widget">
-                                <h3 class="sidebar-title">Training</h3>
-                                <ul class="sidebar-menu">
-                                    <li><a href="#">Training tips <span>(4)</span></a></li>
-                                    <li><a href="#">Training equipments <span>(4)</span></a></li>
+                        <div>
+
+                            <div>
+                                <h3 class="menu1">Catalog</h3>
+                                <!--initiate accordion-->
+                                <div class="box1">
+                                    <ul class="box1_list">
+                                        <%
+                                            List<ArticleBean> a1 = ad.getArticleByTag("Training tips");
+                                            int num1 = a1.size();
+                                            List<ArticleBean> a2 = ad.getArticleByTag("Training equipments");
+                                            int num2 = a2.size();
+                                            List<ArticleBean> a3 = ad.getArticleByTag("For muscle building");
+                                            int num3 = a3.size();
+                                            List<ArticleBean> a4 = ad.getArticleByTag("For fat loss");
+                                            int num4 = a4.size();
+                                        %>
+                                        <h3 class="sidebar-title">Training</h3>
+                                        <li><a href="article.jsp?tag=Training tips">Training tips<span>(<%=num1%>)</span></a></li>
+                                        <li><a href="article.jsp?tag=Training equipments">Training equipments<span>(<%=num2%>)</span></a></li>
+                                        <br><br>
+                                        <h3 class="sidebar-title">Diet</h3>
+                                        <li><a href="article.jsp?tag=For muscle building">For muscle building <span>(<%=num3%>)</span></a></li>
+                                        <li><a href="article.jsp?tag=For fat loss">For fat loss <span>(<%=num4%>)</span></a></li>
+                                    </ul>
+                                </div>
+                                <ul class="box2_list">
+                                    <li><a href="article.jsp">Display All Articles</a></li>
                                 </ul>
                             </div>
-                            <div class="sidebar-widget">
-                                <h3 class="sidebar-title">Diet</h3>
-                                <ul class="sidebar-menu">
-                                    <li><a href="#">For muscle building <span>(4)</span></a></li>
-                                    <li><a href="#">For fat loss <span>(4)</span></a></li>
-                                </ul>
-                            </div>
-                            <div class="sidebar-widget">
-                                <h3 class="sidebar-title">Health</h3>
-                                <ul class="sidebar-menu">
-                                	<li><a href="#">Teenagers(12-17) <span>(4)</span></a></li>
-                                    <li><a href="#">Adults(18-40) <span>(4)</span></a></li>
-                                    <li><a href="#">Adults(41-60) <span>(4)</span></a></li>
-                                </ul>
-                            </div>  
-                            </div>                      
                         </div>
+
+
+
                     </div>
-                    
-                    
+
+                    <%
+                        if(total!=0){
+                    %>
+
                     <div class="col-md-9 col-sm-9">
                         <div class="article-wrapper article-main" style="margin-bottom:80px;">
                             <div class="article-img">
                                 <a href="#"><img alt="" src="img/pic1.jpeg"></a>
                             </div>
                             <div class="article-info">
-                                <h3><a href="#">这里是标题！！</a></h3>
+                                <h3><a href="#"><%=articles.get(0).getTitle()%></a></h3>
                                 <div class="article-meta article-large">
-                                    <span><a href="#"><i class="fa fa-tags" aria-hidden="true"></i> xx分类</a></span>
-                                    <span><a href="#"><i class="fa fa-comment" aria-hidden="true"></i> x Comments</a></span>
-                                    <span><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> x views</a></span>
+                                    <span><a href="#"><i class="fa fa-tags" aria-hidden="true"></i> <%=articles.get(0).getTag()%></a></span>
+                                    <span><a href="#"><i class="fa fa-comment" aria-hidden="true"></i><%=articles.get(0).getComment_cnt()%> comments</a></span>
+                                    <span><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <%=articles.get(0).getView()%> views</a></span>
                                 </div>
-                                 <p>这里是abstract</p>
+                                <p><%=articles.get(0).getAbstract()%></p>
                                 <div class="read-more">
                                     <a href="#">Read More </a>
                                 </div>
                             </div>
                         </div>
-                        
-                        
+
+                    </div>
+
+                    <%
+                        }
+
+                        for(int i = 1; i < total;i++){
+                    %>
+                    <div class="col-md-3 col-sm-3">
+                    </div>
+                    <div class="col-md-9 col-sm-9">
                         <div class="article-wrapper article-main" style="margin-bottom:80px;">
                             <div class="article-img">
                                 <a href="#"><img alt="" src="img/pic1.jpeg"></a>
                             </div>
                             <div class="article-info">
-                                <h3><a href="#">这里是标题！！</a></h3>
+                                <h3><a href="#"><%=articles.get(i).getTitle()%></a></h3>
                                 <div class="article-meta article-large">
-                                    <span><a href="#"><i class="fa fa-tags" aria-hidden="true" style="margin-right:20px;"></i> xx分类</a></span>
-                                    <span><a href="#"><i class="fa fa-comment" aria-hidden="true" style="margin-right:20px;"></i> x Comments</a></span>
-                                    <span><a href="#"><i class="fa fa-eye" aria-hidden="true" style="margin-right:20px;"></i> x views</a></span>
+                                    <span><a href="#"><i class="fa fa-tags" aria-hidden="true"></i> <%=articles.get(i).getTag()%></a></span>
+                                    <span><a href="#"><i class="fa fa-comment" aria-hidden="true"></i><%=articles.get(i).getComment_cnt()%> comments</a></span>
+                                    <span><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <%=articles.get(i).getView()%> views</a></span>
                                 </div>
-                                <p>这里是abstract</p>
+                                <p><%=articles.get(i).getAbstract()%></p>
                                 <div class="read-more">
                                     <a href="#">Read More </a>
                                 </div>
                             </div>
                         </div>
-                       
-                        
+
                     </div>
+                    <%
+                        }
+                    %>
                 </div>
             </div>
         </div>

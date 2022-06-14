@@ -3,15 +3,15 @@ package com.POJO;
 public class CommentBean {
     private int comment_id ;
     private String author;
-    private int like;
+    private int like_;
     private String time;
     private int article_id;
 
     private String content;
 
-    public CommentBean(String author, int like, int article_id, String content) {
+    public CommentBean(String author, int like_, int article_id, String content) {
         this.author = author;
-        this.like = like;
+        this.like_ = like_;
         this.article_id = article_id;
         this.content = content;
     }
@@ -29,7 +29,7 @@ public class CommentBean {
     }
 
     public int getLike() {
-        return like;
+        return like_;
     }
 
     public String getTime() {

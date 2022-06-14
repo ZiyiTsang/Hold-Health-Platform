@@ -73,7 +73,6 @@
 	else{
 		videos = vd.getVideoByTag(tag);
 	}
-	//videos = vd.getAllVideo();
 	int total = videos.size();
 %>
 	</div>
