@@ -64,23 +64,42 @@
 </header>
 <!-- header end -->
 
-<%
-    ArticleDAO ad=new ArticleDAO();
-    List<ArticleBean> articles = ad.getAllArticle();
-%>
+<!-- slider-container start -->
+<div class="slider-container">
+    <!-- Slider Image -->
+    <div id="mainSlider">
+        <img src="img/workouts_fontIMG.jpeg" style="width: 100%;">
+    </div>
+
+    <div id="text">
+        <div class="container">
+            <div class="slide-text">
+                <div class="middle-text">
+                    <div class="cap-dec cap-1 wow bounceInRight" data-wow-duration="0.9s" data-wow-delay="0s">
+                        <h2>Articles</h2>
+                    </div>
+                    <div class="cap-dec cap-2 wow bounceInRight" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                        <h2 style="color:white;font-size:30px;">You can find the article you need here!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider-container end -->
 
 <%
     String tag = null;
     tag = request.getParameter("tag");
-    ArticleDAO vd = new ArticleDAO();
-    List<ArticleBean> Article;
+    ArticleDAO ad =new ArticleDAO();
+    List<ArticleBean> articles;
     if (tag == null) {
-        Article = vd.getAllArticle();
+        articles = ad.getAllArticle();
     }
     else{
-        Article = vd.getArticleByTag(tag);
+        articles = ad.getArticleByTag(tag);
     }
-    int total = Article.size();
+    int total = articles.size();
 %>
 
 <!-- article start -->

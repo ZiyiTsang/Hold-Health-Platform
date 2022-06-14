@@ -99,20 +99,7 @@
     else{
         articles = ad.getArticleByTag(tag);
     }
-%>
-
-<%
-    String tag = null;
-    tag = request.getParameter("tag");
-    ArticleDAO vd = new ArticleDAO();
-    List<ArticleBean> Article;
-    if (tag == null) {
-        Article = vd.getAllArticle();
-    }
-    else{
-        Article = vd.getArticleByTag(tag);
-    }
-    int total = Article.size();
+    int total = articles.size();
 %>
 
 <!-- article start -->
