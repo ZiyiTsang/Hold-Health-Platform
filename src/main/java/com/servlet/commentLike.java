@@ -14,7 +14,9 @@ public class commentLike extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
-        String num_id = String.valueOf(request.getSession().getAttribute("article id"));
+        String num_id = null;
+        num_id = request.getParameter("id");
+        //String num_id = String.valueOf(request.getSession().getAttribute("article id"));
         CommentDAO cd = new CommentDAO();
         int id = 0;
         try {

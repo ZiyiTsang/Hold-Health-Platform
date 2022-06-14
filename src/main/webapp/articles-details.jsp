@@ -91,17 +91,16 @@
 				<p><%=article.getContent()%></p>
 			</div>
 		</div>
-		
+		<%
+			CommentDAO cd = new CommentDAO();
+			List<CommentBean> comments = cd.getCommentByArticleId(num_id);
+		%>
 		<div class="row">
 			<div class="artDe-comment-area">
 				<ul style="list-style: none;">
 					<li style="font-weight:600; font-size:20px;float:left;">Comments</li>
-					<li style="font-size:15px; padding-left:30px;float:left;">(<%=article.getComment_cnt()%>)</li>
+					<li style="font-size:15px; padding-left:30px;float:left;">(<%=comments.size()%>)</li>
 				</ul><br>
-				<%
-					CommentDAO cd = new CommentDAO();
-					List<CommentBean> comments = cd.getCommentByArticleId(num_id);
-				%>
 			
 
 				<form class="make-comment" action="<%= request.getContextPath()%>/commentServlet" method="post">
@@ -122,7 +121,7 @@
 					<div class="artDe-com-details">
 						<h5><%=comments.get(i).getContent()%></h5>
 						<p><%=comments.get(i).getTime()%>
-							<astyle="margin-left:10px;">
+							<a href="../java/com/servlet/commentLike.java?id=<%=id%>" style="margin-left:10px;">
 								<i class="pe-7s-like"></i>
 							</a>
 							<%=comments.get(i).getLike()%>
