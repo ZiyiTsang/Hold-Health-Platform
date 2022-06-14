@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd8afa0-3959-4239-8c48-4eccb735009a" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_14_23_22___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_14_23_22___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="abd8afa0-3959-4239-8c48-4eccb735009a" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -346,6 +343,7 @@
       <workItem from="1655223635748" duration="311000" />
       <workItem from="1655223971210" duration="992000" />
       <workItem from="1655225003967" duration="1659000" />
+      <workItem from="1655226937132" duration="211000" />
     </task>
     <task id="LOCAL-00001" summary="add maven framwork">
       <created>1654155289588</created>
@@ -592,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655225746253</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Changes">
+      <created>1655226976407</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1655226976408</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
