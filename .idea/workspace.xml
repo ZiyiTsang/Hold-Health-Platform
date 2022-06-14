@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="workouts some data import">
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="java part of workouts done without search bar">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/workouts_fontIMG.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/VideoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/VideoBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/article.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" afterDir="false" />
     </list>
     <list id="ffca96c5-4a3d-47b5-81a0-c2941f786e64" name="tanqianqian 进行的变更" comment="" />
@@ -89,7 +89,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment",
+    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img",
     "project.structure.last.edited": "库",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.25172412",
@@ -102,6 +102,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\eclipse\eclipse_workplace\PE_Assinment\lib" />
       <recent name="E:\eclipse\eclipse_workplace\PE_Assinment\src\main\resources\com\mapper" />
@@ -220,7 +223,7 @@
       <workItem from="1654958344949" duration="3878000" />
       <workItem from="1655020025146" duration="4823000" />
       <workItem from="1655130770758" duration="2744000" />
-      <workItem from="1655139183640" duration="9745000" />
+      <workItem from="1655139183640" duration="10465000" />
     </task>
     <task id="LOCAL-00001" summary="add maven framwork">
       <created>1654155289588</created>
@@ -397,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655145543622</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="java part of workouts done without search bar">
+      <created>1655191377843</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1655191377843</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +460,8 @@
     <MESSAGE value="Register logic update" />
     <MESSAGE value="update local file" />
     <MESSAGE value="workouts some data import" />
-    <option name="LAST_COMMIT_MESSAGE" value="workouts some data import" />
+    <MESSAGE value="java part of workouts done without search bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="java part of workouts done without search bar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
