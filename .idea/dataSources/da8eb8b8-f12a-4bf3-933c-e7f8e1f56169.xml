@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="aliyun">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.39">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.32">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -918,10 +918,10 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="283" parent="278" name="id">
-      <AutoIncrement>19</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="284" parent="278" name="title">
       <DataType>varchar(300)|0s</DataType>
@@ -986,10 +986,10 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <UnderlyingIndexName>article_id_uindex</UnderlyingIndexName>
     </key>
     <column id="296" parent="279" name="comment_id">
-      <AutoIncrement>6</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="297" parent="279" name="author">
       <DataType>varchar(15)|0s</DataType>
@@ -1041,10 +1041,10 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <Turn>after-row</Turn>
     </trigger>
     <column id="308" parent="280" name="goodId">
-      <AutoIncrement>3</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="309" parent="280" name="goodName">
       <DataType>varchar(20)|0s</DataType>
@@ -1081,10 +1081,10 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <UnderlyingIndexName>goods_id_uindex</UnderlyingIndexName>
     </key>
     <column id="317" parent="281" name="id">
-      <AutoIncrement>24</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="318" parent="281" name="username">
       <DataType>varchar(25)|0s</DataType>
@@ -1114,10 +1114,10 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <UnderlyingIndexName>table_name_id_uindex</UnderlyingIndexName>
     </key>
     <column id="324" parent="282" name="video_id">
-      <AutoIncrement>16</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="325" parent="282" name="title">
       <DataType>varchar(50)|0s</DataType>
