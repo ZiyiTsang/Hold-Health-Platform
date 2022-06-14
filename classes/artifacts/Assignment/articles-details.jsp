@@ -76,6 +76,9 @@
 	ArticleBean article = ad.getArticleById(num_id);
 %>
 
+
+
+
 <div class="container">
 	<div class="artDe-area row">
 		<div class="row">
@@ -120,7 +123,8 @@
 						<h5><%=comments.get(i).getContent()%></h5>
 						<p><%=comments.get(i).getTime()%>
 						<a href="#" style="margin-left:10px;"><i class="pe-7s-like"></i></a>
-						 <%=comments.get(i).getLike()%></p>
+						 <%=comments.get(i).getLike()%>
+						</p>
 					</div>
 				</div>
 				<%

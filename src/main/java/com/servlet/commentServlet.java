@@ -15,7 +15,7 @@ public class commentServlet extends HttpServlet{
         request.setCharacterEncoding("UTF-8");
         //String author = request.getParameter("author");
         String content = request.getParameter("content");
-        String num_id = String.valueOf(request.getSession(Boolean.parseBoolean("article id")));
+        String num_id = String.valueOf(request.getSession().getAttribute("article id"));
         CommentDAO cd = new CommentDAO();
         int id = 0;
         if (content.length() <= 500) {
@@ -27,22 +27,12 @@ public class commentServlet extends HttpServlet{
             }
             CommentBean cb = new CommentBean("commentTest", 0, id, content);
             cd.addComment(cb);
-            response.sendRedirect(request.getContextPath()+"/articles-details.jsp?" + id);
+
+            response.sendRedirect(request.getContextPath()+"/articles-details.jsp?id=" + id);
         } else {
             request.setAttribute("addCommentMsg", "Content should be within 500 characters.");
-            request.getRequestDispatcher("articles-details.jsp？" + id).forward(request, response);
+            request.getRequestDispatcher("articles-details.jsp?id=" + id).forward(request, response);
         }
-        /*
-        if(ud.validation(username,password)){
-            UserBean ub=ud.getUserByUsername(username);
-            HttpSession session= request.getSession();
-            session.setAttribute("user",ub);
-            response.sendRedirect(request.getContextPath()+"/workouts.jsp");
-        }else{
-            request.setAttribute("loginMsg","用户名或密码错误");
-            request.getRequestDispatcher("login.jsp").forward(request,response);
-        }*/
-
     }
 
     @Override

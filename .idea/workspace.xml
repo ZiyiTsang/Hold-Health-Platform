@@ -10,19 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="tmp">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/commentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/articles_page.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/article.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/articles-details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/article.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/articles-details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/article.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/commentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/commentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <list id="ffca96c5-4a3d-47b5-81a0-c2941f786e64" name="tanqianqian 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +111,7 @@
       <recent name="E:\eclipse\eclipse_workplace\PE_Assinment\src\main\resources\com\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat 服务器.Tomcat">
+  <component name="RunManager" selected="JavaScript 调试.article.jsp">
     <configuration name="testArticleDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.testArticleDao" />
       <module name="Assignment" />
@@ -158,7 +151,6 @@
       <item itemvalue="JavaScript 调试.article.jsp" />
       <item itemvalue="JavaScript 调试.nav.jsp" />
       <item itemvalue="JavaScript 调试.workouts.jsp" />
-      <item itemvalue="Tomcat 服务器.Tomcat" />
       <item itemvalue="应用程序.testComment" />
       <item itemvalue="应用程序.testArticleDao" />
     </list>
@@ -392,7 +384,28 @@
       <option name="project" value="LOCAL" />
       <updated>1655206987925</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="tmp">
+      <created>1655212502862</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1655212502862</updated>
+    </task>
+    <task id="LOCAL-00029" summary="tmp">
+      <created>1655212514751</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1655212514751</updated>
+    </task>
+    <task id="LOCAL-00030" summary="tmp">
+      <created>1655212711852</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1655212711852</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,6 +461,17 @@
     <MESSAGE value="article tmp_1" />
     <MESSAGE value="tmp" />
     <option name="LAST_COMMIT_MESSAGE" value="tmp" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/JDBC/CommentDAO.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
