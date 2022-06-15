@@ -57,24 +57,19 @@
 <div style="margin-top: 10em;margin-left: 3em;">
     <div class="container">
         <div class="col-md-3">
-            <h3 class="menu1">What to buy?</h3>
+            <h3 class="menu1">Look Around</h3>
             <!--initiate accordion-->
             <div class="box1">
-                <ul class="box1_list">
-                    <li><a href="shop.jsp?tag=Home Equipment">Home Equipment</a></li>
-                    <li><a href="shop.jsp?tag=Sports bracelets">Sports bracelets</a></li>
-                    <li><a href="shop.jsp?tag=Sports equipment">Sports equipment</a></li>
-                    <li><a href="shop.jsp?tag=Health Food">Health Food</a></li>
-                    <li><a href="shop.jsp?tag=Women's Clothing">Women's Clothing</a></li>
-                    <li><a href="shop.jsp?tag=Men's Clothing">Men's Clothing</a></li>
-                </ul>
+                <img src="img/p1.jpg">
+                <br><br>
+                <h4 style="float: left;">T-shirt</h4>
+                <h4 style="float: contour;margin-left:8em;color:firebrick">$140</h4>
+                <br>
+                <img src="img/p1.jpg">
+                <br><br>
+                <h4 style="float: left;">T-shirt</h4>
+                <h4 style="float: contour;margin-left:8em;color:firebrick">$140</h4>
             </div>
-            <ul class="box2_list">
-                <li><a href="shop.jsp">Display all the goods</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Sales</a></li>
-                <li><a href="#">Story Behind</a></li>
-            </ul>
 
         </div>
 

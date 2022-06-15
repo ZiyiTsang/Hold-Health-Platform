@@ -1,10 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cart</title>
+    <title>Cart-fill</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +16,9 @@
     <!-- Theme main style -->
     <link rel="stylesheet" href="style.css">
     <!-- this page css -->
-    <link rel="stylesheet" href="css/Shop_style.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
 <body>
 <!-- header start -->
 <header class="header-pos" style="background-color: #f6b923">
@@ -53,55 +51,47 @@
     </div>
 </header>
 <!-- header end -->
-
-<div style="margin-top: 10em;margin-left: 3em;">
-    <div class="container">
-        <div class="col-md-3">
-            <h3 class="menu1">Look Around</h3>
-            <!--initiate accordion-->
-            <div class="box1">
-                <img src="img/p1.jpg">
-                <br><br>
-                <h4 style="float: left;">T-shirt</h4>
-                <h4 style="float: contour;margin-left:8em;color:firebrick">$140</h4>
-                <br>
-                <img src="img/p1.jpg">
-                <br><br>
-                <h4 style="float: left;">T-shirt</h4>
-                <h4 style="float: contour;margin-left:8em;color:firebrick">$140</h4>
+<br><br><br><br><br><br>
+<div class="public-shop-account">
+    <div class="content">
+        <div class="shop-account-head"> Fill in and check the order form  </div>
+        <div class="shop-account-info">
+            <div class="edit-address">
+                <div class="address-head">
+                    <span>Consignee information</span>
+                    <a href="">Add the receiving address</a>
+                </div>
+                <div class="address-info">
+                    <span style="vertical-align: center;">Home</span>
+                    <span>xxx xx State xx City xx Street</span>
+                    <a href="">Edit</a>
+                </div>
             </div>
-
-        </div>
-
-
-
-        <br><br>
-        <!---->
-        <div class="col-md-8">
-            <h2>Shopping cart is empty</h2>
-            <br>
-            <p>You have no items in your shopping cart yet.</p>
-            <p>Click <a href="#">here</a> to continue shopping.</p>
-                <div class="clearfix"> </div>
+            <div class="edit-pay">
+                <div class="pay-head">Payment pattern</div>
+                <div class="pay-info">
+                    <span>Pay on delivery</span>
+                    <span>Online payment</span>
+                    <a href="">More>></a>
+                </div>
             </div>
         </div>
-        <div class="clearfix"> </div>
+        <div class="shop-account-detail">
+            <div class="account-address">
+                <span><i>3</i> products, total price:</span>
+                <span>$14797.00</span>
+                <span>Freight:</span>
+                <span><i>$0.00</i></span>
+                <span>Discount:</span>
+                <span>-$50.00</span>
+            </div>
+            <div class="account-pay">
+                <span> Amount <i>$14747.00 </i></span>
+                <span>Deliver to: xxxx   xxxxxxxx  Consignee: xxx Phone number: xxx</span>
+            </div>
+            <div class="account-btn"><button>Submit order</button></div>
+        </div>
     </div>
 </div>
-
-<br><br><br><br>
-<footer class="page-footer">
-    <div class="footer-copyright text-center">@ 2022 Copyright: XMUM</div>
-</footer>
-<!-- jquery latest version -->
-<script src="js/vendor/jquery-1.12.0.min.js"></script>
-<!-- Bootstrap framework js -->
-<script src="js/bootstrap.min.js"></script>
-<!-- jquery.nivo.slider js -->
-<script src="js/jquery.nivo.slider.pack.js"></script>
-<!-- All js plugins included in this file.  -->
-<script src="js/plugins.js"></script>
-<!-- Main js file that contents all jQuery plugins activation. -->
-<script src="js/main.js"></script>
 </body>
 </html>

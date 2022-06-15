@@ -1,10 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cart</title>
+    <title>Cart-fill</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +16,9 @@
     <!-- Theme main style -->
     <link rel="stylesheet" href="style.css">
     <!-- this page css -->
-    <link rel="stylesheet" href="css/Shop_style.css">
+    <link rel="stylesheet" href="css/cart-fill.css">
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
 <body>
 <!-- header start -->
 <header class="header-pos" style="background-color: #f6b923">
@@ -53,55 +51,39 @@
     </div>
 </header>
 <!-- header end -->
-
-<div style="margin-top: 10em;margin-left: 3em;">
-    <div class="container">
-        <div class="col-md-3">
-            <h3 class="menu1">Look Around</h3>
-            <!--initiate accordion-->
-            <div class="box1">
-                <img src="img/p1.jpg">
-                <br><br>
-                <h4 style="float: left;">T-shirt</h4>
-                <h4 style="float: contour;margin-left:8em;color:firebrick">$140</h4>
-                <br>
-                <img src="img/p1.jpg">
-                <br><br>
-                <h4 style="float: left;">T-shirt</h4>
-                <h4 style="float: contour;margin-left:8em;color:firebrick">$140</h4>
+<br><br><br><br><br><br>
+<div class="public-shop-cart">
+    <div class="content">
+        <span>All 3</span>
+        <div class="cart-title">
+            <span>
+                <input type="checkbox" id="all">
+                <label for="all">Select all</label>
+            </span>
+            <span>Products</span>
+            <span>Unit price</span>
+            <span>Quantity</span>
+            <span>Subtotal</span>
+            <span>Operation</span>
+        </div>
+        <div class="cart-detail">
+            <input type="checkbox">
+            <div class="cart-title">
+                <img src="img/p1.jpg" alt="">
+                <div>
+                    <a href="">Yoga legging</a>
+                </div>
             </div>
-
+            <div class="cart-price">$4999.00</div>
+            <div class="cart-number">
+                <span class="sub">-</span> <input type="text" id="number" value="1"><span class="plus">+</span>
+            </div>
+            <div class="cart-subtotal">$4999.00</div>
+            <div class="cart-operate"><a href="">Delete</a></div>
         </div>
 
-
-
-        <br><br>
-        <!---->
-        <div class="col-md-8">
-            <h2>Shopping cart is empty</h2>
-            <br>
-            <p>You have no items in your shopping cart yet.</p>
-            <p>Click <a href="#">here</a> to continue shopping.</p>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-        <div class="clearfix"> </div>
+        <div class="cart-btn"><span>Total price:</span><span> $14797.00 </span><button class="btn" style="text-align: center">checkout</button></div>
     </div>
 </div>
-
-<br><br><br><br>
-<footer class="page-footer">
-    <div class="footer-copyright text-center">@ 2022 Copyright: XMUM</div>
-</footer>
-<!-- jquery latest version -->
-<script src="js/vendor/jquery-1.12.0.min.js"></script>
-<!-- Bootstrap framework js -->
-<script src="js/bootstrap.min.js"></script>
-<!-- jquery.nivo.slider js -->
-<script src="js/jquery.nivo.slider.pack.js"></script>
-<!-- All js plugins included in this file.  -->
-<script src="js/plugins.js"></script>
-<!-- Main js file that contents all jQuery plugins activation. -->
-<script src="js/main.js"></script>
 </body>
 </html>
