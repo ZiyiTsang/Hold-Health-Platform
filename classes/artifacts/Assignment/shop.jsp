@@ -39,9 +39,6 @@
 				<div class="col-md-2 col-sm-3 col-xs-12">
 					<div style="padding-top: 30px;" >
 						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
-						<a href="#"><img src="img/search.png" style="height:40px;margin-left:20px;"/></a>
-						<a href="#"><img src="img/cart.png" style="height:40px;margin-left:20px"/></a>
-						
 					</div>
 				</div>				
 				<div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">
@@ -51,8 +48,8 @@
 							<ul style="display:inline-block;">
 								<li style="display:inline-block;"><a href="">Workouts</a></li>
 								<li style="display:inline-block;"><a href="">Articles</a></li>
-								<li style="display:inline-block;"><a href="Shop.html">Shop</a></li>
-								<li style="display:inline-block;"><a href="/PE_Assinment/login.html">login</a></li>
+								<li style="display:inline-block;"><a href="">Shop</a></li>
+								<li style="display:inline-block;"><a href="">login</a></li>
 							</ul>
 						</nav>
 					</div>				
@@ -120,12 +117,28 @@
 			</ul>
 		</div>
 		<ul class="box2_list">
+<<<<<<< Updated upstream
 				<li><a href="shop.jsp">Display all the goods</a></li>
 				<li><a href="#">New Arrivals</a></li>
 				<li><a href="#">Sales</a></li>
 				<li><a href="#">Story Behind</a></li>
 		 </ul>
 		</div>
+=======
+				<li>New Arrivals</li>
+				<li>Sales</li>
+				<li>Story Behind</li>
+		 </ul>
+		</div>
+
+			<!---->
+			<div id="box">
+					<input type="text" name="search" placeholder="Please enter the keyword">
+					<div id="search">Search</div>
+					<div class="photo"><img src="img/cart.png"></div>
+			</div>
+
+>>>>>>> Stashed changes
 			<!---->
 			<div class="col-md-8">
 				<div>

@@ -40,7 +40,7 @@
 				<!-- home button -->
 				<div class="col-md-2 col-sm-3 col-xs-12">
 					<div style="padding-top: 30px;" >
-						<a href="homepage.html"><img src="img/home1.png" style="height:40px;"/></a>
+						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
 					</div>
 				</div>
 				<div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">

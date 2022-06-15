@@ -1,0 +1,238 @@
+/*
+the left nav
+*/
+.left-nav{
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:25px;
+  padding-bottom:25px;
+  /*
+  border-top:1px solid #DCDCDC;
+  border-right:1px solid #DCDCDC;
+  border-left:1px solid #DCDCDC;
+  border-bottom:1px solid #DCDCDC;
+ */ 
+}
+
+.title-block h2{
+  padding-bottom:10px;
+  margin-bottom:30px;
+  border-bottom:1px solid #F5F5F5;
+  font-size:32px;
+  font-family:times;
+}
+
+.sidebar-widget{
+  padding-bottom:20px;
+}
+
+.sidebar-widget h3{
+  font-size:22px;
+  font-family:times;
+}
+
+.sidebar-widget li{
+  padding-bottom:10px;
+}
+
+.sidebar-menu li{
+  font-size: 13px;
+  font-family:times;
+}
+
+.sidebar-title{
+  padding-bottom:10px;
+  margin-bottom:20px;
+  border-bottom:1px solid #F5F5F5;
+}
+
+/*
+the right side
+*/
+.article-area{
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.article-wrapper {
+  overflow: hidden;
+}
+
+.article-img {
+  overflow: hidden;
+}
+
+.article-img img {
+  transition: all 0.3s ease 0s;
+  width: 80%;
+}
+
+.article-wrapper:hover .article-img img{
+  opacity:.85;
+  transform:scale(1.1);
+ }
+ 
+.article-info{
+  font-weight: 400;
+  padding: 38px 0 0;
+}
+
+.article-info h3 span{
+  color: #000;
+  font-size: 24px;
+  font-family:times;
+  font-weight: 700;
+  margin-bottom: 7px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.article-meta {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.article-meta span{
+  color: #959595;
+  font-size: 13px;
+}
+
+.article-meta span a{
+  color: #363636;
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: all 300ms ease-in 0s;
+}
+
+.article-meta span a:hover,.article-info h3 span:hover,.sidebar-menu li a:hover{
+  color: #ffae00;
+}
+
+.article-meta span a:after{
+  content: "\f178";
+  font-family: FontAwesome;
+  padding-left: 5px;
+}
+
+.article-large span a:after{
+  display:none;
+}
+
+.article-large span a i{
+  margin-right:5px;
+}
+
+.article-large span {
+  margin-left: 15px;
+}
+
+.article-main .article-info {
+  padding: 15px 0 0;
+}
+.article-main .article-meta {
+  margin: 15px 0;
+}
+
+.read-more > a {
+  border: 1px solid #ddd;
+  color: #444;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.read-more > a:hover {
+  background: #ffae00;
+  color:#fff;
+  border-color:#ffae00;
+}
+
+/*article details page*/
+.artDe-area{
+  margin-bottom:80px;
+  margin-top:120px;
+}
+
+.artDe-title{
+  margin-bottom:20px;
+  font-size:36px;
+  text-align:center;
+}
+
+.artDe-author img,.artDe-userPhoto{
+  width: 60px;
+  border-radius: 100%;
+  border: 1px solid #ebebeb;
+  margin-right: 20px;
+}
+
+.artDe-author p{
+  font-size:16px;
+}
+
+.artDe-text, .artDe-intro{
+  margin-bottom:60px;
+  margin-top:60px;
+}
+
+.artDe-text{
+  margin-left:100px;
+  margin-right:100px;
+}
+
+.artDe-text img{
+  width:600px;
+  margin-left:200px;
+}
+
+.make-comment{
+  margin-top:30px;
+  margin-bottom:50px;
+}
+
+.make-comment textarea{
+  width:900px;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  border: 1px solid;
+  overflow: auto;
+  border-radius: 6px;
+  height: 50px;
+  transition: 0.2s;
+  padding: 5px 10px;
+  line-height: 38px;
+  outline: none;
+  vertical-align: middle;
+  margin-right:20px;
+}
+
+.make-comment textarea:hover{
+  border: 1px solid;
+  background-color: #FFFFFF;
+}
+
+.make-comment button{
+    width: 90px;
+    height: 100%;
+    padding: 4px 15px;
+    font-size: 16px;
+    color:#000000;
+    background-color: #FFD700;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.1s;
+}
+
+.make-comment button:hover{
+	background-color: #ffae00;
+}
+
+.artDe-com-details{
+  margin-left:80px;
+}
+
+.artDe-com-details p{
+  margin-top: 15px;
+  font-size:10px;
+}
