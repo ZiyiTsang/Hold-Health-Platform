@@ -4,12 +4,14 @@ public class ArticleBean {
     public ArticleBean() {
     }
 
-    public ArticleBean(String title, String content, String tag, String abstract_, String author) {
+    public ArticleBean(String title, String content, String tag, String abstract_, String author, String img, String authorIMG) {
         this.title = title;
         this.content = content;
         this.tag = tag;
         this.abstract_ = abstract_;
         this.author = author;
+        this.img = img;
+        this.authorIMG = authorIMG;
     }
 
 
@@ -36,6 +38,8 @@ public class ArticleBean {
     private String tag;
     private String abstract_;
     private String author;
+    private String img;
+    private String authorIMG;
     private int comment_cnt;
     public String getIntro() {
         if (this.content==null){
@@ -65,5 +69,12 @@ public class ArticleBean {
 
     public int getComment_cnt() {
         return comment_cnt;
+    }
+
+    public String getArtIMG() {
+        return img;
+    }
+    public String getArtAuthorIMG() {
+        return authorIMG;
     }
 }

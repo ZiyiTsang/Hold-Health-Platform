@@ -169,7 +169,7 @@
                     <div class="col-md-9 col-sm-9">
                         <div class="article-wrapper article-main" style="margin-bottom:80px;">
                             <div class="article-img">
-                                <a href="#"><img alt="" src="img/pic1.jpeg"></a>
+                                <a href="#"><img alt="" src="<%=articles.get(0).getArtIMG()%>"></a>
                             </div>
                             <div class="article-info">
                                 <h3><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><%=articles.get(0).getTitle()%></a></h3>
@@ -197,7 +197,7 @@
                     <div class="col-md-9 col-sm-9">
                         <div class="article-wrapper article-main" style="margin-bottom:80px;">
                             <div class="article-img">
-                                <a href="#"><img alt="" src="img/pic1.jpeg"></a>
+                                <a href="#"><img alt="" src="<%=articles.get(i).getArtIMG()%>"></a>
                             </div>
                             <div class="article-info">
                                 <h3><a href="articles-details.jsp?id=<%=articles.get(i).getId()%>"><%=articles.get(i).getTitle()%></a></h3>
