@@ -148,7 +148,7 @@
 						for(int i=0;i<total;i++){
 					%>
 					<div class="col-md-4 cup-in">
-						<a href="#"><img src="img/p1.jpg" class="img-responsive" alt=""></a>
+						<a href="#"><img src="<%=goods.get(i).getImage()%>" class="img-responsive" alt=""></a>
 						<p><%=goods.get(i).getGoodName()%></p>
 						<span class="dollar">$<%=goods.get(i).getPrice()%></span>
 						<div class="details-in">
