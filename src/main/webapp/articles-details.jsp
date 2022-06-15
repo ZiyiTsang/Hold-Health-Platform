@@ -84,7 +84,7 @@
 		<div class="row">
 			<h3 class="artDe-title"><%=article.getTitle()%></h3>
 			<div class="artDe-author">
-				<p><img src="img/bilibili.png"><%=article.getAuthor()%></p>
+				<p><img src="<%=article.getArtAuthorIMG()%>"><%=article.getAuthor()%></p>
 			</div>
 			
 			<div class="artDe-text">

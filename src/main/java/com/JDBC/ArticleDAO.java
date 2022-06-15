@@ -27,15 +27,15 @@ public class ArticleDAO extends BaseDAO {
     public  List<ArticleBean> getAllArticle(){
         return mapper.selectAll();
     }
-    public  int addArticle(String title,String content){
+    public  int addArticle(String title,String content,String img,String authorIMG){
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        return mapper.addArticle(title,content,sdf.format(date));
+        return mapper.addArticle(title,content,sdf.format(date),img,authorIMG);
     }
     public  int addArticleComplete(ArticleBean article){
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        return mapper.addArticleComplete(sdf.format(date), article.getTitle(),article.getContent(), article.getTag(), article.getAuthor(), article.getAbstract());
+        return mapper.addArticleComplete(sdf.format(date), article.getTitle(),article.getContent(), article.getTag(), article.getAuthor(), article.getAbstract(), article.getArtIMG(), article.getArtAuthorIMG());
     }
     public void deleteById(int id){
         mapper.deleteById(id);
