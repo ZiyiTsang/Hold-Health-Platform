@@ -9,9 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="模糊查询bug(已修复2.0">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shop.jsp" afterDir="false" />
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="模糊查询bug(已修复2.0">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06___tanqianqian__.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06___tanqianqian__.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_13__23_48____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_13__23_48____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_14_23_22___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_14_23_22___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15_15_46____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_15_15_46____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
+    <list id="ffca96c5-4a3d-47b5-81a0-c2941f786e64" name="tanqianqian 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,16 +68,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
@@ -303,7 +310,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
