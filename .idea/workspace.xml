@@ -9,7 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="abd8afa0-3959-4239-8c48-4eccb735009a" name="Changes" comment="Changes" />
+=======
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="addLikes() works">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/GoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/GoodDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/GoodDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/GoodMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/GoodMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestGoodDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestGoodDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/GoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/GoodMapper.xml" afterDir="false" />
+    </list>
+    <list id="ffca96c5-4a3d-47b5-81a0-c2941f786e64" name="tanqianqian 进行的变更" comment="" />
+>>>>>>> 024850725d7c3a4d19705cf040aefdebf5d832b3
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +42,12 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -69,6 +90,7 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -80,6 +102,33 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.25172412",
+    "settings.editor.selected.configurable": "MavenSettings"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+>>>>>>> 024850725d7c3a4d19705cf040aefdebf5d832b3
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
@@ -90,9 +139,15 @@
       <recent name="E:\eclipse\eclipse_workplace\PE_Assinment\src\main\resources\com\mapper" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Tomcat 服务器.Tomcat 10.0.20">
     <configuration name="testArticleDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.testArticleDao" />
+=======
+  <component name="RunManager" selected="应用程序.TestGoodDAO">
+    <configuration name="TestGoodDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.TestGoodDAO" />
+>>>>>>> 024850725d7c3a4d19705cf040aefdebf5d832b3
       <module name="Assignment" />
       <extension name="coverage">
         <pattern>
@@ -297,17 +352,21 @@
       <item itemvalue="JavaScript 调试.article.jsp" />
       <item itemvalue="JavaScript 调试.nav.jsp" />
       <item itemvalue="JavaScript 调试.workouts.jsp" />
+<<<<<<< HEAD
       <item itemvalue="Tomcat 服务器.Tomcat 10.0.20" />
+=======
+      <item itemvalue="Tomcat 服务器.Tomcat 10.0.13" />
+      <item itemvalue="应用程序.TestGoodDAO" />
+>>>>>>> 024850725d7c3a4d19705cf040aefdebf5d832b3
       <item itemvalue="应用程序.testComment" />
-      <item itemvalue="应用程序.testArticleDao" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestGoodDAO" />
         <item itemvalue="应用程序.testComment" />
         <item itemvalue="JavaScript 调试.article.jsp" />
         <item itemvalue="JavaScript 调试.workouts.jsp" />
         <item itemvalue="JavaScript 调试.nav.jsp" />
-        <item itemvalue="应用程序.testArticleDao" />
       </list>
     </recent_temporary>
   </component>
@@ -576,6 +635,7 @@
       <option name="project" value="LOCAL" />
       <updated>1655218962658</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00034" summary="Changes">
       <created>1655225631929</created>
       <option name="number" value="00034" />
@@ -598,6 +658,23 @@
       <updated>1655226976408</updated>
     </task>
     <option name="localTasksCounter" value="37" />
+=======
+    <task id="LOCAL-00034" summary="addLikes() works">
+      <created>1655219061807</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1655219061807</updated>
+    </task>
+    <task id="LOCAL-00035" summary="addLikes() works">
+      <created>1655221597508</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1655221597508</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
+>>>>>>> 024850725d7c3a4d19705cf040aefdebf5d832b3
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,6 +731,16 @@
     <MESSAGE value="addLikes() works" />
     <MESSAGE value="Changes" />
     <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.ibatis.binding.BindingException" package="org.apache.ibatis.binding" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

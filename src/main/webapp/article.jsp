@@ -64,6 +64,15 @@
 </header>
 <!-- header end -->
 
+<%
+    String tag = null;
+    tag = request.getParameter("tag");
+    ArticleDAO ad =new ArticleDAO();
+    List<ArticleBean> articles;
+    if (tag == null) {
+        articles = ad.getAllArticle();
+%>
+
 <!-- slider-container start -->
 <div class="slider-container">
     <!-- Slider Image -->
@@ -89,12 +98,6 @@
 <!-- slider-container end -->
 
 <%
-    String tag = null;
-    tag = request.getParameter("tag");
-    ArticleDAO ad =new ArticleDAO();
-    List<ArticleBean> articles;
-    if (tag == null) {
-        articles = ad.getAllArticle();
     }
     else{
         articles = ad.getArticleByTag(tag);

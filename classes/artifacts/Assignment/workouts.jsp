@@ -61,6 +61,15 @@
 </header>
 <!-- header end -->
 
+<%
+	String tag = null;
+	tag = request.getParameter("tag");
+	VideoDAO vd = new VideoDAO();
+	List<VideoBean> videos;
+	if (tag == null) {
+		videos = vd.getAllVideo();
+%>
+
 <!-- slider-container start -->
 <div class="slider-container">
 	<!-- Slider Image -->
@@ -87,12 +96,6 @@
 
 
 <%
-	String tag = null;
-	tag = request.getParameter("tag");
-	VideoDAO vd = new VideoDAO();
-	List<VideoBean> videos;
-	if (tag == null) {
-		videos = vd.getAllVideo();
 	}
 	else{
 		videos = vd.getVideoByTag(tag);

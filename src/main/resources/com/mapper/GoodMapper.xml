@@ -9,6 +9,9 @@
     <select id="selectById" resultType="com.POJO.GoodBean">
         select * from goods where goodId=#{goodId};
     </select>
+    <select id="goodSelectByTag" resultType="com.POJO.GoodBean">
+        select * from goods where tag=#{tag};
+    </select>
     <select id="selectByName" resultType="com.POJO.GoodBean">
         select * from goods where goodName=#{goodName};
     </select>

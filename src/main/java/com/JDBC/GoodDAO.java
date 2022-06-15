@@ -1,5 +1,6 @@
 package com.JDBC;
 
+import com.POJO.ArticleBean;
 import com.POJO.GoodBean;
 import com.mapper.CommentMapper;
 import com.mapper.GoodMapper;
@@ -29,6 +30,10 @@ public class GoodDAO extends BaseDAO{
     }
     public boolean addGoods(GoodBean gb){
         return mapper.addGood(gb.getGoodName(), gb.getPrice(), gb.getIntroduction(), gb.getImage(), gb.getMonthlySales()) == 1;
+    }
+
+    public List<GoodBean> getGoodByTag(String tag){
+        return mapper.goodSelectByTag(tag);
     }
 
 }
