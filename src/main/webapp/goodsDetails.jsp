@@ -2,37 +2,41 @@
 	pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Health</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- All css files are included here. -->
+<!-- Bootstrap framework main css -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- This core.css file contents all plugings css file. -->
+<link rel="stylesheet" href="css/core.css">
+<!-- Theme main style -->
+<link rel="stylesheet" href="style.css">
+<!-- this page css -->
+<link rel="stylesheet" href="css/goods-page.css">
+<!-- Modernizr JS -->
+<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
-
-	<!-- All css files are included here. -->
-	<!-- Bootstrap framework main css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- This core.css file contents all plugings css file. -->
-	<link rel="stylesheet" href="css/core.css">
-	<!-- Theme main style -->
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/goods-page.css">
-	<!-- Modernizr JS -->
-	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#horizontalTab').easyResponsiveTabs({
+			type: 'default', //Types: default, vertical, accordion
+			width: 'auto', //auto or any width like 600px
+			fit: true   // 100% fit in a container
+		});
+	});
+</script>
 </head>
+
 <body>
-<div class="cont1 span_2_of_a1">
+<!-- start product_slider -->
+<img src="img/p1.jpg" style="float:left;margin-top: 10em;margin-left: 10em;">
+<div class="cont1 span_2_of_a1" style="float:left;margin-top: 10em;margin-left: 3em;">
 	<h1> Lorem Ipsum</h1>
-	<ul class="rating">
-		<li><a class="product-rate" href="#"> </a> <span> </span></li>
-		<li><a href="#">1 Review(s) Add Review</a></li>
-		<div class="clearfix"></div>
-	</ul>
 	<div class="price_single">
 		<span class="reducedfrom">$140.00</span>
-		<span class="actual">$120.00</span><a href="#">click for offer</a>
+		<span class="actual">$120.00</span>
 	</div>
 	<h2 class="quick">Quick Overview:</h2>
 	<p class="quick_desc"> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; es</p>
@@ -72,9 +76,9 @@
 </div>
 
 <div class="clearfix"></div>
-</div>
+
 <div class="sap_tabs">
-	<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+	<div id="horizontalTab" style="display: block; width: 100%; margin-left: 9em;margin-top: 3em;">
 		<ul class="resp-tabs-list">
 			<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Product Description</span></li>
 			<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Additional Information</span></li>
@@ -112,7 +116,6 @@
 		</div>
 	</div>
 </div>
-
 </body>
 </html>
 	
