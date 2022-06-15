@@ -71,7 +71,7 @@
     List<ArticleBean> articles;
 
     List<ArticleBean> aTitle, aTag, aAuthor;
-    HttpSession session1 = request.getSession();
+    HttpSession session1 = (HttpSession) request.getSession();
     articles = (List<ArticleBean>) session1.getAttribute("aTitle");
     aTag= (List<ArticleBean>) session1.getAttribute("aTag");
     aAuthor = (List<ArticleBean>) session1.getAttribute("aAuthor");
