@@ -118,7 +118,7 @@
 								<!-- Nav tabs -->
 								<div class="selector-field hidden-xs" style="margin-left: 20px; float: left;">
 									<div class="video-icon">
-										<label>Sort by</label>
+										<label>Supported by</label>
 										<a href="#"><img src="img/youtube.png" alt="" /></a>
 										<a href="#"><img src="img/bilibili.png" alt="" /></a>
 									</div>
@@ -163,8 +163,9 @@
 								<div class="video-wrapper" style="margin-bottom: 40px;">
 
 									<div class="col-md-4 col-sm-6">
-										<div class="video-img">
-											<a href="#"><img src="img/pic1.jpeg" alt="" /></a>
+										<div class="video-img" style="margin-top:40px;">
+											<!--videos.get(0).getAbsIMG()-->
+											<a href="#"><img src="<%=videos.get(0).getAbsIMG()%>" alt="" /></a>
 										</div>
 									</div>
 									<div class="col-md-8 col-sm-12">
@@ -173,7 +174,8 @@
 												<h3><a href="<%=videos.get(0).getLink()%>"><%=videos.get(0).getTitle()%></a></h3>
 											</div>
 											<div class="creater">
-												<p><img src="img/bilibili.png"><%=videos.get(0).getAuthor()%></p>
+												<!--videos.get(0).getAuthorIMG()-->
+												<p><img src="<%=videos.get(0).getAuthorIMG()%>"><%=videos.get(0).getAuthor()%></p>
 
 											</div>
 											<div class="video-description">
@@ -202,8 +204,8 @@
 							<div class="video-wrapper" style="margin-bottom: 40px;">
 							
 								<div class="col-md-4 col-sm-6">
-									<div class="video-img">
-										<a href="#"><img src="img/pic1.jpeg" alt="" /></a>
+									<div class="video-img" style="margin-top:40px;">
+										<a href="#"><img src="<%=videos.get(i).getAbsIMG()%>" alt="" /></a>
 									</div>
 								</div>
 								<div class="col-md-8 col-sm-12">
@@ -212,8 +214,8 @@
 											<h3><a href="<%=videos.get(i).getLink()%>"><%=videos.get(i).getTitle()%></a></h3>
 										</div>
 										<div class="creater">
-											<p><img src="img/bilibili.png"><%=videos.get(i).getAuthor()%></p>
-											
+											<p><img src="<%=videos.get(i).getAuthorIMG()%>"><%=videos.get(i).getAuthor()%></p>
+
 										</div>
 										<div class="video-description">
 											<p><%=videos.get(i).getAbstract_()%></p>

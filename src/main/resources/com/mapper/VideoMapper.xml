@@ -17,6 +17,6 @@
     </select>
     <insert id="addVideo"  keyProperty="video_id">
         insert into video(title, link,author,tag,abstract_)
-        VALUES (#{title},#{link},#{author},#{tag},#{abstract_});
+        VALUES (#{title},#{link},#{author},#{tag},#{abstract_},#{authorIMG},#{absIMG});
     </insert>
 </mapper>

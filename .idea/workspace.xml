@@ -9,16 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="addLikes() works">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="3a8982b9-efb3-43bb-9042-ae1ef3e5a642" name="变更" comment="getGoodByTag() created">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/GoodMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/GoodDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/GoodDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/GoodMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/GoodMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestGoodDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestGoodDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/GoodMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/GoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/VideoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/VideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/VideoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/VideoBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/VideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/VideoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/VideoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/VideoMapper.xml" afterDir="false" />
     </list>
     <list id="ffca96c5-4a3d-47b5-81a0-c2941f786e64" name="tanqianqian 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,9 +125,22 @@
       <recent name="E:\eclipse\eclipse_workplace\PE_Assinment\src\main\resources\com\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestGoodDAO">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 10.0.13">
     <configuration name="TestGoodDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.TestGoodDAO" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestVideoDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.TestVideoDAO" />
       <module name="Assignment" />
       <extension name="coverage">
         <pattern>
@@ -149,12 +166,6 @@
       </method>
     </configuration>
     <configuration name="article.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Assignment/article.jsp">
-      <method v="2" />
-    </configuration>
-    <configuration name="nav.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Assignment/nav.jsp">
-      <method v="2" />
-    </configuration>
-    <configuration name="workouts.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Assignment/workouts.jsp">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 10.0.13" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.13" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -324,21 +335,109 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="shop.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 10.0.13" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/shop.jsp" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Assignment:Web exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Assignment_Web_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="ee495aa2-415b-4e3b-a4e7-02c93aa420d2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63795" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Assignment:Web exploded" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JavaScript 调试.article.jsp" />
-      <item itemvalue="JavaScript 调试.nav.jsp" />
-      <item itemvalue="JavaScript 调试.workouts.jsp" />
       <item itemvalue="Tomcat 服务器.Tomcat 10.0.13" />
+      <item itemvalue="Tomcat 服务器.shop.jsp" />
       <item itemvalue="应用程序.TestGoodDAO" />
+      <item itemvalue="应用程序.TestVideoDAO" />
       <item itemvalue="应用程序.testComment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestVideoDAO" />
+        <item itemvalue="Tomcat 服务器.shop.jsp" />
         <item itemvalue="应用程序.TestGoodDAO" />
         <item itemvalue="应用程序.testComment" />
         <item itemvalue="JavaScript 调试.article.jsp" />
-        <item itemvalue="JavaScript 调试.workouts.jsp" />
-        <item itemvalue="JavaScript 调试.nav.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -618,7 +717,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655221597508</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="getGoodByTag() created">
+      <created>1655226794771</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1655226794771</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +741,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -649,7 +755,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="maven customize" />
     <MESSAGE value="web folder delete" />
     <MESSAGE value="mybatis framework" />
     <MESSAGE value="article JDBC" />
@@ -674,7 +779,8 @@
     <MESSAGE value="tmp" />
     <MESSAGE value="comments function is done" />
     <MESSAGE value="addLikes() works" />
-    <option name="LAST_COMMIT_MESSAGE" value="addLikes() works" />
+    <MESSAGE value="getGoodByTag() created" />
+    <option name="LAST_COMMIT_MESSAGE" value="getGoodByTag() created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

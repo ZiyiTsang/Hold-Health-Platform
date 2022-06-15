@@ -8,12 +8,17 @@ public class VideoBean {
     private String tag;
     private String abstract_;
 
-    public VideoBean(String title, String link, String author, String tag, String abstract_) {
+    private String authorIMG;
+    private String absIMG;
+
+    public VideoBean(String title, String link, String author, String tag, String abstract_, String authorIMG, String absIMG) {
         this.title = title;
         this.link = link;
         this.author = author;
         this.tag = tag;
         this.abstract_ = abstract_;
+        this.authorIMG = authorIMG;
+        this.absIMG = absIMG;
     }
 
     public VideoBean() {
@@ -31,6 +36,13 @@ public class VideoBean {
         return link;
     }
 
+    public String getAuthorIMG() {
+        return authorIMG;
+    }
+
+    public String getAbsIMG(){
+        return absIMG;
+    }
 
     public String getAuthor() {
         return author;

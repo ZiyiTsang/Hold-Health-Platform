@@ -18,7 +18,7 @@ public class VideoDAO extends BaseDAO{
     }
     public boolean addVideo(VideoBean videoBean){
         try{
-            mapper.addVideo(videoBean.getTitle(), videoBean.getLink(), videoBean.getAuthor(), videoBean.getTag(), videoBean.getAbstract_());
+            mapper.addVideo(videoBean.getTitle(), videoBean.getLink(), videoBean.getAuthor(), videoBean.getTag(), videoBean.getAbstract_(), videoBean.getAuthorIMG(), videoBean.getAbsIMG());
         }catch (Exception exception){
             System.out.printf("addVideo err:%s",exception);
             return false;
