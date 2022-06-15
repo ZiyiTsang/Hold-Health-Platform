@@ -75,6 +75,9 @@
     articles = (List<ArticleBean>) session1.getAttribute("aTitle");
     aTag= (List<ArticleBean>) session1.getAttribute("aTag");
     aAuthor = (List<ArticleBean>) session1.getAttribute("aAuthor");
+    session.removeAttribute("aTitle");
+    session.removeAttribute("aTag");
+    session.removeAttribute("aAuthor");
 
     if(aTag== null && aAuthor == null){
         if (tag == null) {

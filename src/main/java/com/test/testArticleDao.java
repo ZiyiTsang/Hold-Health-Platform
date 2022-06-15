@@ -24,7 +24,5 @@ public class testArticleDao {
             System.out.println(sd.get(i).getTitle());
         }
 
-
-
     }
 }

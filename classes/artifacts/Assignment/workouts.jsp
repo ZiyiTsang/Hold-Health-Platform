@@ -69,17 +69,20 @@
 	VideoDAO vd = new VideoDAO();
 	//List<VideoBean> videos = null;
 
-	List<VideoBean> vTitle, vTag, vAuthor,videos;
+	List<VideoBean> vTitle = null, vTag = null, vAuthor = null,videos = null;
 	HttpSession session1 = request.getSession();
 	videos = (List<VideoBean>) session1.getAttribute("vTitle");
 	vTag= (List<VideoBean>) session1.getAttribute("vTag");
 	vAuthor = (List<VideoBean>) session1.getAttribute("vAuthor");
 	System.out.println(vAuthor);
 	System.out.println(vTag);
+	session.removeAttribute("vTitle");
+	session.removeAttribute("vTag");
+	session.removeAttribute("vAuthor");
 
 	if(vTag== null && vAuthor == null){
-		if (tag == null) {
-			videos = vd.getAllVideo();
+			if (tag == null) {
+				videos = vd.getAllVideo();
 %>
 
 <!-- slider-container start -->
@@ -108,35 +111,34 @@
 
 
 <%
-		}
-		else{
-			videos = vd.getVideoByTag(tag);
-		}
-		System.out.println("Not working");
-	}else{
-		System.out.println("work!!!!");
-		videos.addAll(vAuthor);
-		//videos.addAll(vTitle);
-		videos.addAll(vTag);
-
-		List<VideoBean> tmp = vd.getAllVideo();
-		int [] check;
-		check = new int [tmp.size()];
-
-		for(int j=0; j < videos.size(); j++){
-			int temp;
-			temp = videos.get(j).getVideo_id();
-			//System.out.println("temp= " +temp);
-
-			if(check[temp] != 0){
-				videos.remove(j);
-				j--;
 			}
 			else{
-				check[temp]++;
+				videos = vd.getVideoByTag(tag);
+			}
+			System.out.println("Not working");
+		}else {
+			System.out.println("work!!!!");
+			videos.addAll(vAuthor);
+			//videos.addAll(vTitle);
+			videos.addAll(vTag);
+
+			List<VideoBean> tmp = vd.getAllVideo();
+			int[] check;
+			check = new int[tmp.size()];
+
+			for (int j = 0; j < videos.size(); j++) {
+				int temp;
+				temp = videos.get(j).getVideo_id() - 1;
+				//System.out.println("temp= " +temp);
+
+				if (check[temp] != 0) {
+					videos.remove(j);
+					j--;
+				} else {
+					check[temp]++;
+				}
 			}
 
-		}
 	}
 		int total = videos.size();
 
@@ -186,14 +188,12 @@
 							</ul>
 						</div>
 							<ul class="box2_list">
-								<li><a href="workouts.jsp">Display All Videos</a></li>
+								<li><a href="workouts.jsp?tag">Display All Videos</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<%
-					if(total!=0){
-				%>
+
 				<div class="col-md-9 col-sm-9">
 					<br><br>
 					<form id="box" action="<%= request.getContextPath()%>/search?id=1" method="post">
@@ -201,6 +201,9 @@
 						<button type="submit" id="search">Search</button>
 					</form>
 					<br><br><br>
+					<%
+						if(total!=0){
+					%>
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane active" id="x" style="margin-top:80px; margin-bottom:30px;">
 

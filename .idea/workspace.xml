@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="模糊查询articles&amp;workouts done&#10;//存在一个bug（待修复">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da8eb8b8-f12a-4bf3-933c-e7f8e1f56169.xml" afterDir="false" />
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="模糊查询bug(已修复">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/article.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/article.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/article.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +232,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655261311813</updated>
       <workItem from="1655261316250" duration="8940000" />
-      <workItem from="1655288458813" duration="3038000" />
+      <workItem from="1655288458813" duration="4587000" />
     </task>
     <task id="LOCAL-00001" summary="import the img of article is done">
       <created>1655275767122</created>
@@ -270,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655289005224</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="模糊查询bug(已修复">
+      <created>1655291582159</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655291582159</updated>
+    </task>
+    <task id="LOCAL-00007" summary="模糊查询bug(已修复">
+      <created>1655291593338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655291593338</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +317,8 @@
     <MESSAGE value="模糊查询workouts done" />
     <MESSAGE value="模糊查询articles done&#10;//发现一个bug（待修复" />
     <MESSAGE value="模糊查询articles&amp;workouts done&#10;//存在一个bug（待修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="模糊查询articles&amp;workouts done&#10;//存在一个bug（待修复" />
+    <MESSAGE value="模糊查询bug(已修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="模糊查询bug(已修复" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
