@@ -918,7 +918,7 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="283" parent="278" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>19</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -994,7 +994,7 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <UnderlyingIndexName>article_id_uindex</UnderlyingIndexName>
     </key>
     <column id="298" parent="279" name="comment_id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>28</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1049,7 +1049,7 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <Turn>after-row</Turn>
     </trigger>
     <column id="310" parent="280" name="goodId">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>13</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1095,7 +1095,7 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <UnderlyingIndexName>goods_id_uindex</UnderlyingIndexName>
     </key>
     <column id="320" parent="281" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>24</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1128,7 +1128,7 @@ pe\\_db|schema||pe||UPDATE|G</Grants>
       <UnderlyingIndexName>table_name_id_uindex</UnderlyingIndexName>
     </key>
     <column id="327" parent="282" name="video_id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>16</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>

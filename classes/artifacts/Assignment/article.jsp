@@ -115,9 +115,29 @@
             articles.addAll(aAuthor);
             //videos.addAll(vTitle);
             articles.addAll(aTag);
+
+            List<ArticleBean> tmp = ad.getAllArticle();
+            int [] check;
+            check = new int [tmp.size()];
+
+            for(int j=0; j < articles.size(); j++){
+
+                int temp;
+                temp = articles.get(j).getId() - 6;
+                //System.out.println("temp= " +temp);
+
+                if(check[temp] != 0){
+                    articles.remove(j);
+                    j--;
+                }
+                else{
+                    check[temp]++;
+                }
+
+            }
+            //System.out.println(articles.size());
     }
 
-    int total = articles.size();
 %>
 
 <!-- article start -->
@@ -127,7 +147,7 @@
                 	<div>
 					<h2 class="page-heading" style="margin-top: 40px;">
 						<span class="cat-name">Articles</span>
-						<span class="heading-counter">There are <%=total%> articles.</span>
+						<span class="heading-counter">There are <%=articles.size()%> articles.</span>
 					</h2>
 					<div class="shop-page-bar">
 						<div>	
@@ -178,7 +198,7 @@
                     </div>
 
                     <%
-                        if(total!=0){
+                        if(articles.size()!=0){
                     %>
 
                     <div class="col-md-9 col-sm-9">
@@ -211,7 +231,7 @@
                     <%
                         }
 
-                        for(int i = 1; i < total;i++){
+                        for(int i = 1; i < articles.size();i++){
                     %>
                     <div class="col-md-3 col-sm-3">
                     </div>

@@ -118,6 +118,25 @@
 		videos.addAll(vAuthor);
 		//videos.addAll(vTitle);
 		videos.addAll(vTag);
+
+		List<VideoBean> tmp = vd.getAllVideo();
+		int [] check;
+		check = new int [tmp.size()];
+
+		for(int j=0; j < videos.size(); j++){
+			int temp;
+			temp = videos.get(j).getVideo_id();
+			//System.out.println("temp= " +temp);
+
+			if(check[temp] != 0){
+				videos.remove(j);
+				j--;
+			}
+			else{
+				check[temp]++;
+			}
+
+		}
 	}
 		int total = videos.size();
 
