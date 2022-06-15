@@ -101,9 +101,9 @@
 					<li style="font-weight:600; font-size:20px;float:left;">Comments</li>
 					<li style="font-size:15px; padding-left:30px;float:left;">(<%=comments.size()%>)</li>
 				</ul><br>
-			
 
-				<form class="make-comment" action="<%= request.getContextPath()%>/commentServlet" method="post">
+				<div id="error_message"></div>
+				<form class="make-comment" onsubmit="return validate();" action="" method="post">
 					<div>${addCommentMsg}${Msg}</div>
 					<img src="img/bilibili.png" class="artDe-userPhoto">
 					<textarea id="content" rows="" cols="" name="content" placeholder="make a comment here ~ ~"></textarea>
@@ -122,7 +122,7 @@
 						<h5><%=comments.get(i).getContent()%></h5>
 						<p><%=comments.get(i).getTime()%>
 							<a style="margin-left:10px;">
-							<a href="../java/com/servlet/commentLike.java?id=<%=id%>" style="margin-left:10px;">
+							<a href="<%= request.getContextPath()%>/commentLike?id=<%=id%>" style="margin-left:10px;">
 								<i class="pe-7s-like"></i>
 							</a>
 							<%=comments.get(i).getLike()%>
@@ -146,7 +146,20 @@
 	<div class="footer-copyright text-center">@ 2022 Copyright: XMUM</div>
 </footer>
 
-
+<script type="text/javascript">
+	function validate(){
+		let content =document.getElementById("content").value;
+		let error_message =document.getElementById("error_message");
+		let text;
+		if (content.length>200){
+			text="Please enter less than 200 characters";
+			error_message.innerHTML = text;
+			return false;
+		}
+		alert("Your comment is submitted!");
+		return true;
+	}
+</script>
 
 
 

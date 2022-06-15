@@ -3,6 +3,8 @@
 <%@ page import="com.POJO.VideoBean" %>
 <%@ page import="com.JDBC.VideoDAO" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.apache.ibatis.jdbc.Null" %>
+<%@ page import="jakarta.servlet.http.HttpSession" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,15 +61,23 @@
 		</div>
 	</div>
 </header>
-<!-- header end -->
+<!-- header end  你说吧 我在办公室 不方便说话-->
 
 <%
 	String tag = null;
 	tag = request.getParameter("tag");
 	VideoDAO vd = new VideoDAO();
-	List<VideoBean> videos;
-	if (tag == null) {
-		videos = vd.getAllVideo();
+	//List<VideoBean> videos = null;
+	List<VideoBean> vTitle, vTag, vAuthor,videos;
+	HttpSession session1 = request.getSession();
+	videos = (List<VideoBean>) session1.getAttribute("vTitle");
+	vTag= (List<VideoBean>) session1.getAttribute("vTag");
+	vAuthor = (List<VideoBean>) session1.getAttribute("vAuthor");
+	System.out.println(vAuthor);
+	System.out.println(vTag);
+	if(vTag== null && vAuthor == null){
+		if (tag == null) {
+			videos = vd.getAllVideo();
 %>
 
 <!-- slider-container start -->
@@ -96,11 +106,19 @@
 
 
 <%
+		}
+		else{
+			videos = vd.getVideoByTag(tag);
+		}
+		System.out.println("Not working");
+	}else{
+		System.out.println("work!!!!");
+		videos.addAll(vAuthor);
+		//videos.addAll(vTitle);
+		videos.addAll(vTag);
 	}
-	else{
-		videos = vd.getVideoByTag(tag);
-	}
-	int total = videos.size();
+		int total = videos.size();
+
 %>
 	</div>
 	<!-- display start -->
@@ -156,6 +174,12 @@
 					if(total!=0){
 				%>
 				<div class="col-md-9 col-sm-9">
+					<br><br>
+					<form id="box" action="<%= request.getContextPath()%>/search?id=1" method="post">
+						<input type="text" name="videoText" placeholder="Please enter the keyword">
+						<button type="submit" id="search">Search</button>
+					</form>
+					<br><br><br>
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane active" id="x" style="margin-top:80px; margin-bottom:30px;">
 

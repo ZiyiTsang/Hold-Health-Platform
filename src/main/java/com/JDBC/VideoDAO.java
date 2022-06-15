@@ -35,7 +35,7 @@ public class VideoDAO extends BaseDAO{
     }
     public List<VideoBean> getVideoByTag(String tag){
         try{
-            return mapper.selectByTag(tag);
+            return mapper.selectByTag("%"+tag+"%");
         }catch(Exception e) {
             System.out.println("getVideoByTag err:e");
             return null;
@@ -43,7 +43,7 @@ public class VideoDAO extends BaseDAO{
     }
     public List<VideoBean> getVideoByTitle(String title){
         try{
-            return mapper.selectByTitle(title);
+            return mapper.selectByTitle("%"+title+"%");
         }catch(Exception e) {
             System.out.println("getVideoByTitle err:e");
             return null;
@@ -51,10 +51,11 @@ public class VideoDAO extends BaseDAO{
     }
     public List<VideoBean> getVideoByAuthor(String author){
         try{
-            return mapper.selectByAuthor(author);
+            return mapper.selectByAuthor("%"+author+"%");
         }catch(Exception e) {
             System.out.println("getVideoByAuthor err:e");
             return null;
         }
     }
+
 }

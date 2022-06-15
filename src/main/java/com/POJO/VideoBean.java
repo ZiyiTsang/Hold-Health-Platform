@@ -1,5 +1,7 @@
 package com.POJO;
 
+import java.util.List;
+
 public class VideoBean {
     private int video_id;
     private String title;
@@ -55,4 +57,5 @@ public class VideoBean {
     public String getAbstract_() {
         return abstract_;
     }
+
 }

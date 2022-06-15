@@ -6,15 +6,19 @@
     <select id="selectAll" resultType="com.POJO.VideoBean">
         select * from video;
     </select>
+
     <select id="selectByTag" resultType="com.POJO.VideoBean">
-        select * from video where tag=#{tag};
+        select * from video where tag like #{tag};
     </select>
+
     <select id="selectByAuthor" resultType="com.POJO.VideoBean">
-        select * from video where author=#{author};
+        select * from video where author like #{author};
     </select>
+
     <select id="selectByTitle" resultType="com.POJO.VideoBean">
-        select * from video where title=#{title};
+        select * from video where title like #{title};
     </select>
+
     <insert id="addVideo"  keyProperty="video_id">
         insert into video(title, link,author,tag,abstract_)
         VALUES (#{title},#{link},#{author},#{tag},#{abstract_},#{authorIMG},#{absIMG});

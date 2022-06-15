@@ -1,5 +1,6 @@
 package com.mapper;
 
+import com.JDBC.VideoDAO;
 import com.POJO.VideoBean;
 import org.apache.ibatis.annotations.Param;
 
@@ -12,6 +13,5 @@ public interface VideoMapper {
 
     List<VideoBean> selectByAuthor(String author);
     List<VideoBean> selectByTitle(String Title);
-
 
 }
