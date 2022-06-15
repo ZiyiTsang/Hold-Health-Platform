@@ -69,8 +69,16 @@
     tag = request.getParameter("tag");
     ArticleDAO ad =new ArticleDAO();
     List<ArticleBean> articles;
-    if (tag == null) {
-        articles = ad.getAllArticle();
+
+    List<ArticleBean> aTitle, aTag, aAuthor;
+    HttpSession session1 = request.getSession();
+    articles = (List<ArticleBean>) session1.getAttribute("aTitle");
+    aTag= (List<ArticleBean>) session1.getAttribute("aTag");
+    aAuthor = (List<ArticleBean>) session1.getAttribute("aAuthor");
+
+    if(aTag== null && aAuthor == null){
+        if (tag == null) {
+            articles = ad.getAllArticle();
 %>
 
 <!-- slider-container start -->
@@ -98,10 +106,17 @@
 <!-- slider-container end -->
 
 <%
+        }
+        else {
+            articles = ad.getArticleByTag(tag);
+        }
+    }else{
+            System.out.println("work!!!!");
+            articles.addAll(aAuthor);
+            //videos.addAll(vTitle);
+            articles.addAll(aTag);
     }
-    else{
-        articles = ad.getArticleByTag(tag);
-    }
+
     int total = articles.size();
 %>
 
@@ -167,6 +182,12 @@
                     %>
 
                     <div class="col-md-9 col-sm-9">
+                        <br><br>
+                        <form id="box" action="<%= request.getContextPath()%>/search?id=2" method="post">
+                            <input type="text" name="Text" placeholder="Please enter the keyword">
+                            <button type="submit" id="search">Search</button>
+                        </form>
+                        <br><br><br>
                         <div class="article-wrapper article-main" style="margin-bottom:80px;">
                             <div class="article-img">
                                 <a href="#"><img alt="" src="<%=articles.get(0).getArtIMG()%>"></a>

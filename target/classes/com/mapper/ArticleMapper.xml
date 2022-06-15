@@ -16,10 +16,13 @@
         select title from article where id=#{id};
     </select>
     <select id="selectByAuthor" resultType="com.POJO.ArticleBean">
-        select title from article where author=#{author};
+        select title from article where author like #{author};
     </select>
     <select id="selectByTag" resultType="com.POJO.ArticleBean">
-        select * from article where tag=#{tag};
+        select * from article where tag like #{tag};
+    </select>
+    <select id="selectByTitle" resultType="com.POJO.ArticleBean">
+        select * from article where title like #{title};
     </select>
 
     <insert id="addArticle"  keyProperty="id">

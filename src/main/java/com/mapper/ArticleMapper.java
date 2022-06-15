@@ -18,4 +18,5 @@ public interface ArticleMapper {
     List<ArticleBean> selectByTag(String tag);
     void moreView(int id);
 
+    List<ArticleBean> selectByTitle(String title);
 }

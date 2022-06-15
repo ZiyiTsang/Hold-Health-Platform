@@ -9,21 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="import the img of article is done">
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="模糊查询workouts done">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/articles-details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/VideoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/articles-details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/ArticleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/workouts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/VideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/VideoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/VideoBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/VideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/VideoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestVideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/VideoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/ArticleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/ArticleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/ArticleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/article.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/VideoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/ArticleMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
@@ -56,12 +62,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
@@ -70,6 +76,19 @@
   <component name="RunManager" selected="Tomcat 服务器.Tomcat 10.0.13">
     <configuration name="TestVideoDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.TestVideoDAO" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testArticleDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.testArticleDao" />
       <module name="Assignment" />
       <extension name="coverage">
         <pattern>
@@ -186,10 +205,12 @@
     <list>
       <item itemvalue="Tomcat 服务器.Tomcat 10.0.13" />
       <item itemvalue="应用程序.TestVideoDAO" />
+      <item itemvalue="应用程序.testArticleDao" />
       <item itemvalue="应用程序.testComment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.testArticleDao" />
         <item itemvalue="应用程序.TestVideoDAO" />
         <item itemvalue="应用程序.testComment" />
       </list>
@@ -212,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655275767122</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="模糊查询workouts done">
+      <created>1655284582369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655284582369</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +257,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -243,7 +271,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="import the img of article is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="import the img of article is done" />
+    <MESSAGE value="模糊查询workouts done" />
+    <option name="LAST_COMMIT_MESSAGE" value="模糊查询workouts done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

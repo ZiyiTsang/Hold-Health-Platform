@@ -61,13 +61,14 @@
 		</div>
 	</div>
 </header>
-<!-- header end  你说吧 我在办公室 不方便说话-->
+<!-- header end-->
 
 <%
 	String tag = null;
 	tag = request.getParameter("tag");
 	VideoDAO vd = new VideoDAO();
 	//List<VideoBean> videos = null;
+
 	List<VideoBean> vTitle, vTag, vAuthor,videos;
 	HttpSession session1 = request.getSession();
 	videos = (List<VideoBean>) session1.getAttribute("vTitle");
@@ -75,6 +76,7 @@
 	vAuthor = (List<VideoBean>) session1.getAttribute("vAuthor");
 	System.out.println(vAuthor);
 	System.out.println(vTag);
+
 	if(vTag== null && vAuthor == null){
 		if (tag == null) {
 			videos = vd.getAllVideo();
@@ -176,7 +178,7 @@
 				<div class="col-md-9 col-sm-9">
 					<br><br>
 					<form id="box" action="<%= request.getContextPath()%>/search?id=1" method="post">
-						<input type="text" name="videoText" placeholder="Please enter the keyword">
+						<input type="text" name="Text" placeholder="Please enter the keyword">
 						<button type="submit" id="search">Search</button>
 					</form>
 					<br><br><br>

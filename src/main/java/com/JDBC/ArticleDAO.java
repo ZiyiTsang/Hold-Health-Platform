@@ -64,10 +64,13 @@ public class ArticleDAO extends BaseDAO {
 //    }
 
     public List<ArticleBean> getArticleByAuthor(String author){
-        return mapper.selectByAuthor(author);
+        return mapper.selectByAuthor("%"+author+"%");
     }
     public List<ArticleBean> getArticleByTag(String tag){
-        return mapper.selectByTag(tag);
+        return mapper.selectByTag("%"+tag+"%");
+    }
+    public List<ArticleBean> getArticleByTitle(String title){
+        return mapper.selectByTitle("%"+title+"%");
     }
 
     public void moreViewByArticleID(int id) {
