@@ -121,11 +121,8 @@
 					<div class="artDe-com-details">
 						<h5><%=comments.get(i).getContent()%></h5>
 						<p><%=comments.get(i).getTime()%>
-<<<<<<< HEAD
 							<a style="margin-left:10px;">
-=======
 							<a href="../java/com/servlet/commentLike.java?id=<%=id%>" style="margin-left:10px;">
->>>>>>> 024850725d7c3a4d19705cf040aefdebf5d832b3
 								<i class="pe-7s-like"></i>
 							</a>
 							<%=comments.get(i).getLike()%>

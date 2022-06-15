@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="com.POJO.GoodBean" %>
+<%@ page import="com.JDBC.GoodDAO" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -59,6 +62,15 @@
 	</div>
 </header>
 <!-- header end -->
+
+<%
+	String tag = null;
+	tag = request.getParameter("tag");
+	GoodDAO gd = new GoodDAO();
+	List<GoodBean> goods;
+	if (tag == null) {
+		goods = gd.getAllGoods();
+%>
 <!-- slider-container start -->
 <div class="slider-container">
 	<!-- Slider Image -->
@@ -83,6 +95,14 @@
 </div>
 <!-- slider-container end -->
 
+<%
+	}
+	else{
+		goods = gd.getGoodByTag(tag);
+	}
+	int total = goods.size();
+%>
+
 
 <div class="content_top">
 	<div class="container">
@@ -91,79 +111,39 @@
 			<!--initiate accordion-->
 		<div class="box1">
 			<ul class="box1_list">
-				<li><a href="#">Home Equipment</a></li>
-				<li><a href="#">Sports bracelets</a></li>
-				<li><a href="#">Sports equipment</a></li>
-				<li><a href="#">Health Food</a></li>
-				<li><a href="#">Women's Clothing</a></li>
-				<li><a href="#">Men's Clothing</a></li>
+				<li><a href="shop.jsp?tag=Home Equipment">Home Equipment</a></li>
+				<li><a href="shop.jsp?tag=Sports bracelets">Sports bracelets</a></li>
+				<li><a href="shop.jsp?tag=Sports equipment">Sports equipment</a></li>
+				<li><a href="shop.jsp?tag=Health Food">Health Food</a></li>
+				<li><a href="shop.jsp?tag=Women's Clothing">Women's Clothing</a></li>
+				<li><a href="shop.jsp?tag=Men's Clothing">Men's Clothing</a></li>
 			</ul>
 		</div>
 		<ul class="box2_list">
+				<li><a href="shop.jsp">Display all the goods</a></li>
 				<li><a href="#">New Arrivals</a></li>
 				<li><a href="#">Sales</a></li>
 				<li><a href="#">Story Behind</a></li>
 		 </ul>
 		</div>
-	
 			<!---->
 			<div class="col-md-8">
 				<div>
+					<%
+						for(int i=0;i<total;i++){
+					%>
 					<div class="col-md-4 cup-in">
 						<a href="#"><img src="img/p1.jpg" class="img-responsive" alt=""></a>
-						<p>Lorem ipsum dolor sit consectetur</p>
-						<span class="dollar">$25.89</span>
+						<p><%=goods.get(i).getGoodName()%></p>
+						<span class="dollar">$<%=goods.get(i).getPrice()%></span>
 						<div class="details-in">
 							<a href="#" class="details">Details</a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
-					<div class="col-md-4 cup-in">
-						<a href="#"><img src="img/p2.jpg" class="img-responsive" alt=""></a>
-						<p>Lorem ipsum dolor sit consectetur</p>
-						<span class="dollar">$25.89</span>
-						<div class="details-in">
-							<a href="#" class="details">Details</a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="col-md-4 cup-in">
-						<a href="#"><img src="img/p3.jpg" class="img-responsive" alt=""></a>
-						<p>Lorem ipsum dolor sit consectetur</p>
-						<span class="dollar">$25.89</span>
-						<div class="details-in">
-							<a href="single.html" class="details">Details</a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					
-					<div class="col-md-4 cup-in">
-						<a href="#"><img src="img/p4.jpg" class="img-responsive" alt=""></a>
-						<p>Lorem ipsum dolor sit consectetur</p>
-						<span class="dollar">$25.89</span>
-						<div class="details-in">
-							<a href="single.html" class="details">Details</a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="col-md-4 cup-in">
-						<a href="#"><img src="img/p5.jpg" class="img-responsive" alt=""></a>
-						<p>Lorem ipsum dolor sit consectetur</p>
-						<span class="dollar">$25.89</span>
-						<div class="details-in">
-							<a href="single.html" class="details">Details</a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="col-md-4 cup-in">
-						<a href="#"><img src="img/p6.jpg" class="img-responsive" alt=""></a>
-						<p>Lorem ipsum dolor sit consectetur</p>
-						<span class="dollar">$25.89</span>
-						<div class="details-in">
-							<a href="#" class="details">Details</a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
+					<%
+						}
+					%>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
