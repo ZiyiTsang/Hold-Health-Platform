@@ -1,9 +1,5 @@
 Manifest-Version: 1.0
 Created-By: IntelliJ IDEA
-<<<<<<< Updated upstream
-Built-By: tanqianqian
-=======
 Built-By: yang
->>>>>>> Stashed changes
 Build-Jdk: Oracle OpenJDK version 18.0.1
 

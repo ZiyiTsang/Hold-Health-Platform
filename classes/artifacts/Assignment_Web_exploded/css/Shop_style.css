@@ -60,7 +60,9 @@ ul.box2_list li a{
 }
 
 input{
-	width:260px;
+	width:320px;
+	text-align: left;
+	vertical-align: center;
 	border:1px solid #e2e2e2;
 	height:30px;
 	float:left;
@@ -91,15 +93,7 @@ input{
 
 }
 
-.photo{
-	width:650px;
-	hight:0px;
-}
-.photo img{
-	float:right;
-	width:40px;
-	height:40px;
-}
+
 
 .cup-in {
 	border-radius: 14px;

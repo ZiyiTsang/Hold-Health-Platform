@@ -39,6 +39,7 @@
 				<div class="col-md-2 col-sm-3 col-xs-12">
 					<div style="padding-top: 30px;" >
 						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
+						<a href="homepage.html"><img src="img/cart.png" style="height:40px;margin-left: 20px;"/></a>
 					</div>
 				</div>				
 				<div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">
@@ -100,6 +101,12 @@
 	int total = goods.size();
 %>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <div class="content_top">
 	<div class="container">
@@ -117,30 +124,25 @@
 			</ul>
 		</div>
 		<ul class="box2_list">
-<<<<<<< Updated upstream
 				<li><a href="shop.jsp">Display all the goods</a></li>
 				<li><a href="#">New Arrivals</a></li>
 				<li><a href="#">Sales</a></li>
 				<li><a href="#">Story Behind</a></li>
 		 </ul>
-		</div>
-=======
-				<li>New Arrivals</li>
-				<li>Sales</li>
-				<li>Story Behind</li>
-		 </ul>
+
 		</div>
 
-			<!---->
-			<div id="box">
-					<input type="text" name="search" placeholder="Please enter the keyword">
-					<div id="search">Search</div>
-					<div class="photo"><img src="img/cart.png"></div>
-			</div>
 
->>>>>>> Stashed changes
+
+
 			<!---->
 			<div class="col-md-8">
+				<!---->
+				<div id="box">
+					<input type="text" name="search" placeholder="Please enter the keyword">
+					<div id="search">Search</div>
+				</div>
+				<br><br><br>
 				<div>
 					<%
 						for(int i=0;i<total;i++){
@@ -163,6 +165,7 @@
 			<div class="clearfix"> </div>
 	</div>
 </div>
+
 
 
 
