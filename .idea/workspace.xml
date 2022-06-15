@@ -10,6 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="shop is done">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/cart-fill.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -22,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -51,6 +54,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\yang\桌面\pe_groupProject\src\main\webapp\js" />
       <recent name="E:\yang\桌面\pe_groupProject\src\main\webapp\css\plugins" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\yang\桌面\pe_groupProject\src\main\webapp\img" />
     </key>
   </component>
   <component name="RunManager">
