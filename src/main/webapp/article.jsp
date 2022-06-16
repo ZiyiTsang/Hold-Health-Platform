@@ -25,6 +25,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="workout-page.css">
 <link rel="stylesheet" href="article-page.css">
+
     <!-- this page css -->
     <link rel="stylesheet" href="css/Shop_style.css">
 <!-- Modernizr JS -->
