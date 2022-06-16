@@ -13,55 +13,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Login.css">
 </head>
 
 <body>
 <div class="container">
-
-    <div class="blog-post bg-white p-5 rounded shadow mb-4">
-
-        <h3 class="mb-5 text-center">Login</h3>
-
-        <form action="<%= request.getContextPath()%>/loginServlet" method="post">
+    <div class="form row" style="margin-top: 240px;">
+        <form class="form-horizontal col-sm-offset-3 col-md-offset-3" action="<%= request.getContextPath()%>/loginServlet" method="post">
             <div>${loginMsg}${Msg}</div>
-            <div class="form-group row mb-3">
-                <label for="name" class="col-md-4 col-form-label text-md-right">姓名</label>
-                <div class="col-md-6">
-                    <input id="name" type="text" class="form-control" name="username" value="" required="" autofocus="">
+            <h3 class="form-title" style="margin-left: 70px; font-family: times; font-weight: bold; font-size:30px;">login</h3><br><br>
+            <div class="col-sm-9 col-md-9">
+                <div class="form-group">
+                    <!--        用户名图标和用户名输入框            -->
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input class="form-control" type="text" name="username" id="username" placeholder="username" required autofocus>
                 </div>
-            </div>
-
-
-            <div class="form-group row mb-3">
-                <label for="password" class="col-md-4 col-form-label text-md-right">密码</label>
-                <div class="col-md-6">
-                    <input id="password" type="password" class="form-control" name="password" required="">
+                <!--        密码图标和密码输入框                -->
+                <div class="form-group">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                    <input class="form-control " type="password" name="password" id="password" placeholder="password" required>
                 </div>
-            </div>
-
-
-            <div class="form-group row mb-3 mb-0 mt-4">
-                <div class="col-md-6 offset-md-4">
-                    <button type="submit" class="btn btn-primary">
-                        login
-                    </button>
+                <!--        用超链接跳转到注册页面               -->
+                <br>
+                <!--         登录按钮           -->
+                <div class="form-group">
+                    <input type="submit" value="login" class="btn btn-success pull-right">
                 </div>
+                <div class="form-group smallText">
+                    <br>
+                    <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted" style="float: right;">
+                        <small>back</small>
+                    </a>
+                    <a href="${pageContext.request.contextPath}/" class="text-sm text-muted " style="float: left;">
+                        <small>register</small>
+                    </a>
+                </div><br>
             </div>
-
         </form>
-
     </div>
-
 </div>
-
-
-<div class="mb-3">
-    <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted"><small>返回首页</small></a>
-    <a href="${pageContext.request.contextPath}/" class="text-sm text-muted float-right"><small>注册</small></a>
-</div>
-<script src="./js/bootstrap.min.js"></script>
-
-
 </body>
 
 </html>

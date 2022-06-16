@@ -13,69 +13,92 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/register.css">
 </head>
 
+<%--<div class="mb-3">--%>
+<%--    <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted"><small>返回首页</small></a>--%>
+<%--    <a href="${pageContext.request.contextPath}/" class="text-sm text-muted float-right"><small>登录</small></a>--%>
+<%--</div>--%>
+<%--<script src="./js/bootstrap.min.js"></script>--%>
+<%--<script>--%>
+<%--    document.getElementById("change").onclick=function () {--%>
+<%--        document.getElementById("checkcodeimg").src="${pageContext.request.contextPath}/CodeServlet?"+Math.ceil(Math.random()*10000);--%>
+<%--    }--%>
+<%--</script>--%>
+
+
+<%--</body>--%>
 <body>
 <div class="container">
+    <div class="form row" style="margin-top: 120px;">
+        <form style="margin-left: 110px;" action="<%= request.getContextPath()%>/registerServlet" method="post">
+            <div>${loginMsg}${Msg}</div>
+            <h3 class="form-title" style="margin-left: 150px; font-family: times; font-weight: bold; font-size:30px;">register</h3><br><br>
+            <div >
+                <p style="font-family: Times; font-size: 18px;">Basic Information</p>
+                <div class="col-sm-4 col-md-4" >
+                    <div class="form-group">
+                        <!--        用户名图标和用户名输入框            -->
+                        <i class="fa fa-user"></i>
+                        <input class="form-control" type="text" name="username" id="username" placeholder="username" required autofocus>
+                    </div>
+                    <div class="form-group" >
+                        <!--        用户名图标和用户名输入框            -->
+                        <p>Gender: </p>
+                        <input id="man" type="radio" checked="checked" name="1" /> Male    <input id="woman" type="radio"  name="1"/> Female
+                    </div>
 
-    <div class="blog-post bg-white p-5 rounded shadow mb-4">
+                </div>
 
-        <h3 class="mb-5 text-center">register</h3>
+                <div class="col-sm-4 col-md-4" style="margin-left: 60px;">
+                    <div class="form-group">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <input class="form-control " type="password" name="password" id="password" placeholder="password" required>
+                    </div>
+                    <div class="form-group" style="margin-top: 20px;">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <input class="form-control " type="password" name="password Repeat" id="passwordRepeat" placeholder="Repeat" required>
+                    </div>
+                </div>
 
+                <p style="font-family: Times; font-size: 18px; margin-top: 140px;">Email validation</p>
+                <div class="form-group">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                    <input class="form-control " type="email" name="email" id="email" placeholder="email address" required style="width:  200px;">
+                    <input class="form-control " type="text" name="emailCode" id="emailCode" placeholder="Code" required style="width:  100px; margin-top: 15px;">
+                    <button type="" value="register" class="btn btn-success pull-right" style="margin-right: 120px;">Send the code</button>
+                </div>
 
-        <form action="<%= request.getContextPath()%>/registerServlet" method="post">
-            <div>${Msg}</div>
-            <div class="form-group row mb-3">
-                <label for="name" class="col-md-4 col-form-label text-md-right">姓名</label>
-                <div class="col-md-6">
-                    <input id="name" type="text" class="form-control" name="username" value="" required="" autofocus="">
-                </div>
-            </div>
+                <p style="font-family: Times; font-size: 18px; margin-top: 55px;">Man-machine detection</p>
+                <div class="form-group">
 
-            <div class="form-group row mb-3">
-                <label for="password" class="col-md-4 col-form-label text-md-right">密码</label>
-                <div class="col-md">
-                    <input id="password" type="password" class="form-control" name="password" required="">
-                </div>
-            </div>
-            <div class="form-group row mb-3">
-                <label for="passwordRepeat" class="col-md-4 col-form-label text-md-right">确认密码</label>
-                <div class="col-md">
-                    <input id="passwordRepeat" type="password" class="form-control" name="passwordRepeat" required="">
-                </div>
-            </div>
-            <div class="form-group row mb-3">
-                <label for="code" class="col-md-3 col-form-label text-md-right">验证码</label>
-                <div class="col-md">
-                    <input id="code" type="text" class="form-control" name="code" required="">
-                </div>
-                <div class="col-md">
-                    <img src="${pageContext.request.contextPath}/CodeServlet" id="checkcodeimg"></img>
-                </div>
-                <div class="col-md">
-                    <a href="#" id="change" onclick="">看不清</a>
-                </div>
-            </div>
+                    <div class ="col-md-4">
+                        <i class="fa fa-key" aria-hidden="false"></i>
+                        <input class="form-control " type="text" name="code" id="code" placeholder="code" required style="width:  100px;">
+                    </div>
 
+                    <div class ="col-md-4" style="margin-left: 40px;">
+                        <img src="${pageContext.request.contextPath}/CodeServlet" id="checkcodeimg" style="width: 120px;margin-bottom: 15px;">
+                        <a href="#" id="change" onclick="">Refresh the code</a>
+                    </div>
 
-            <div class="form-group row mb-3 mb-0 mt-4">
-                <div class="col-md-6 offset-md-4">
-                    <button type="submit" class="btn btn-primary">
-                        login
-                    </button>
+                </div><br><br><br>
+                <!--        用超链接跳转到注册页面               -->
+
+                <!--         register button           -->
+                <div class="form-group" style="margin-top: 50px; margin-left: 320px;">
+                    <input type="submit" value="register" class="btn btn-success">
                 </div>
-            </div>
+                <div class="form-group">
+                    <br>
+                    <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted"><small>back</small></a>
+                    <a href="${pageContext.request.contextPath}/" class="text-sm text-muted"  style="margin-left: 320px;"><small>login</small></a>
+                </div>
+            </div><br>
 
         </form>
-
     </div>
-
-</div>
-
-
-<div class="mb-3">
-    <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted"><small>返回首页</small></a>
-    <a href="${pageContext.request.contextPath}/" class="text-sm text-muted float-right"><small>登录</small></a>
 </div>
 <script src="./js/bootstrap.min.js"></script>
 <script>
@@ -83,8 +106,6 @@
         document.getElementById("checkcodeimg").src="${pageContext.request.contextPath}/CodeServlet?"+Math.ceil(Math.random()*10000);
     }
 </script>
-
-
 </body>
 
 </html>
