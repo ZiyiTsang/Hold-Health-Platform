@@ -9,14 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="goodsDetails">
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="邮件验证done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/css/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/css/checkout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/css/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/css/checkout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/checkout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/css/Shop_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/css/Shop_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/shop.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/WEB-INF/classes/com/mapper/GoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/css/Shop_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/css/Shop_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/shop.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/GoodDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/GoodDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestGoodDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestGoodDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/GoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Shop_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Shop_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shop.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/GoodMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,13 +33,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -44,33 +59,104 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2AdoKDFmz4uMBbFTTc1AKEVw0jt" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Abq6QKGStdV5kOPhn2AYsIc6C0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp/css",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\yang\桌面\pe_groupProject\src\main\webapp\js" />
-      <recent name="E:\yang\桌面\pe_groupProject\src\main\webapp\css\plugins" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\yang\桌面\pe_groupProject\src\main\webapp\img" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/img" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.20" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 10.0.13">
+    <configuration name="TestGoodDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.TestGoodDAO" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUserDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.TestUserDAO" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestVideoDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.TestVideoDAO" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testArticleDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.testArticleDao" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testComment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.testComment" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 10.0.13" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.13" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -159,6 +245,23 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat 服务器.Tomcat 10.0.13" />
+      <item itemvalue="应用程序.TestGoodDAO" />
+      <item itemvalue="应用程序.TestUserDAO" />
+      <item itemvalue="应用程序.TestVideoDAO" />
+      <item itemvalue="应用程序.testArticleDao" />
+      <item itemvalue="应用程序.testComment" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.TestGoodDAO" />
+        <item itemvalue="应用程序.TestUserDAO" />
+        <item itemvalue="应用程序.testArticleDao" />
+        <item itemvalue="应用程序.TestVideoDAO" />
+        <item itemvalue="应用程序.testComment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -168,19 +271,66 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655261311813</updated>
-      <workItem from="1655261316250" duration="16057000" />
-      <workItem from="1655348765056" duration="2256000" />
-      <workItem from="1655351250732" duration="405000" />
-      <workItem from="1655351693473" duration="4794000" />
+      <workItem from="1655261316250" duration="8940000" />
+      <workItem from="1655288458813" duration="4904000" />
     </task>
-    <task id="LOCAL-00001" summary="shop is done">
-      <created>1655270597879</created>
+    <task id="LOCAL-00001" summary="import the img of article is done">
+      <created>1655275767122</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1655270597879</updated>
+      <updated>1655275767122</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="模糊查询workouts done">
+      <created>1655284582369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655284582369</updated>
+    </task>
+    <task id="LOCAL-00003" summary="模糊查询articles done&#10;//发现一个bug（待修复">
+      <created>1655286736617</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655286736617</updated>
+    </task>
+    <task id="LOCAL-00004" summary="模糊查询articles done&#10;//发现一个bug（待修复">
+      <created>1655288080828</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655288080828</updated>
+    </task>
+    <task id="LOCAL-00005" summary="模糊查询articles&amp;workouts done&#10;//存在一个bug（待修复">
+      <created>1655289005224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655289005224</updated>
+    </task>
+    <task id="LOCAL-00006" summary="模糊查询bug(已修复">
+      <created>1655291582159</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655291582159</updated>
+    </task>
+    <task id="LOCAL-00007" summary="模糊查询bug(已修复">
+      <created>1655291593338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655291593338</updated>
+    </task>
+    <task id="LOCAL-00008" summary="模糊查询bug(已修复2.0">
+      <created>1655293405340</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655293405340</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +360,16 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="shop is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop is done" />
+    <MESSAGE value="import the img of article is done" />
+    <MESSAGE value="模糊查询workouts done" />
+    <MESSAGE value="模糊查询articles done&#10;//发现一个bug（待修复" />
+    <MESSAGE value="模糊查询articles&amp;workouts done&#10;//存在一个bug（待修复" />
+    <MESSAGE value="模糊查询bug(已修复" />
+    <MESSAGE value="模糊查询bug(已修复2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="模糊查询bug(已修复2.0" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
