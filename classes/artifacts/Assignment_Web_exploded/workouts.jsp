@@ -24,7 +24,6 @@
 <!-- Theme main style -->
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="workout-page.css">
-	<link rel="stylesheet" href="css/Shop_style.css">
 <!-- Modernizr JS -->
 <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 <!-- this page css -->

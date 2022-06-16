@@ -18,7 +18,7 @@ public class email {
     public static final String MY_EMAIL_PASSWORD = "AOTSZKAYMJAYRMTE";// 密码,是你自己的设置的授权码
 
     public static final String MEAIL_163_SMTP_HOST = "smtp.163.com";
-    public static final String SMTP_163_PORT = "25";// 端口号,这个是163使用到的;QQ的应该是465或者875
+    public static final String SMTP_163_PORT = "25";
 
 
     //public static final String RECEIVE_EMAIL_ACCOUNT = userEmail;

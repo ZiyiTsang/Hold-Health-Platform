@@ -63,7 +63,6 @@ input{
 	width:320px;
 	text-align: left;
 	vertical-align: center;
-	line-height: 5px;
 	border:1px solid #e2e2e2;
 	height:30px;
 	float:left;
@@ -88,9 +87,7 @@ input{
 
 	text-align: center;
 
-	vertical-align: middle;
-
-	line-height: 23px;
+	line-height: 32px;
 
 	cursor: pointer;
 
