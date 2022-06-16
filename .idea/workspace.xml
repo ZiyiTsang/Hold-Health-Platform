@@ -9,17 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="goodDetails.jsp all done">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Assignment_Web_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Assignment_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Assignment_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__13_37____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__13_37____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__17_23____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__17_23____.xml" afterDir="false" />
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="Merge remote-tracking branch 'origin/main'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/login1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/commentLike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CommentLike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/commentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CommentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Search.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,19 +66,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/eclipse/eclipse_workplace/PE_Assinment/src/main/webapp",
-    "project.structure.last.edited": "Facet",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.25172412",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/eclipse/eclipse_workplace/PE_Assinment/src/main/webapp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facet&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.25172412&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/css" />
@@ -272,7 +268,8 @@
       <updated>1655261311813</updated>
       <workItem from="1655261316250" duration="8940000" />
       <workItem from="1655288458813" duration="4904000" />
-      <workItem from="1655369317962" duration="809000" />
+      <workItem from="1655369317962" duration="2297000" />
+      <workItem from="1655384308838" duration="2101000" />
     </task>
     <task id="LOCAL-00001" summary="import the img of article is done">
       <created>1655275767122</created>
@@ -344,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655364893784</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1655370515321</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655370515321</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +365,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -382,7 +386,8 @@
     <MESSAGE value="模糊查询bug(已修复2.0" />
     <MESSAGE value="shop.jsp所有的后端done" />
     <MESSAGE value="goodDetails.jsp all done" />
-    <option name="LAST_COMMIT_MESSAGE" value="goodDetails.jsp all done" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
