@@ -86,7 +86,7 @@
                 </div><br><br><br>
                 <!--        用超链接跳转到注册页面               -->
 
-                <!--         登录按钮           -->
+                <!--         register button           -->
                 <div class="form-group" style="margin-top: 50px; margin-left: 320px;">
                     <input type="submit" value="register" class="btn btn-success">
                 </div>
