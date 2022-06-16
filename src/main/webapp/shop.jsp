@@ -9,7 +9,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Shop</title>
+<title>Health</title>
 
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +39,7 @@
 				<div class="col-md-2 col-sm-3 col-xs-12">
 					<div style="padding-top: 30px;" >
 						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
-						<a href="homepage.html"><img src="img/cart.png" style="height:40px;margin-left: 20px;"/></a>
+						<a href="Cart-fill.jsp"><img src="img/cart.png" style="height:40px;margin-left: 20px;"/></a>
 					</div>
 				</div>				
 				<div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">
@@ -47,10 +47,10 @@
 					<div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
 						<nav>
 							<ul style="display:inline-block;">
-								<li style="display:inline-block;"><a href="">Workouts</a></li>
-								<li style="display:inline-block;"><a href="">Articles</a></li>
-								<li style="display:inline-block;"><a href="">Shop</a></li>
-								<li style="display:inline-block;"><a href="">login</a></li>
+								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
+								<li style="display:inline-block;"><a href="article.jsp">Articles</a></li>
+								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
 							</ul>
 						</nav>
 					</div>				

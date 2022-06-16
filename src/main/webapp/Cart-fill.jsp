@@ -38,10 +38,10 @@
                     <div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
                         <nav>
                             <ul style="display:inline-block;">
-                                <li style="display:inline-block;"><a href="">Workouts</a></li>
-                                <li style="display:inline-block;"><a href="">Articles</a></li>
-                                <li style="display:inline-block;"><a href="">Shop</a></li>
-                                <li style="display:inline-block;"><a href="">login</a></li>
+                                <li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
+                                <li style="display:inline-block;"><a href="article.jsp">Articles</a></li>
+                                <li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+                                <li style="display:inline-block;"><a href="login.jsp">login</a></li>
                             </ul>
                         </nav>
                     </div>

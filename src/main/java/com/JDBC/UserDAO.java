@@ -51,15 +51,15 @@ public class UserDAO extends BaseDAO {
     public List<UserBean> getAllUser(){
         return mapper.selectAll();
     }
-    public int newUser(String username,String password){
+    public int newUser(String username,String password,String profile){
         String passwd=SHA(password);
         ro.setUserNameAndPassword(username, password);
-        return mapper.addUser(username,passwd);
+        return mapper.addUser(username,passwd,profile);
     }
-    public int updateUser(String username,String password){
+    public int updateUser(String username,String password,String profile){
         ro.deleteUser(username);
         String passwd=SHA(password);
-        return mapper.updatePassword(username,passwd);
+        return mapper.updatePassword(username,passwd,profile);
     }
     private String SHA(final String strText) {
         // 返回值
