@@ -31,7 +31,7 @@
 
 <body>
 <!-- header start -->
-<header class="header-pos" style="background-color: #f6b923">
+<div class="header-pos" style="background-color: #f6b923">
 	<div class="header-area header-middle">
 		<div class="container-fluid">
 			<!-- navigation bar -->
@@ -59,11 +59,16 @@
 			</div>
 		</div>
 	</div>
-</header>
+</div>
 <!-- header end -->
+<br><br><br><br><br><br>
+<div>
+		<img src="img/left.png" style="width: 60px;height: 60px;margin-left: 3em;">
+		<img src="img/right.png" style="width: 60px;height: 60px;float: right;margin-right: 3em;">
+</div>
 <!-- start product_slider -->
-<img src="img/p1.jpg" style="float:left;margin-top: 10em;margin-left: 10em;">
-<div class="cont1 span_2_of_a1" style="float:left;margin-top: 10em;margin-left: 3em;">
+<img src="img/p1.jpg" style="float:left;margin-top: 3em;margin-left: 10em;">
+<div class="cont1 span_2_of_a1" style="float:left;margin-top: 3em;margin-left: 3em;">
 	<h1> Lorem Ipsum</h1>
 	<div class="price_single">
 		<span class="reducedfrom">$140.00</span>
@@ -108,11 +113,11 @@
 			<input type="submit" value="Add to Cart" title="">
 		</form>
 	</div>
-	<br><br>
-	<div>
-		<img src="img/left.png" style="width: 40px;height: 40px;">
-		<img src="img/right.png" style="width: 40px;height: 40px;margin-left: 4em">
+	<div style="margin-top: 3em;">
+		<p>We are pleased that you choose our platform! </p>
 	</div>
+	<br><br>
+
 </div>
 
 <div class="clearfix"></div>
