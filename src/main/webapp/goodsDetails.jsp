@@ -30,6 +30,37 @@
 </head>
 
 <body>
+<!-- header start -->
+<header class="header-pos" style="background-color: #f6b923">
+	<div class="header-area header-middle">
+		<div class="container-fluid">
+			<!-- navigation bar -->
+			<div class="row">
+				<!-- home button -->
+				<div class="col-md-2 col-sm-3 col-xs-12">
+					<div style="padding-top: 30px;" >
+						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
+						<a href="homepage.html"><img src="img/cart-fill.png" style="height:40px;margin-left: 20px;"/></a>
+					</div>
+				</div>
+				<div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">
+
+					<div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
+						<nav>
+							<ul style="display:inline-block;">
+								<li style="display:inline-block;"><a href="">Workouts</a></li>
+								<li style="display:inline-block;"><a href="">Articles</a></li>
+								<li style="display:inline-block;"><a href="">Shop</a></li>
+								<li style="display:inline-block;"><a href="">login</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- header end -->
 <!-- start product_slider -->
 <img src="img/p1.jpg" style="float:left;margin-top: 10em;margin-left: 10em;">
 <div class="cont1 span_2_of_a1" style="float:left;margin-top: 10em;margin-left: 3em;">
@@ -40,22 +71,26 @@
 	</div>
 	<h2 class="quick">Quick Overview:</h2>
 	<p class="quick_desc"> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; es</p>
-	<ul class="size">
-		<h3>Size</h3>
-		<li><a href="#">25</a></li>
-		<li><a href="#">26</a></li>
-		<li><a href="#">27</a></li>
-		<li><a href="#">28</a></li>
-		<li><a href="#">29</a></li>
-		<li><a href="#">30</a></li>
-		<li><a href="#">31</a></li>
-		<li><a href="#">32</a></li>
-		<li><a href="#">33</a></li>
+	<ul class="product-qty">
+		<span>SIZE</span>
+		<select>
+			<option>25</option>
+			<option>26</option>
+			<option>27</option>
+			<option>28</option>
+			<option>29</option>
+			<option>30</option>
+			<option>31</option>
+			<option>32</option>
+			<option>33</option>
+		</select>
 	</ul>
-	<ul class="size">
-		<h3>Length</h3>
-		<li><a href="#">32</a></li>
-		<li><a href="#">34</a></li>
+	<ul class="product-qty">
+		<span>Length</span>
+		<select>
+		<option>32</option>
+		<option>34</option>
+		</select>
 	</ul>
 	<ul class="product-qty">
 		<span>Quantity:</span>
@@ -73,49 +108,16 @@
 			<input type="submit" value="Add to Cart" title="">
 		</form>
 	</div>
+	<br><br>
+	<div>
+		<img src="img/left.png" style="width: 40px;height: 40px;">
+		<img src="img/right.png" style="width: 40px;height: 40px;margin-left: 4em">
+	</div>
 </div>
 
 <div class="clearfix"></div>
 
-<div class="sap_tabs">
-	<div id="horizontalTab" style="display: block; width: 100%; margin-left: 9em;margin-top: 3em;">
-		<ul class="resp-tabs-list">
-			<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Product Description</span></li>
-			<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Additional Information</span></li>
-			<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Reviews</span></li>
-			<div class="clear"></div>
-		</ul>
-		<div class="resp-tabs-container">
-			<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-				<div class="facts">
-					<ul class="tab_list">
-						<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</a></li>
-						<li><a href="#">augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigatione</a></li>
-						<li><a href="#">claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica</a></li>
-						<li><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-				<div class="facts">
-					<ul class="tab_list">
-						<li><a href="#">augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigatione</a></li>
-						<li><a href="#">claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica</a></li>
-						<li><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-				<ul class="tab_list tab_last">
-					<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</a></li>
-					<li><a href="#">augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigatione</a></li>
-					<li><a href="#">claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores leg</a></li>
-					<li><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
+
 </body>
 </html>
 	
