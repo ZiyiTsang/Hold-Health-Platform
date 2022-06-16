@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- this page css -->
     <link rel="stylesheet" href="css/Shop_style.css">
+    <link rel="stylesheet" href="css/cart-fill.css">
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -60,15 +61,15 @@
             <h3 class="menu1">Look Around</h3>
             <!--initiate accordion-->
             <div class="box1">
-                <img src="img/p1.jpg">
+                <img src="img/p1.jpg" style="height: 200px;width: 200px;">
                 <br><br>
                 <h4 style="float: left;">T-shirt</h4>
-                <h4 style="float: contour;margin-left:8em;color:firebrick">$140</h4>
+                <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
                 <br>
-                <img src="img/p1.jpg">
+                <img src="img/p1.jpg" style="height: 200px;width: 200px;">
                 <br><br>
                 <h4 style="float: left;">T-shirt</h4>
-                <h4 style="float: contour;margin-left:8em;color:firebrick">$140</h4>
+                <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
             </div>
 
         </div>
@@ -83,7 +84,40 @@
             <p>You have no items in your shopping cart yet.</p>
             <p>Click <a href="#">here</a> to continue shopping.</p>
                 <div class="clearfix"> </div>
+            <div class="public-shop-cart">
+                <div class="content">
+                    <span>All 3</span>
+                    <div class="cart-title">
+            <span>
+                <input type="checkbox" id="all">
+                <label for="all">Select all</label>
+            </span>
+                        <span>Products</span>
+                        <span>Unit price</span>
+                        <span>Quantity</span>
+                        <span>Subtotal</span>
+                        <span>Operation</span>
+                    </div>
+                    <div class="cart-detail">
+                        <input type="checkbox">
+                        <div class="cart-title">
+                            <img src="img/p1.jpg" alt="">
+                            <div>
+                                <a href="">Yoga legging</a>
+                            </div>
+                        </div>
+                        <div class="cart-price">$4999.00</div>
+                        <div class="cart-number">
+                            <span class="sub">-</span> <input type="text" id="number" value="1"><span class="plus">+</span>
+                        </div>
+                        <div class="cart-subtotal">$4999.00</div>
+                        <div class="cart-operate"><a href="">Delete</a></div>
+                    </div>
+
+                    <div class="cart-btn"><span>Total price:</span><span> $14797.00 </span><button class="btn" style="text-align: center">checkout</button></div>
+                </div>
             </div>
+        </div>
         </div>
         <div class="clearfix"> </div>
     </div>

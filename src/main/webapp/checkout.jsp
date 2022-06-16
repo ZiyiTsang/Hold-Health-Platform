@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cart-fill</title>
+    <title>checkout</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,12 +59,24 @@
             <div class="edit-address">
                 <div class="address-head">
                     <span>Consignee information</span>
-                    <a href="">Add the receiving address</a>
                 </div>
                 <div class="address-info">
-                    <span style="vertical-align: center;">Home</span>
-                    <span>xxx xx State xx City xx Street</span>
-                    <a href="">Edit</a>
+                    <form>
+                        Country:
+                        <input type="text" name="country">
+
+                        State:
+                        <input type="text" name="state">
+
+                        City:
+                        <input type="text" name="city">
+
+                        Street:
+                        <input type="text" name="street">
+
+                        <input type="submit" value="Submit">
+                    </form>
+
                 </div>
             </div>
             <div class="edit-pay">
@@ -87,7 +99,6 @@
             </div>
             <div class="account-pay">
                 <span> Amount <i>$14747.00 </i></span>
-                <span>Deliver to: xxxx   xxxxxxxx  Consignee: xxx Phone number: xxx</span>
             </div>
             <div class="account-btn"><button>Submit order</button></div>
         </div>

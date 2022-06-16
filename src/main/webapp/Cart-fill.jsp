@@ -54,6 +54,16 @@
 <br><br><br><br><br><br>
 <div class="public-shop-cart">
     <div class="content">
+        <h2>Shopping cart is empty</h2>
+        <br>
+        <p>You have no items in your shopping cart yet.</p>
+        <p>Click <a href="#">here</a> to continue shopping.</p>
+    </div>
+</div>
+
+<div class="clearfix"> </div>
+<div class="public-shop-cart">
+    <div class="content">
         <span>All 3</span>
         <div class="cart-title">
             <span>
@@ -83,6 +93,44 @@
         </div>
 
         <div class="cart-btn"><span>Total price:</span><span> $14797.00 </span><button class="btn" style="text-align: center">checkout</button></div>
+    </div>
+</div>
+
+<br><br><br>
+<div class="public-shop-cart">
+    <div class="content">
+        <h3 class="menu1">Look Around</h3>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/p1.jpg" style="height: 200px;width: 200px;border:0px">
+                    <br><br>
+                    <h4 style="float: left;">T-shirt</h4>
+                    <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
+                </td>
+                <td>
+                    <img src="img/p1.jpg" style="height: 200px;width: 200px;">
+                    <br><br>
+                    <h4 style="float: left;">T-shirt</h4>
+                    <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
+                </td>
+                <td>
+                    <img src="img/p1.jpg" style="height: 200px;width: 200px;">
+                    <br><br>
+                    <h4 style="float: left;">T-shirt</h4>
+                    <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
+                </td>
+                <td>
+                    <img src="img/p1.jpg" style="height: 200px;width: 200px;">
+                    <br><br>
+                    <h4 style="float: left;">T-shirt</h4>
+                    <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
+                </td>
+            </tr>
+        </table>
+
+
     </div>
 </div>
 </body>
