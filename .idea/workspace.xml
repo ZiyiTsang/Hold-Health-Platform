@@ -61,22 +61,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat 服务器.Tomcat 10.0.13">
+  <component name="RunManager" selected="应用程序.TestUserDAO">
+    <configuration name="TestUserDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.TestUserDAO" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestVideoDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.TestVideoDAO" />
       <module name="Assignment" />
@@ -207,12 +220,14 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat 服务器.Tomcat 10.0.13" />
+      <item itemvalue="应用程序.TestUserDAO" />
       <item itemvalue="应用程序.TestVideoDAO" />
       <item itemvalue="应用程序.testArticleDao" />
       <item itemvalue="应用程序.testComment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestUserDAO" />
         <item itemvalue="应用程序.testArticleDao" />
         <item itemvalue="应用程序.TestVideoDAO" />
         <item itemvalue="应用程序.testComment" />
