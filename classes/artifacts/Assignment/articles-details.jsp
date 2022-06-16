@@ -76,6 +76,26 @@
 	ArticleBean article = ad.getArticleById(num_id);
 %>
 
+<br><br><br><br><br><br>
+<div style="margin-top: 50px;">
+	<%
+		if(num_id != 1){
+	%>
+	<a href="articles-details.jsp?id=<%=num_id-1%>">
+		<img src="img/left.png" style="width: 60px;height: 60px;margin-left:10em;">
+			<%
+		}
+
+		if(num_id !=11){
+	%>
+		<a href="articles-details.jsp?id=<%=num_id+1%>">
+			<img src="img/right.png" style="width: 60px;height: 60px;float: right;margin-right: 10em;">
+		</a>
+			<%
+		}
+	%>
+</div>
+
 
 
 

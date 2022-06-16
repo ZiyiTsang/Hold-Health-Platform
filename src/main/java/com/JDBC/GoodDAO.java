@@ -26,14 +26,14 @@ public class GoodDAO extends BaseDAO{
         return mapper.selectById(id);
     }
     public List<GoodBean> getGoodsByName(String goodName){
-        return mapper.selectByName(goodName);
+        return mapper.selectByName("%"+goodName+"%");
     }
     public boolean addGoods(GoodBean gb){
-        return mapper.addGood(gb.getGoodName(), gb.getPrice(), gb.getIntroduction(), gb.getImage(), gb.getMonthlySales()) == 1;
+        return mapper.addGood(gb.getGoodName(), gb.getPrice(), gb.getIntroduction(), gb.getImage(), gb.getMonthlySales(), gb.getColor(), gb.getMaterial(), gb.getBrand(), gb.getManufacturer(),gb.getProductDimensions()) == 1;
     }
 
     public List<GoodBean> getGoodByTag(String tag){
-        return mapper.goodSelectByTag(tag);
+        return mapper.goodSelectByTag("%"+tag+"%");
     }
 
 }

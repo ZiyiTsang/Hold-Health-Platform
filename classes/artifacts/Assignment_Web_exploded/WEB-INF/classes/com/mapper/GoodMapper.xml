@@ -10,14 +10,14 @@
         select * from goods where goodId=#{goodId};
     </select>
     <select id="goodSelectByTag" resultType="com.POJO.GoodBean">
-        select * from goods where tag=#{tag};
+        select * from goods where tag like #{tag};
     </select>
     <select id="selectByName" resultType="com.POJO.GoodBean">
-        select * from goods where goodName=#{goodName};
+        select * from goods where goodName like #{goodName};
     </select>
     <insert id="addGood"  keyProperty="goodId">
         insert into goods(goodName, price, introduction, image, monthlySales)
-        VALUES (#{goodName},#{price},#{introduction},#{image},#{monthlySales});
+        VALUES (#{goodName},#{price},#{introduction},#{image},#{monthlySales},#{color},#{material},#{Brand},#{Manufacuturer},#{productDimensions});
     </insert>
 
 </mapper>

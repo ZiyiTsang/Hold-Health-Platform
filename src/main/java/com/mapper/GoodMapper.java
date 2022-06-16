@@ -12,7 +12,7 @@ public interface GoodMapper {
 
     GoodBean goodSelectById(int id);
     List<GoodBean> selectByName(String goodName);
-    int addGood(@Param("goodName") String goodName,@Param("price") int price,@Param("introduction") String introduction,@Param("image") String image,@Param("monthlySales") int monthlySales);
+    int addGood(@Param("goodName") String goodName,@Param("price") int price,@Param("introduction") String introduction,@Param("image") String image,@Param("monthlySales") int monthlySales,@Param("color") String color,@Param("material") String material, @Param("Brand") String Brand, @Param("Manufacturer") String Manufacturer, @Param("productDimensions") String productDimensions);
 
 
     List<GoodBean> goodSelectByTag(String tag);

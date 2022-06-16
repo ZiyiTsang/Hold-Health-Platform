@@ -7,6 +7,12 @@ public class GoodBean {
     private String introduction;
     private String image;
 
+    private String color;
+    private String material;
+    private String Brand;
+    private String Manufacturer;
+    private String productDimensions;
+
     public int getMonthlySales() {
         return monthlySales;
     }
@@ -19,6 +25,11 @@ public class GoodBean {
         this.introduction = introduction;
         this.image = image;
         this.monthlySales=monthlySales;
+        this.color = color;
+        this.Brand = Brand;
+        this.material = material;
+        this.Manufacturer = Manufacturer;
+        this.productDimensions = productDimensions;
     }
 
     public GoodBean() {
@@ -42,5 +53,29 @@ public class GoodBean {
 
     public String getImage() {
         return image;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getBrand() {
+        return Brand;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public String getManufacturer() {
+        return Manufacturer;
+    }
+
+    public String getProductDimensions() {
+        return productDimensions;
     }
 }
