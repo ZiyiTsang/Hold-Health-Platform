@@ -4,8 +4,8 @@ import com.JDBC.ArticleDAO;
 import com.POJO.ArticleBean;
 import com.JDBC.VideoDAO;
 import com.POJO.VideoBean;
-import com.JDBC.CommentDAO;
-import com.POJO.CommentBean;
+import com.JDBC.GoodDAO;
+import com.POJO.GoodBean;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -51,6 +51,15 @@ public class search extends HttpServlet{
             session.setAttribute("aTag", aTag);
             session.setAttribute("aAuthor", aAuthor);
             response.sendRedirect(request.getContextPath()+"/article.jsp");
+        }
+
+        if(id==3){
+            GoodDAO gd = new GoodDAO();
+            List<GoodBean> gTitle = gd.getGoodsByName(Text);
+            List<GoodBean> gTag = gd.getGoodByTag(Text);
+            session.setAttribute("gTitle", gTitle);
+            session.setAttribute("gTag", gTag);
+            response.sendRedirect(request.getContextPath()+"/shop.jsp");
         }
        // response.sendRedirect(request.getContextPath()+"/articles-details.jsp?id=" + id);
     }

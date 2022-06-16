@@ -65,9 +65,22 @@
 	String tag = null;
 	tag = request.getParameter("tag");
 	GoodDAO gd = new GoodDAO();
-	List<GoodBean> goods;
-	if (tag == null) {
-		goods = gd.getAllGoods();
+
+	List<GoodBean> gTitle = null, gTag = null, goods = null;
+	HttpSession session1 = (HttpSession) request.getSession();
+	goods = (List<GoodBean>) session1.getAttribute("gTitle");
+	gTag= (List<GoodBean>) session1.getAttribute("gTag");
+	gTitle = goods;
+
+	System.out.println(gTitle);
+	System.out.println(gTag);
+	session.removeAttribute("gTitle");
+	session.removeAttribute("gTag");
+
+	if(gTag== null && gTitle == null){
+		System.out.println("Not working");
+		if (tag == null) {
+			goods = gd.getAllGoods();
 %>
 <!-- slider-container start -->
 <div class="slider-container">
@@ -94,10 +107,33 @@
 <!-- slider-container end -->
 
 <%
+		}
+		else{
+			goods = gd.getGoodByTag(tag);
+		}
+	}else {
+		System.out.println("work!!!!");
+		goods.addAll(gTag);
+
+		List<GoodBean> tmp = gd.getAllGoods();
+		int[] check;
+		check = new int[tmp.size()];
+
+		for (int j = 0; j < goods.size(); j++) {
+			int temp;
+			temp = goods.get(j).getGoodId() - 1;
+			//System.out.println("temp= " +temp);
+
+			if (check[temp] != 0) {
+				goods.remove(j);
+				j--;
+			} else {
+				check[temp]++;
+			}
+		}
 	}
-	else{
-		goods = gd.getGoodByTag(tag);
-	}
+
+
 	int total = goods.size();
 %>
 
@@ -119,8 +155,7 @@
 				<li><a href="shop.jsp?tag=Sports bracelets">Sports bracelets</a></li>
 				<li><a href="shop.jsp?tag=Sports equipment">Sports equipment</a></li>
 				<li><a href="shop.jsp?tag=Health Food">Health Food</a></li>
-				<li><a href="shop.jsp?tag=Women's Clothing">Women's Clothing</a></li>
-				<li><a href="shop.jsp?tag=Men's Clothing">Men's Clothing</a></li>
+				<li><a href="shop.jsp?tag=Clothing">Clothing</a></li>
 			</ul>
 		</div>
 		<ul class="box2_list">
@@ -138,10 +173,11 @@
 			<!---->
 			<div class="col-md-8">
 				<!---->
-				<div id="box">
-					<input type="text" name="search" placeholder="Please enter the keyword">
-					<div id="search">Search</div>
-				</div>
+				<br><br>
+				<form id="box" action="<%= request.getContextPath()%>/search?id=3" method="post">
+					<input type="text" name="Text" placeholder="Please enter the keyword">
+					<button type="submit" id="search">Search</button>
+				</form>
 				<br><br><br>
 				<div>
 					<%
