@@ -34,7 +34,7 @@
 }
 .public-shop-account > .content >.shop-account-info > .edit-address > .address-info{
     display: flex;
-    padding: 20px;
+    padding: 10px;
     justify-content: space-between;
 }
 .public-shop-account > .content >.shop-account-info > .edit-address > .address-info >span:first-of-type{
@@ -78,7 +78,7 @@
     color: #E2231A;
 }
 .public-shop-account > .content > .shop-account-detail > .account-pay{
-    height: 80px;
+    height: 40px;
     background-color: #eee;
     border: 1px solid #ccc;
     display: flex;
