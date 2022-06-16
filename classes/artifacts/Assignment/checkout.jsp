@@ -11,6 +11,7 @@
     <!-- All css files are included here. -->
     <!-- Bootstrap framework main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- This core.css file contents all plugings css file. -->
     <link rel="stylesheet" href="css/core.css">
     <!-- Theme main style -->
@@ -30,7 +31,7 @@
                 <div class="col-md-2 col-sm-3 col-xs-12">
                     <div style="padding-top: 30px;" >
                         <a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
-                        <a href="homepage.html"><img src="img/cart-fill.png" style="height:40px;margin-left: 20px;"/></a>
+                        <a href="Cart-fill.jsp"><img src="img/cart-fill.png" style="height:40px;margin-left: 20px;"/></a>
                     </div>
                 </div>
                 <div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">
@@ -38,10 +39,10 @@
                     <div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
                         <nav>
                             <ul style="display:inline-block;">
-                                <li style="display:inline-block;"><a href="">Workouts</a></li>
-                                <li style="display:inline-block;"><a href="">Articles</a></li>
-                                <li style="display:inline-block;"><a href="">Shop</a></li>
-                                <li style="display:inline-block;"><a href="">login</a></li>
+                                <li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
+                                <li style="display:inline-block;"><a href="article.jsp">Articles</a></li>
+                                <li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+                                <li style="display:inline-block;"><a href="login.jsp">login</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -62,19 +63,21 @@
                 </div>
                 <div class="address-info">
                     <form>
-                        Country:
-                        <input type="text" name="country">
+                        <div class="col-md-4" style="margin-left: 50px;">
+                            Country:
+                            <input type="text" name="country" style="width: 150px;"><br><br>
+                            City:
+                            <input type="text" name="city">
+                        </div>
 
-                        State:
-                        <input type="text" name="state">
+                        <div class="col-md-4" style="margin-left: 20px;">
+                            State:
+                            <input type="text" name="country"><br><br>
+                            Street:
+                            <input type="text" name="street">
+                        </div>
 
-                        City:
-                        <input type="text" name="city">
-
-                        Street:
-                        <input type="text" name="street">
-
-                        <input type="submit" value="Submit">
+                        <button class="btn btn-outline-danger" type="submit" value="Submit" style="margin-top:150px; float: right;">Submit</button>
                     </form>
 
                 </div>
