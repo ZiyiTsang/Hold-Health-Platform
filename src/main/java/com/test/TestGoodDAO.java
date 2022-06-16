@@ -13,6 +13,6 @@ public class TestGoodDAO {
         //System.out.println(gd.getGoodsById(2));
         List<GoodBean> good= gd.getGoodByTag("food" );
         System.out.println(good);
-        //System.out.println(good.get(0).getPrice());
+        System.out.println(good.get(0).getColor());
     }
 }

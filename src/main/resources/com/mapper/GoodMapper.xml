@@ -17,7 +17,7 @@
     </select>
     <insert id="addGood"  keyProperty="goodId">
         insert into goods(goodName, price, introduction, image, monthlySales)
-        VALUES (#{goodName},#{price},#{introduction},#{image},#{monthlySales});
+        VALUES (#{goodName},#{price},#{introduction},#{image},#{monthlySales},#{color},#{material},#{Brand},#{Manufacuturer},#{productDimensions});
     </insert>
 
 </mapper>

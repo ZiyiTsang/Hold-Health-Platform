@@ -152,3 +152,38 @@ a.details{
 a.details:hover{
 	background: #aa381e;
 }
+
+
+.box-quantity label{
+	display: inline-block;
+	float: left;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 35px;
+	margin-right: 10px; }
+
+.box-quantity input{
+	border: 1px solid #ebebeb;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 6px;
+	width: 78px;
+}
+.box-quantity button {
+	background: #fff none repeat scroll 0 0;
+	border: 3px solid #ebebeb;
+	color: #4e4e4e;
+	font-family: raleway;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 30px;
+	margin-left: 12px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	transition: all 300ms ease-in 0s;
+}
+.box-quantity button:hover{
+	border-color:#ffae00;
+	color:#ffae00;
+}

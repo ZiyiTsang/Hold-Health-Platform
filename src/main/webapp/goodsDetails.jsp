@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ page import="com.POJO.GoodBean" %>
+<%@ page import="com.JDBC.GoodDAO" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <meta name="description" content="">
@@ -8,6 +11,7 @@
 <!-- All css files are included here. -->
 <!-- Bootstrap framework main css -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
 <!-- This core.css file contents all plugings css file. -->
 <link rel="stylesheet" href="css/core.css">
 <!-- Theme main style -->
@@ -48,10 +52,10 @@
 					<div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
 						<nav>
 							<ul style="display:inline-block;">
-								<li style="display:inline-block;"><a href="">Workouts</a></li>
-								<li style="display:inline-block;"><a href="">Articles</a></li>
-								<li style="display:inline-block;"><a href="">Shop</a></li>
-								<li style="display:inline-block;"><a href="">login</a></li>
+								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
+								<li style="display:inline-block;"><a href="article.jsp">Articles</a></li>
+								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -60,64 +64,122 @@
 		</div>
 	</div>
 </div>
+
+<%
+
+	String id = null;
+	id = request.getParameter("id");
+	int num_id = -1;
+	try {
+		num_id = Integer.parseInt(id);
+	} catch (NumberFormatException e) {
+		e.printStackTrace();
+	}
+	GoodDAO gd = new GoodDAO();
+
+	GoodBean good = gd.getGoodsById(num_id);
+%>
+
+
 <!-- header end -->
 <br><br><br><br><br><br>
-<div>
-		<img src="img/left.png" style="width: 60px;height: 60px;margin-left: 3em;">
-		<img src="img/right.png" style="width: 60px;height: 60px;float: right;margin-right: 3em;">
+<div style="margin-top: 50px; margin-bottom: 70px;">
+	<%
+		if(num_id != 1){
+	%>
+	<a href="goodsDetails.jsp?id=<%=num_id-2%>">
+		<img src="img/left.png" style="width: 60px;height: 60px;margin-left:10em;">
+	<%
+		}
+
+		if(num_id !=11){
+	%>
+	<a href="goodsDetails.jsp?id=<%=num_id+2%>">
+		<img src="img/right.png" style="width: 60px;height: 60px;float: right;margin-right: 10em;">
+	</a>
+	<%
+		}
+	%>
 </div>
+
+
 <!-- start product_slider -->
-<img src="img/p1.jpg" style="float:left;margin-top: 3em;margin-left: 10em;">
+<div style="margin-left: 80px; margin-right: 80px;">
+<img src="<%=good.getImage()%>" style="width:200px; float:left;margin-top: 3em;margin-left: 10em;">
 <div class="cont1 span_2_of_a1" style="float:left;margin-top: 3em;margin-left: 3em;">
-	<h1> Lorem Ipsum</h1>
+	<h1 style="margin-bottom: 20px;"> <%=good.getGoodName()%></h1>
 	<div class="price_single">
-		<span class="reducedfrom">$140.00</span>
-		<span class="actual">$120.00</span>
+		<span class="reducedfrom">$<%=good.getPrice()*1.5%></span>
+		<span class="actual">$<%=good.getPrice()%></span>
 	</div>
 	<h2 class="quick">Quick Overview:</h2>
-	<p class="quick_desc"> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; es</p>
-	<ul class="product-qty">
-		<span>SIZE</span>
-		<select>
-			<option>25</option>
-			<option>26</option>
-			<option>27</option>
-			<option>28</option>
-			<option>29</option>
-			<option>30</option>
-			<option>31</option>
-			<option>32</option>
-			<option>33</option>
-		</select>
-	</ul>
-	<ul class="product-qty">
-		<span>Length</span>
-		<select>
-		<option>32</option>
-		<option>34</option>
-		</select>
-	</ul>
-	<ul class="product-qty">
-		<span>Quantity:</span>
-		<select>
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
-			<option>6</option>
-		</select>
-	</ul>
-	<div class="btn_form">
-		<form>
-			<input type="submit" value="Add to Cart" title="">
+	<p class="quick_desc"> <%=good.getIntroduction()%></p>
+
+	<div class="box-quantity btn_form product-qty">
+		<form action="#">
+			<label style="margin-right: 10px;">Quantity</label>
+			<input type="number" value="1" style="width: 45px; margin-right: 30px;"/>
+			<button type="submit" class="btn btn-outline-warning">add to cart</button>
 		</form>
 	</div>
+
 	<div style="margin-top: 3em;">
 		<p>We are pleased that you choose our platform! </p>
 	</div>
 	<br><br>
 
+		<div class="col-md-5" style="">
+			<div class="table-responsive-md">
+				<table class="table">
+					<tbody>
+					<tr>
+						<td style="font-weight: bold;">Product Name</td>
+						<td><%=good.getGoodName()%></td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;">Monthly Sales</td>
+						<td><%=good.getMonthlySales()%></td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;">Brand</td>
+						<td><%=good.getBrand()%></td>
+					</tr>
+					<tr >
+						<td style="font-weight: bold;">Color</td>
+						<td><%=good.getColor()%></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	<div class="col-md-5" style="">
+		<div class="table-responsive-md">
+			<table class="table">
+				<tbody>
+				<tr>
+					<td style="font-weight: bold;">Price</td>
+					<td><%=good.getPrice()%></td>
+				</tr>
+				<tr>
+					<td style="font-weight: bold;">Material</td>
+					<td><%=good.getMaterial()%></td>
+				</tr>
+				<tr>
+					<td style="font-weight: bold;">Manufacturer</td>
+					<td><%=good.getManufacturer()%></td>
+				</tr>
+				<tr >
+					<td style="font-weight: bold;">Product Dimensions</td>
+					<td><%=good.getProductDimensions()%></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+</div>
 </div>
 
 <div class="clearfix"></div>
