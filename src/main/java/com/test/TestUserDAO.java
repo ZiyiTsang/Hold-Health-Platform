@@ -19,7 +19,7 @@ public class TestUserDAO {
         //System.out.println(ud.validation("ziyi","0000"));
 //        ud.updateUser("ziyi","0000");
         email mail=new email();
-        mail.sendEmail("swe2009514@xmu.edu.my",1234);
+        mail.sendEmail("swe2009512@xmu.edu.my",1234);//1034337098@qq.com
         //mail.email();
 
     }
