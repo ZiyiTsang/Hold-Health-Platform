@@ -9,21 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="updated">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="Merge remote-tracking branch 'origin/main'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/UserBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Cart-fill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Cart-fill.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shop.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/login1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/commentLike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CommentLike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/commentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CommentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Search.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +85,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestUserDAO">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 10.0.20">
     <configuration name="TestGoodDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.TestGoodDAO" />
       <module name="Assignment" />
@@ -159,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.13" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.20" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -258,10 +250,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.TestUserDAO" />
-        <item itemvalue="应用程序.TestVideoDAO" />
         <item itemvalue="应用程序.TestGoodDAO" />
+        <item itemvalue="应用程序.TestUserDAO" />
         <item itemvalue="应用程序.testArticleDao" />
+        <item itemvalue="应用程序.TestVideoDAO" />
         <item itemvalue="应用程序.testComment" />
       </list>
     </recent_temporary>
@@ -276,7 +268,8 @@
       <updated>1655261311813</updated>
       <workItem from="1655261316250" duration="8940000" />
       <workItem from="1655288458813" duration="4904000" />
-      <workItem from="1655369317962" duration="809000" />
+      <workItem from="1655369317962" duration="2297000" />
+      <workItem from="1655384308838" duration="2101000" />
     </task>
     <task id="LOCAL-00001" summary="import the img of article is done">
       <created>1655275767122</created>
@@ -348,12 +341,12 @@
       <option name="project" value="LOCAL" />
       <updated>1655364893784</updated>
     </task>
-    <task id="LOCAL-00011" summary="updated">
-      <created>1655393507497</created>
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1655370515321</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1655393507497</updated>
+      <updated>1655370515321</updated>
     </task>
     <option name="localTasksCounter" value="12" />
     <servers />
@@ -372,7 +365,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -393,8 +386,8 @@
     <MESSAGE value="模糊查询bug(已修复2.0" />
     <MESSAGE value="shop.jsp所有的后端done" />
     <MESSAGE value="goodDetails.jsp all done" />
-    <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,7 +1,6 @@
 package com.servlet;
 
 import com.JDBC.CommentDAO;
-import com.POJO.CommentBean;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -10,7 +9,7 @@ import java.io.IOException;
 
 
 @WebServlet("/commentLike")
-public class commentLike extends HttpServlet{
+public class CommentLike extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
