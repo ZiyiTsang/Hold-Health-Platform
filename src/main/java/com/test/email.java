@@ -23,7 +23,7 @@ public class email {
 
     //public static final String RECEIVE_EMAIL_ACCOUNT = userEmail;
 
-    public static void sendEmail(String userEmail, int code) throws AddressException, MessagingException {
+    public static void sendEmail(String userEmail, int code, boolean id) throws AddressException, MessagingException {
         Properties p = new Properties();
         //String RECEIVE_EMAIL_ACCOUNT = userEmail;
         p.setProperty("mail.smtp.host", MEAIL_163_SMTP_HOST);
@@ -49,9 +49,15 @@ public class email {
 //		message.setRecipients(Message.RecipientType.CC, MY_EMAIL_ACCOUNT);
 
         // 内容
-        message.setSubject("Validation Code(HEALTH)");
-        message.setContent("<h1>Welcome to register HEALTH !</h1>" +
-                "<h2>Copy the code here to start your journey with us!</h2>"+"<h4>You validation code is </h4>"+code, "text/html;charset=UTF-8");
+        if(id){
+            message.setSubject("Validation Code(HEALTH)");
+            message.setContent("<h4>Welcome to register HEALTH !</h4>" +
+                    "<p>Copy the code here to start your journey with us!</p>"+"<p>You validation code is </p>"+code, "text/html;charset=UTF-8");
+        }else{
+            message.setSubject("HEALTH：have new order");
+            //message.setContent("<h2>Welcome to register HEALTH !</h2>");
+        }
+
         message.setSentDate(new Date());
         message.saveChanges();
         System.out.println("准备发送");

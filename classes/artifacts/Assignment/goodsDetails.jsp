@@ -44,7 +44,7 @@
 				<div class="col-md-2 col-sm-3 col-xs-12">
 					<div style="padding-top: 30px;" >
 						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
-						<a href="homepage.html"><img src="img/cart-fill.png" style="height:40px;margin-left: 20px;"/></a>
+						<a href="Cart-fill.jsp"><img src="img/cart-fill.png" style="height:40px;margin-left: 20px;"/></a>
 					</div>
 				</div>
 				<div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">

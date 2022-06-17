@@ -5,8 +5,10 @@ body {
 }
 /*给表单的边框设置大小,颜色和不透明度*/
 .form {
+    border-radius: 25px;
     background: rgba(255,255,255,0.9);
-    width:400px;margin:50px auto;
+    width:400px;
+    margin:50px auto;
 }
 /*设置字体和大小*/
 label {
@@ -37,5 +39,9 @@ input[type="text"],input[type="password"],input[type="email"]{
 }
 #button{
     padding-bottom: 50px;
+}
+
+smallText small:hover{
+    color: #ffae00;
 }
 

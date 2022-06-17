@@ -44,7 +44,8 @@ public class Register extends HttpServlet {
             request.getRequestDispatcher("register.jsp").forward(request,response);
         }
 
-        ud.newUser(username,password);
+        String profile = null;
+        ud.newUser(username,password,profile);//记得改
         request.setAttribute("Msg","注册成功，请登录");
         request.getRequestDispatcher("login.jsp").forward(request,response);
         response.sendRedirect(request.getContextPath()+"/homepage.html");

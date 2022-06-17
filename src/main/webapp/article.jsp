@@ -1,5 +1,9 @@
 <%@ page import="com.JDBC.ArticleDAO" %>
 <%@ page import="com.POJO.ArticleBean" %>
+<%@ page import="com.JDBC.CommentDAO" %>
+<%@ page import="com.POJO.CommentBean" %>
+<%@ page import="com.POJO.UserBean" %>
+<%@ page import="com.JDBC.UserDAO" %>
 <%@ page import="java.util.List" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
@@ -53,7 +57,25 @@
 								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
 								<li style="display:inline-block;"><a href="article.jsp">Article</a></li>
 								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+                                <%
+                                    HttpSession session1 = (HttpSession) request.getSession();
+                                    //UserDAO ud = new UserDAO();
+                                    //UserBean user = null;
+                                    //user = (UserBean) session1.getAttribute("ub");
+                                    if(false){//user == null
+                                %>
 								<li style="display:inline-block;"><a href="">login</a></li>
+                                <%
+                                    }else{
+                                        %>
+                                <img src="https://s1.328888.xyz/2022/06/16/0uGfR.jpg" alt="" style="display:inline-block; width:40px;border-radius: 50px;">
+                                <li style="display:inline-block;"><p style="font-weight: bold; font-size:20px; margin-left:10px; color: #1a1e21;">ziyi</p></li>
+                                <%
+                                        /**user.getProfile()
+                                         * user.getProfile()
+                                         */
+                                    }
+                                %>
 							</ul>
 						</nav>
 					</div>				
@@ -71,7 +93,6 @@
     List<ArticleBean> articles;
 
     List<ArticleBean> aTitle, aTag, aAuthor;
-    HttpSession session1 = (HttpSession) request.getSession();
     articles = (List<ArticleBean>) session1.getAttribute("aTitle");
     aTag= (List<ArticleBean>) session1.getAttribute("aTag");
     aAuthor = (List<ArticleBean>) session1.getAttribute("aAuthor");
@@ -157,7 +178,7 @@
 							<div class="workouts-bar">
 								<!-- Nav tabs -->
 								<div class="selector-field hidden-xs" style="margin-left: 20px; float: left;">
-									<p>这里没想好放什么</p>
+									<p>Provided by professional writer.</p>
 								</div>
 							</div>
 						</div> 
@@ -219,7 +240,10 @@
                                 <h3><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><%=articles.get(0).getTitle()%></a></h3>
                                 <div class="article-meta article-large">
                                     <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-tags" aria-hidden="true"></i> <%=articles.get(0).getTag()%></a></span>
-                                    <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-comment" aria-hidden="true"></i><%=articles.get(0).getComment_cnt()%> comments</a></span>
+                                    <%
+                                        CommentDAO cd = new CommentDAO();
+                                    %>
+                                    <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-comment" aria-hidden="true"></i><%=cd.getCommentByArticleId(articles.get(0).getId()).size()%> comments</a></span>
                                     <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-eye" aria-hidden="true"></i> <%=articles.get(0).getView()%> views</a></span>
                                 </div>
                                 <p><%=articles.get(0).getAbstract()%></p>

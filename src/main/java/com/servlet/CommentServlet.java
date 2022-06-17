@@ -12,6 +12,7 @@ import java.io.IOException;
 public class CommentServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("the serlvet is working!");
         request.setCharacterEncoding("UTF-8");
         //String author = request.getParameter("author");
         String content = request.getParameter("content");

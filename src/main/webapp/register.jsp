@@ -109,3 +109,18 @@
 </body>
 
 </html>
+<%
+    /*
+    男生头像
+https://s1.328888.xyz/2022/06/16/0uGfR.jpg
+https://s1.328888.xyz/2022/06/16/0uuMS.jpg
+https://s1.328888.xyz/2022/06/16/0ug0i.jpg
+https://s1.328888.xyz/2022/06/16/0u9Fv.jpg
+
+女生头像
+https://s1.328888.xyz/2022/06/16/0uLG0.jpg
+https://s1.328888.xyz/2022/06/16/0uXtJ.jpg
+https://s1.328888.xyz/2022/06/16/0ufOF.jpg
+https://s1.328888.xyz/2022/06/16/0uixW.jpg
+* */
+%>

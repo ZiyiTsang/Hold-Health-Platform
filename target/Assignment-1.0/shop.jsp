@@ -9,7 +9,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Shop</title>
+<title>Health</title>
 
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +39,7 @@
 				<div class="col-md-2 col-sm-3 col-xs-12">
 					<div style="padding-top: 30px;" >
 						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
-						<a href="homepage.html"><img src="img/cart.png" style="height:40px;margin-left: 20px;"/></a>
+						<a href="Cart-fill.jsp"><img src="img/cart.png" style="height:40px;margin-left: 20px;"/></a>
 					</div>
 				</div>				
 				<div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">
@@ -47,10 +47,10 @@
 					<div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
 						<nav>
 							<ul style="display:inline-block;">
-								<li style="display:inline-block;"><a href="">Workouts</a></li>
-								<li style="display:inline-block;"><a href="">Articles</a></li>
-								<li style="display:inline-block;"><a href="">Shop</a></li>
-								<li style="display:inline-block;"><a href="">login</a></li>
+								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
+								<li style="display:inline-block;"><a href="article.jsp">Articles</a></li>
+								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
 							</ul>
 						</nav>
 					</div>				
@@ -65,9 +65,22 @@
 	String tag = null;
 	tag = request.getParameter("tag");
 	GoodDAO gd = new GoodDAO();
-	List<GoodBean> goods;
-	if (tag == null) {
-		goods = gd.getAllGoods();
+
+	List<GoodBean> gTitle = null, gTag = null, goods = null;
+	HttpSession session1 = (HttpSession) request.getSession();
+	goods = (List<GoodBean>) session1.getAttribute("gTitle");
+	gTag= (List<GoodBean>) session1.getAttribute("gTag");
+	gTitle = goods;
+
+	System.out.println(gTitle);
+	System.out.println(gTag);
+	session.removeAttribute("gTitle");
+	session.removeAttribute("gTag");
+
+	if(gTag== null && gTitle == null){
+		System.out.println("Not working");
+		if (tag == null) {
+			goods = gd.getAllGoods();
 %>
 <!-- slider-container start -->
 <div class="slider-container">
@@ -94,10 +107,33 @@
 <!-- slider-container end -->
 
 <%
+		}
+		else{
+			goods = gd.getGoodByTag(tag);
+		}
+	}else {
+		System.out.println("work!!!!");
+		goods.addAll(gTag);
+
+		List<GoodBean> tmp = gd.getAllGoods();
+		int[] check;
+		check = new int[tmp.size()];
+
+		for (int j = 0; j < goods.size(); j++) {
+			int temp;
+			temp = goods.get(j).getGoodId() - 1;
+			//System.out.println("temp= " +temp);
+
+			if (check[temp] != 0) {
+				goods.remove(j);
+				j--;
+			} else {
+				check[temp]++;
+			}
+		}
 	}
-	else{
-		goods = gd.getGoodByTag(tag);
-	}
+
+
 	int total = goods.size();
 %>
 
@@ -119,8 +155,7 @@
 				<li><a href="shop.jsp?tag=Sports bracelets">Sports bracelets</a></li>
 				<li><a href="shop.jsp?tag=Sports equipment">Sports equipment</a></li>
 				<li><a href="shop.jsp?tag=Health Food">Health Food</a></li>
-				<li><a href="shop.jsp?tag=Women's Clothing">Women's Clothing</a></li>
-				<li><a href="shop.jsp?tag=Men's Clothing">Men's Clothing</a></li>
+				<li><a href="shop.jsp?tag=Clothing">Clothing</a></li>
 			</ul>
 		</div>
 		<ul class="box2_list">
@@ -138,10 +173,11 @@
 			<!---->
 			<div class="col-md-8">
 				<!---->
-				<div id="box">
-					<input type="text" name="search" placeholder="Please enter the keyword">
-					<div id="search">Search</div>
-				</div>
+				<br><br>
+				<form id="box" action="<%= request.getContextPath()%>/search?id=3" method="post">
+					<input type="text" name="Text" placeholder="Please enter the keyword">
+					<button type="submit" id="search">Search</button>
+				</form>
 				<br><br><br>
 				<div>
 					<%
@@ -152,7 +188,7 @@
 						<p><%=goods.get(i).getGoodName()%></p>
 						<span class="dollar">$<%=goods.get(i).getPrice()%></span>
 						<div class="details-in">
-							<a href="#" class="details">Details</a>
+							<a href="goodsDetails.jsp?id=<%=1+2*i%>" class="details">Details</a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>

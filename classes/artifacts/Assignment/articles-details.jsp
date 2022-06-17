@@ -79,7 +79,7 @@
 <br><br><br><br><br><br>
 <div style="margin-top: 50px;">
 	<%
-		if(num_id != 1){
+		if(num_id != 6){
 	%>
 	<a href="articles-details.jsp?id=<%=num_id-1%>">
 		<img src="img/left.png" style="width: 60px;height: 60px;margin-left:10em;">
@@ -123,7 +123,7 @@
 				</ul><br>
 
 				<div id="error_message"></div>
-				<form class="make-comment" onsubmit="return validate();" action="" method="post">
+				<form class="make-comment" onsubmit="return validate();" action="<%= request.getContextPath()%>/commentServlet?id=<%=id%>" method="post">
 					<div>${addCommentMsg}${Msg}</div>
 					<img src="img/bilibili.png" class="artDe-userPhoto">
 					<textarea id="content" rows="" cols="" name="content" placeholder="make a comment here ~ ~"></textarea>
