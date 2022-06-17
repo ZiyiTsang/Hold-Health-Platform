@@ -14,6 +14,7 @@ public class TestUserDAO {
     public static void main(String[] args) throws IOException, MessagingException {
         UserDAO ud=new UserDAO();
         UserBean user = ud.getUserById(8);
+        System.out.println(user.getUsername());
         System.out.println(user.getProfile());
 //        ud.newUser("ziyi","ziyi7777");
 //        ud.newUser("xiaotong","xiaotong7777");

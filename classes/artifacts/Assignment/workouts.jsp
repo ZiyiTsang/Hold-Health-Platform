@@ -50,7 +50,7 @@
 						<nav>
 							<ul style="display:inline-block;">
 								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
-								<li style="display:inline-block;"><a href="article.jsp">Health</a></li>
+								<li style="display:inline-block;"><a href="article.jsp">Article</a></li>
 								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
 								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
 							</ul>

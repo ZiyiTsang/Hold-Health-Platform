@@ -92,7 +92,7 @@
             <div class="cart-operate"><a href="">Delete</a></div>
         </div>
 
-        <div class="cart-btn"><span>Total price:</span><span> $14797.00 </span><button class="btn" style="text-align: center">checkout</button></div>
+        <div class="cart-btn"><span>Total price:</span><span> $147 </span><button class="btn" style="text-align: center; width:120px; margin-left: 20px;">check out</button></div>
     </div>
 </div>
 

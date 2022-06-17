@@ -1,5 +1,7 @@
 <%@ page import="com.JDBC.ArticleDAO" %>
 <%@ page import="com.POJO.ArticleBean" %>
+<%@ page import="com.POJO.UserBean" %>
+<%@ page import="com.JDBC.UserDAO" %>
 <%@ page import="java.util.List" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
@@ -53,7 +55,22 @@
 								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
 								<li style="display:inline-block;"><a href="article.jsp">Article</a></li>
 								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+                                <%
+                                    HttpSession session1 = (HttpSession) request.getSession();
+                                    //UserDAO ud = new UserDAO();
+                                    UserBean user = null;
+                                    //user = (UserBean) session1.getAttribute("ub");
+                                    if(false){
+                                %>
 								<li style="display:inline-block;"><a href="">login</a></li>
+                                <%
+                                    }else{
+                                        %>
+                                <img src="https://s1.328888.xyz/2022/06/16/0uGfR.jpg<%=//user.getProfile()%>" class="artDe-author" alt="" style="display:inline-block;">
+                                <li style="display:inline-block;"><a>ziyi<%=//user.getUsername()%></a></li>
+                                <%
+                                    }
+                                %>
 							</ul>
 						</nav>
 					</div>				
@@ -71,7 +88,6 @@
     List<ArticleBean> articles;
 
     List<ArticleBean> aTitle, aTag, aAuthor;
-    HttpSession session1 = (HttpSession) request.getSession();
     articles = (List<ArticleBean>) session1.getAttribute("aTitle");
     aTag= (List<ArticleBean>) session1.getAttribute("aTag");
     aAuthor = (List<ArticleBean>) session1.getAttribute("aAuthor");

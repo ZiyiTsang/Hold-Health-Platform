@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ page import="com.POJO.GoodBean" %>
+<%@ page import="com.JDBC.GoodDAO" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <meta name="description" content="">
@@ -8,6 +11,7 @@
 <!-- All css files are included here. -->
 <!-- Bootstrap framework main css -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
 <!-- This core.css file contents all plugings css file. -->
 <link rel="stylesheet" href="css/core.css">
 <!-- Theme main style -->
@@ -30,92 +34,157 @@
 </head>
 
 <body>
-<!-- start product_slider -->
-<img src="img/p1.jpg" style="float:left;margin-top: 10em;margin-left: 10em;">
-<div class="cont1 span_2_of_a1" style="float:left;margin-top: 10em;margin-left: 3em;">
-	<h1> Lorem Ipsum</h1>
-	<div class="price_single">
-		<span class="reducedfrom">$140.00</span>
-		<span class="actual">$120.00</span>
-	</div>
-	<h2 class="quick">Quick Overview:</h2>
-	<p class="quick_desc"> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; es</p>
-	<ul class="size">
-		<h3>Size</h3>
-		<li><a href="#">25</a></li>
-		<li><a href="#">26</a></li>
-		<li><a href="#">27</a></li>
-		<li><a href="#">28</a></li>
-		<li><a href="#">29</a></li>
-		<li><a href="#">30</a></li>
-		<li><a href="#">31</a></li>
-		<li><a href="#">32</a></li>
-		<li><a href="#">33</a></li>
-	</ul>
-	<ul class="size">
-		<h3>Length</h3>
-		<li><a href="#">32</a></li>
-		<li><a href="#">34</a></li>
-	</ul>
-	<ul class="product-qty">
-		<span>Quantity:</span>
-		<select>
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
-			<option>6</option>
-		</select>
-	</ul>
-	<div class="btn_form">
-		<form>
-			<input type="submit" value="Add to Cart" title="">
-		</form>
-	</div>
-</div>
-
-<div class="clearfix"></div>
-
-<div class="sap_tabs">
-	<div id="horizontalTab" style="display: block; width: 100%; margin-left: 9em;margin-top: 3em;">
-		<ul class="resp-tabs-list">
-			<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Product Description</span></li>
-			<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Additional Information</span></li>
-			<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Reviews</span></li>
-			<div class="clear"></div>
-		</ul>
-		<div class="resp-tabs-container">
-			<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-				<div class="facts">
-					<ul class="tab_list">
-						<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</a></li>
-						<li><a href="#">augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigatione</a></li>
-						<li><a href="#">claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica</a></li>
-						<li><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</a></li>
-					</ul>
+<!-- header start -->
+<div class="header-pos" style="background-color: #f6b923">
+	<div class="header-area header-middle">
+		<div class="container-fluid">
+			<!-- navigation bar -->
+			<div class="row">
+				<!-- home button -->
+				<div class="col-md-2 col-sm-3 col-xs-12">
+					<div style="padding-top: 30px;" >
+						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
+						<a href="Cart-fill.jsp"><img src="img/cart-fill.png" style="height:40px;margin-left: 20px;"/></a>
+					</div>
 				</div>
-			</div>
-			<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-				<div class="facts">
-					<ul class="tab_list">
-						<li><a href="#">augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigatione</a></li>
-						<li><a href="#">claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica</a></li>
-						<li><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</a></li>
-					</ul>
+				<div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">
+
+					<div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
+						<nav>
+							<ul style="display:inline-block;">
+								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
+								<li style="display:inline-block;"><a href="article.jsp">Articles</a></li>
+								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
-			</div>
-			<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-				<ul class="tab_list tab_last">
-					<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</a></li>
-					<li><a href="#">augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigatione</a></li>
-					<li><a href="#">claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores leg</a></li>
-					<li><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</a></li>
-				</ul>
 			</div>
 		</div>
 	</div>
 </div>
+
+<%
+
+	String id = null;
+	id = request.getParameter("id");
+	int num_id = -1;
+	try {
+		num_id = Integer.parseInt(id);
+	} catch (NumberFormatException e) {
+		e.printStackTrace();
+	}
+	GoodDAO gd = new GoodDAO();
+
+	GoodBean good = gd.getGoodsById(num_id);
+%>
+
+
+<!-- header end -->
+<br><br><br><br><br><br>
+<div style="margin-top: 50px; margin-bottom: 70px;">
+	<%
+		if(num_id != 1){
+	%>
+	<a href="goodsDetails.jsp?id=<%=num_id-2%>">
+		<img src="img/left.png" style="width: 60px;height: 60px;margin-left:10em;">
+	<%
+		}
+
+		if(num_id !=11){
+	%>
+	<a href="goodsDetails.jsp?id=<%=num_id+2%>">
+		<img src="img/right.png" style="width: 60px;height: 60px;float: right;margin-right: 10em;">
+	</a>
+	<%
+		}
+	%>
+</div>
+
+
+<!-- start product_slider -->
+<div style="margin-left: 80px; margin-right: 80px;">
+<img src="<%=good.getImage()%>" style="width:200px; float:left;margin-top: 3em;margin-left: 10em;">
+<div class="cont1 span_2_of_a1" style="float:left;margin-top: 3em;margin-left: 3em;">
+	<h1 style="margin-bottom: 20px;"> <%=good.getGoodName()%></h1>
+	<div class="price_single">
+		<span class="reducedfrom">$<%=good.getPrice()*1.5%></span>
+		<span class="actual">$<%=good.getPrice()%></span>
+	</div>
+	<h2 class="quick">Quick Overview:</h2>
+	<p class="quick_desc"> <%=good.getIntroduction()%></p>
+
+	<div class="box-quantity btn_form product-qty">
+		<form action="#">
+			<label style="margin-right: 10px;">Quantity</label>
+			<input type="number" value="1" style="width: 45px; margin-right: 30px;"/>
+			<button type="submit" class="btn btn-outline-warning">add to cart</button>
+		</form>
+	</div>
+
+	<div style="margin-top: 3em;">
+		<p>We are pleased that you choose our platform! </p>
+	</div>
+	<br><br>
+
+		<div class="col-md-5" style="">
+			<div class="table-responsive-md">
+				<table class="table">
+					<tbody>
+					<tr>
+						<td style="font-weight: bold;">Product Name</td>
+						<td><%=good.getGoodName()%></td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;">Monthly Sales</td>
+						<td><%=good.getMonthlySales()%></td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;">Brand</td>
+						<td><%=good.getBrand()%></td>
+					</tr>
+					<tr >
+						<td style="font-weight: bold;">Color</td>
+						<td><%=good.getColor()%></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	<div class="col-md-5" style="">
+		<div class="table-responsive-md">
+			<table class="table">
+				<tbody>
+				<tr>
+					<td style="font-weight: bold;">Price</td>
+					<td><%=good.getPrice()%></td>
+				</tr>
+				<tr>
+					<td style="font-weight: bold;">Material</td>
+					<td><%=good.getMaterial()%></td>
+				</tr>
+				<tr>
+					<td style="font-weight: bold;">Manufacturer</td>
+					<td><%=good.getManufacturer()%></td>
+				</tr>
+				<tr >
+					<td style="font-weight: bold;">Product Dimensions</td>
+					<td><%=good.getProductDimensions()%></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+
 </body>
 </html>
 	

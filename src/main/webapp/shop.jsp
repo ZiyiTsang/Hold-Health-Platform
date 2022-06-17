@@ -188,7 +188,7 @@
 						<p><%=goods.get(i).getGoodName()%></p>
 						<span class="dollar">$<%=goods.get(i).getPrice()%></span>
 						<div class="details-in">
-							<a href="goodsDetails.jsp?id=<%=1+2*(i-1)%>" class="details">Details</a>
+							<a href="goodsDetails.jsp?id=<%=1+2*i%>" class="details">Details</a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
