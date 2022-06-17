@@ -9,13 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="Merge remote-tracking branch 'origin/main'">
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="change name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/login1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/commentLike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CommentLike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/commentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CommentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Search.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +264,7 @@
       <workItem from="1655261316250" duration="8940000" />
       <workItem from="1655288458813" duration="4904000" />
       <workItem from="1655369317962" duration="2297000" />
-      <workItem from="1655384308838" duration="2101000" />
+      <workItem from="1655384308838" duration="2862000" />
     </task>
     <task id="LOCAL-00001" summary="import the img of article is done">
       <created>1655275767122</created>
@@ -348,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655370515321</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="change name">
+      <created>1655394377263</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655394377263</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +367,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -387,7 +389,8 @@
     <MESSAGE value="shop.jsp所有的后端done" />
     <MESSAGE value="goodDetails.jsp all done" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="change name" />
+    <option name="LAST_COMMIT_MESSAGE" value="change name" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
