@@ -19,6 +19,12 @@ public class Register extends HttpServlet {
         String password=request.getParameter("password");
         String code = request.getParameter("code");
         String passwordRepeat=request.getParameter("passwordRepeat");
+        //
+        System.out.printf("username:%s\n",username);
+        System.out.printf("password:%s\n",password);
+        System.out.printf("passwordRepeat:%s\n",passwordRepeat);
+        System.out.printf("code:%s\n\n",code);
+        //
         if(username==null||password==null||passwordRepeat==null){
             request.setAttribute("Msg","不得出现放空现象");
             request.getRequestDispatcher("register.jsp").forward(request,response);

@@ -33,8 +33,10 @@
 <div class="container">
     <div class="form row" style="margin-top: 120px;">
         <form style="margin-left: 110px;" action="<%= request.getContextPath()%>/registerServlet" method="post">
+
+            <h3 class="form-title" style="margin-left: 150px; font-family: times; font-weight: bold; font-size:30px;">Register</h3><br><br>
             <div>${loginMsg}${Msg}</div>
-            <h3 class="form-title" style="margin-left: 150px; font-family: times; font-weight: bold; font-size:30px;">register</h3><br><br>
+            <br>
             <div >
                 <p style="font-family: Times; font-size: 18px;">Basic Information</p>
                 <div class="col-sm-4 col-md-4" >
@@ -58,7 +60,7 @@
                     </div>
                     <div class="form-group" style="margin-top: 20px;">
                         <i class="fa fa-key" aria-hidden="true"></i>
-                        <input class="form-control " type="password" name="password Repeat" id="passwordRepeat" placeholder="Repeat" required>
+                        <input class="form-control " type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Repeat" required>
                     </div>
                 </div>
 

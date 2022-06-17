@@ -26,11 +26,13 @@
                 <div class="form-group">
                     <!--        用户名图标和用户名输入框            -->
                     <i class="fa fa-user" aria-hidden="true"></i>
+                    <label for="username"></label>
                     <input class="form-control" type="text" name="username" id="username" placeholder="username" required autofocus>
                 </div>
                 <!--        密码图标和密码输入框                -->
                 <div class="form-group">
                     <i class="fa fa-key" aria-hidden="true"></i>
+                    <label for="password"></label>
                     <input class="form-control " type="password" name="password" id="password" placeholder="password" required>
                 </div>
                 <!--        用超链接跳转到注册页面               -->
@@ -44,7 +46,7 @@
                     <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted" style="float: right;">
                         <small>back</small>
                     </a>
-                    <a href="${pageContext.request.contextPath}/" class="text-sm text-muted " style="float: left;">
+                    <a href="${pageContext.request.contextPath}/register.jsp" class="text-sm text-muted " style="float: left;">
                         <small>register</small>
                     </a>
                 </div><br>

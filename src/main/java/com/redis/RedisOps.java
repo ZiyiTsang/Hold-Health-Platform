@@ -7,12 +7,12 @@ public class RedisOps {
     public RedisOps() {
         String address = "101.43.195.210";
         String passwd = "Zzy18950146872";
-        System.out.println("Redis:Staring");
+//        System.out.println("Redis:Staring");
         JedisPool pool = new JedisPool(address, 6379);
         Jedis jedis=pool.getResource();
         jedis.auth(passwd);
-//        System.out.println(jedis.ping());
-        System.out.printf("Redis:%s\n",jedis.ping());
+
+//        System.out.printf("Redis:%s\n",jedis.ping());
 
         jedis.close();
         this.pool=pool;

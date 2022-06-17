@@ -58,7 +58,7 @@
                     </div>
                     <div class="form-group" style="margin-top: 20px;">
                         <i class="fa fa-key" aria-hidden="true"></i>
-                        <input class="form-control " type="password" name="password Repeat" id="passwordRepeat" placeholder="Repeat" required>
+                        <input class="form-control " type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Repeat" required>
                     </div>
                 </div>
 

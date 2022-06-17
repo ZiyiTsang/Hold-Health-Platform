@@ -9,25 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="2022/6/17">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Assignment_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Assignment_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_22.xml" beforeDir="false" />
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="debug comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/article.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/CommentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/CommentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/CommentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/CommentBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/CommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CommentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/CommentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/article.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/CommentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +87,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.testComment">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 10.0.20">
     <configuration name="TestGoodDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.TestGoodDAO" />
       <module name="Assignment" />
@@ -282,7 +271,7 @@
       <workItem from="1655261316250" duration="8940000" />
       <workItem from="1655288458813" duration="4904000" />
       <workItem from="1655369317962" duration="809000" />
-      <workItem from="1655479555148" duration="1678000" />
+      <workItem from="1655479555148" duration="3103000" />
     </task>
     <task id="LOCAL-00001" summary="import the img of article is done">
       <created>1655275767122</created>
@@ -361,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655393507497</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="debug comment">
+      <created>1655481324187</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655481324187</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +396,8 @@
     <MESSAGE value="shop.jsp所有的后端done" />
     <MESSAGE value="goodDetails.jsp all done" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="debug comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug comment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
