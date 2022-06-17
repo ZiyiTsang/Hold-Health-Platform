@@ -32,12 +32,12 @@
 <body>
 <div class="container">
     <div class="form row" style="margin-top: 120px;">
-        <form style="margin-left: 110px;" action="<%= request.getContextPath()%>/registerServlet" method="post">
+        <div style="color: red; text-align: center; margin-top: 10px;">${loginMsg}${Msg}</div>
+        <h3 class="form-title" style="margin-left: 260px; font-family: times; font-weight: bold; font-size:30px;">register</h3><br><br>
 
-            <h3 class="form-title" style="margin-left: 150px; font-family: times; font-weight: bold; font-size:30px;">Register</h3><br><br>
-            <div>${loginMsg}${Msg}</div>
-            <br>
-            <div >
+
+        <form style="margin-left: 110px;" action="<%= request.getContextPath()%>/registerServlet" method="post">
+            <div  style="margin-top: 0px;">
                 <p style="font-family: Times; font-size: 18px;">Basic Information</p>
                 <div class="col-sm-4 col-md-4" >
                     <div class="form-group">
@@ -48,7 +48,8 @@
                     <div class="form-group" >
                         <!--        用户名图标和用户名输入框            -->
                         <p>Gender: </p>
-                        <input id="man" type="radio" checked="checked" name="1" /> Male    <input id="woman" type="radio"  name="1"/> Female
+                        <input id="man" type="radio" checked="checked" name="1" /> Male<br>
+                        <input id="woman" type="radio"  name="1"/> Female
                     </div>
 
                 </div>
@@ -60,19 +61,11 @@
                     </div>
                     <div class="form-group" style="margin-top: 20px;">
                         <i class="fa fa-key" aria-hidden="true"></i>
-                        <input class="form-control " type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Repeat" required>
+                        <input class="form-control " type="password" name="password Repeat" id="passwordRepeat" placeholder="Repeat" required>
                     </div>
                 </div>
 
-                <p style="font-family: Times; font-size: 18px; margin-top: 140px;">Email validation</p>
-                <div class="form-group">
-                    <i class="fa fa-key" aria-hidden="true"></i>
-                    <input class="form-control " type="email" name="email" id="email" placeholder="email address" required style="width:  200px;">
-                    <input class="form-control " type="text" name="emailCode" id="emailCode" placeholder="Code" required style="width:  100px; margin-top: 15px;">
-                    <button type="" value="register" class="btn btn-success pull-right" style="margin-right: 120px;">Send the code</button>
-                </div>
-
-                <p style="font-family: Times; font-size: 18px; margin-top: 55px;">Man-machine detection</p>
+                <p style="font-family: Times; font-size: 18px; margin-top: 160px;">Man-machine detection</p>
                 <div class="form-group">
 
                     <div class ="col-md-4">

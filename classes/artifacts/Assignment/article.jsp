@@ -75,6 +75,7 @@
                                         /**user.getProfile()
                                          * user.getProfile()
                                          */
+
                                     }
                                 %>
 							</ul>

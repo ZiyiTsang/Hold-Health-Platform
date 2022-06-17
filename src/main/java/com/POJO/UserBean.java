@@ -5,6 +5,7 @@ public class UserBean {
     private String username;
     private String password;
     private String profile;
+    private String email;
 
     public Integer getId() {
         return id;
@@ -16,6 +17,10 @@ public class UserBean {
 
     public String getPassword() {
         return password;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public String getProfile() {

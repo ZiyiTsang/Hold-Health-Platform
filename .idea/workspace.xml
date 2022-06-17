@@ -9,15 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="debug comment">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="发送邮件的done了" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,16 +65,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/eclipse/eclipse_workplace/PE_Assinment/src/main/webapp",
+    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp",
     "project.structure.last.edited": "Facet",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.25172412",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
     </key>
@@ -153,7 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.20" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.13" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -252,11 +244,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.testComment" />
         <item itemvalue="应用程序.TestUserDAO" />
-        <item itemvalue="应用程序.TestGoodDAO" />
-        <item itemvalue="应用程序.TestVideoDAO" />
+        <item itemvalue="应用程序.testComment" />
         <item itemvalue="应用程序.testArticleDao" />
+        <item itemvalue="应用程序.TestVideoDAO" />
+        <item itemvalue="应用程序.TestGoodDAO" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +263,6 @@
       <workItem from="1655261316250" duration="8940000" />
       <workItem from="1655288458813" duration="4904000" />
       <workItem from="1655369317962" duration="809000" />
-      <workItem from="1655479555148" duration="3103000" />
     </task>
     <task id="LOCAL-00001" summary="import the img of article is done">
       <created>1655275767122</created>
@@ -350,14 +341,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655393507497</updated>
     </task>
-    <task id="LOCAL-00012" summary="debug comment">
-      <created>1655481324187</created>
+    <task id="LOCAL-00012" summary="在shop.jsp里加入了login之后展示用户头像与用户名称的功能（但是用参数代替">
+      <created>1655452066822</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1655481324187</updated>
+      <updated>1655452066822</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="发送邮件的done了">
+      <created>1655481915129</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655481915129</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,12 +367,13 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="BEK_SORT_TYPE" value="1" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -396,8 +395,9 @@
     <MESSAGE value="shop.jsp所有的后端done" />
     <MESSAGE value="goodDetails.jsp all done" />
     <MESSAGE value="updated" />
-    <MESSAGE value="debug comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug comment" />
+    <MESSAGE value="在shop.jsp里加入了login之后展示用户头像与用户名称的功能（但是用参数代替" />
+    <MESSAGE value="发送邮件的done了" />
+    <option name="LAST_COMMIT_MESSAGE" value="发送邮件的done了" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
