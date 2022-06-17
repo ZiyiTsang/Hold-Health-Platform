@@ -44,7 +44,7 @@
                     <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted" style="float: right;">
                         <small>back</small>
                     </a>
-                    <a href="${pageContext.request.contextPath}/" class="text-sm text-muted " style="float: left;">
+                    <a href="register-email.jsp?id=1" class="text-sm text-muted " style="float: left;">
                         <small>register</small>
                     </a>
                 </div><br>

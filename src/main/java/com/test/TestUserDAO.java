@@ -16,15 +16,15 @@ public class TestUserDAO {
         UserBean user = ud.getUserById(8);
         System.out.println(user.getUsername());
         System.out.println(user.getProfile());
-//        ud.newUser("ziyi","ziyi7777");
+        //ud.newUser("ziyi","ziyi7777","https://s1.328888.xyz/2022/06/16/0ufOF.jpg","test");
 //        ud.newUser("xiaotong","xiaotong7777");
 //        ud.newUser("aofan","aofan7777");
 //        ud.newUser("yanghang","yanghang7777");
 //        ud.newUser("xianglong","xianglong7777");
         //System.out.println(ud.validation("ziyi","0000"));
 //        ud.updateUser("ziyi","0000");
-//        email mail=new email();
-        //mail.sendEmail("swe2009514@xmu.edu.my",1234, true);//1034337098@qq.com
+        email mail=new email();
+        mail.sendEmail("swe2009514@xmu.edu.my",1234, true);//1034337098@qq.com
         //mail.email();
 
         //id = true 发送验证码

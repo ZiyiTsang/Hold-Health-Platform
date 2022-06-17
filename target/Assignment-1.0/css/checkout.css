@@ -1,0 +1,107 @@
+.public-shop-account > .content {
+    width: 1200px;
+    background-color: #fff;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+.public-shop-account > .content >.shop-account-head{
+    margin: 10px 5px;
+    font-size: 16px;
+}
+.public-shop-account > .content >.shop-account-info{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.public-shop-account > .content >.shop-account-info > .edit-address{
+    border-bottom: 1px solid #ccc;
+}
+.public-shop-account > .content >.shop-account-info > .edit-address >.address-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.public-shop-account > .content >.shop-account-info > .edit-address >.address-head >span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.public-shop-account > .content >.shop-account-info > .edit-address >.address-head >a{
+    color: #005ea7;
+    font-size: 12px;
+}
+.public-shop-account > .content >.shop-account-info > .edit-address >.address-head >a:hover{
+    color: firebrick;
+}
+.public-shop-account > .content >.shop-account-info > .edit-address > .address-info{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.public-shop-account > .content >.shop-account-info > .edit-address > .address-info >span:first-of-type{
+    width: 120px;
+    height: 35px;
+    border: 3px solid firebrick;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.public-shop-account > .content >.shop-account-info > .edit-pay > .pay-head{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.public-shop-account > .content >.shop-account-info > .edit-pay >.pay-info{
+    display: flex;
+    align-items: center;
+}
+.public-shop-account > .content >.shop-account-info > .edit-pay >.pay-info >span{
+    width: 100px;
+    height: 30px;
+    border: 2px solid #ccc;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+.public-shop-account > .content >.shop-account-info > .edit-pay >.pay-info >span:hover{
+    border: 2px solid #E2231A;
+}
+.public-shop-account > .content > .shop-account-detail > .account-address{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    grid-template-rows: repeat(3, 30px);
+    justify-items: end;
+}
+.public-shop-account > .content > .shop-account-detail > .account-address i{
+    font-style: normal;
+    color: #E2231A;
+}
+.public-shop-account > .content > .shop-account-detail > .account-pay{
+    height: 40px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 10px 20px 0 0;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.public-shop-account > .content > .shop-account-detail > .account-pay > span > i{
+    font-style: normal;
+    font-size: 20px;
+    color: firebrick;
+}
+.public-shop-account > .content > .shop-account-detail > .account-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.public-shop-account > .content > .shop-account-detail > .account-btn > button{
+    border: none;
+    background-color: firebrick;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}

@@ -26,6 +26,7 @@ public class email {
     public static void sendEmail(String userEmail, int code, boolean id) throws AddressException, MessagingException {
         Properties p = new Properties();
         //String RECEIVE_EMAIL_ACCOUNT = userEmail;
+        System.setProperty("java.net.preferIPv4Stack", "true");
         p.setProperty("mail.smtp.host", MEAIL_163_SMTP_HOST);
         p.setProperty("mail.smtp.port", SMTP_163_PORT);
         p.setProperty("mail.smtp.socketFactory.port", SMTP_163_PORT);

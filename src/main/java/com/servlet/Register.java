@@ -17,6 +17,7 @@ public class Register extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String username=request.getParameter("username");
         String password=request.getParameter("password");
+        String email=request.getParameter("email");
         String code = request.getParameter("code");
         String passwordRepeat=request.getParameter("passwordRepeat");
         if(username==null||password==null||passwordRepeat==null){
@@ -45,7 +46,7 @@ public class Register extends HttpServlet {
         }
 
         String profile = null;
-        ud.newUser(username,password,profile);//记得改
+        ud.newUser(username,password,profile,email);//记得改
         request.setAttribute("Msg","注册成功，请登录");
         request.getRequestDispatcher("login.jsp").forward(request,response);
         response.sendRedirect(request.getContextPath()+"/homepage.html");

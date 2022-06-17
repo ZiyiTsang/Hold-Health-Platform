@@ -13,4 +13,10 @@
       <module name="Assignment" target="18" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="--add-modules java.activation" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Assignment" options="" />
+    </option>
+  </component>
 </project>
