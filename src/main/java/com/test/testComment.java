@@ -9,11 +9,11 @@ import java.io.IOException;
 public class testComment {
     public static void main(String[] args) throws IOException {
         CommentDAO cd=new CommentDAO();
-        CommentBean cb=new CommentBean("dsf",23,6,"content");
+        CommentBean cb=new CommentBean(8,23,6,"content");
         cd.addComment(cb);
-        List<CommentBean> comments=cd.getCommentByArticleId(6);
-        cd.addLikes(comments.get(0).getComment_id());
-//        System.out.println(cd.getCommentByArticleId(6));
-        System.out.println(comments.get(0).getLike());
+        //List<CommentBean> comments=cd.getCommentByArticleId(6);
+        //cd.addLikes(comments.get(0).getComment_id());
+//       System.out.println(cd.getCommentByArticleId(6));
+        //System.out.println(comments.get(0).getLike());
     }
 }

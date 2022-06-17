@@ -59,17 +59,18 @@
 								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
                                 <%
                                     HttpSession session1 = (HttpSession) request.getSession();
-                                    //UserDAO ud = new UserDAO();
-                                    //UserBean user = null;
-                                    //user = (UserBean) session1.getAttribute("ub");
-                                    if(false){//user == null
+                                    UserDAO ud = new UserDAO();
+                                    UserBean user = null;
+                                    user = (UserBean) session1.getAttribute("user");
+                                    if(user == null){
+
                                 %>
 								<li style="display:inline-block;"><a href="">login</a></li>
                                 <%
                                     }else{
                                         %>
-                                <img src="https://s1.328888.xyz/2022/06/16/0uGfR.jpg" alt="" style="display:inline-block; width:40px;border-radius: 50px;">
-                                <li style="display:inline-block;"><p style="font-weight: bold; font-size:20px; margin-left:10px; color: #1a1e21;">ziyi</p></li>
+                                <img src="<%=user.getProfile()%>" alt="" style="display:inline-block; width:40px;border-radius: 50px;">
+                                <li style="display:inline-block;"><p style="font-weight: bold; font-size:20px; margin-left:10px; color: #1a1e21;"><%=user.getUsername()%></p></li>
                                 <%
                                         /**user.getProfile()
                                          * user.getProfile()

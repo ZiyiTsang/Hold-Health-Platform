@@ -26,8 +26,8 @@ public class CommentServlet extends HttpServlet{
             } catch (NumberFormatException e) {
                 e.printStackTrace();
             }
-            CommentBean cb = new CommentBean("commentTest", 0, id, content);
-            cd.addComment(cb);
+//            CommentBean cb = new CommentBean("commentTest", 0, id, content);
+//            cd.addComment(cb);
 
             response.sendRedirect(request.getContextPath()+"/articles-details.jsp?id=" + id);
         } else {
