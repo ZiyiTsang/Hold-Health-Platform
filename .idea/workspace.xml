@@ -9,43 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="updated">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Assignment_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Assignment_war_exploded.xml" afterDir="false" />
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="2022/6/17">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Assignment_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Assignment_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_22.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/Cart-fill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/Cart-fill.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/article.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/articles-details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/goodsDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/goodsDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/shop.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/workouts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/CommentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/CommentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/CommentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/CommentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/CommentMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/CommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CommentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/MybatisIntro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/MybatisIntro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Cart-fill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Cart-fill.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mapper/CommentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/article.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/goodsDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/goodsDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shop.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/Cart.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/GoodMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/article.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/articles-details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/css/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/Shop_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/css/Shop_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/goodsDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/goodsDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/login1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/register1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/shop.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Assignment-1.0/workouts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/CommentMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,19 +78,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/eclipse/eclipse_workplace/PE_Assinment/src/main/webapp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facet&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.25172412&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/eclipse/eclipse_workplace/PE_Assinment/src/main/webapp",
+    "project.structure.last.edited": "Facet",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.25172412",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/css" />
@@ -181,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.13" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.20" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -282,8 +265,8 @@
       <list>
         <item itemvalue="应用程序.testComment" />
         <item itemvalue="应用程序.TestUserDAO" />
-        <item itemvalue="应用程序.TestVideoDAO" />
         <item itemvalue="应用程序.TestGoodDAO" />
+        <item itemvalue="应用程序.TestVideoDAO" />
         <item itemvalue="应用程序.testArticleDao" />
       </list>
     </recent_temporary>
@@ -299,6 +282,7 @@
       <workItem from="1655261316250" duration="8940000" />
       <workItem from="1655288458813" duration="4904000" />
       <workItem from="1655369317962" duration="809000" />
+      <workItem from="1655479555148" duration="1678000" />
     </task>
     <task id="LOCAL-00001" summary="import the img of article is done">
       <created>1655275767122</created>
@@ -394,7 +378,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>

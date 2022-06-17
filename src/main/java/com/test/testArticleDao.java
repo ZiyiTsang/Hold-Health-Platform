@@ -20,8 +20,8 @@ public class testArticleDao {
 
         List<ArticleBean> sd = ad.getArticleByTitle("my");
         System.out.println(sd);
-        for(int i=0;i<sd.size();i++){
-            System.out.println(sd.get(i).getTitle());
+        for (ArticleBean articleBean : sd) {
+            System.out.println(articleBean.getTitle());
         }
 
     }

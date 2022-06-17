@@ -21,10 +21,21 @@ public class CommentDAO extends BaseDAO{
         sqlSession=getSqlSession();
         mapper= sqlSession.getMapper(CommentMapper.class);
     }
-    public int addComment(CommentBean cb){
+    public boolean addComment(CommentBean cb) throws IOException {
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        return mapper.addComment(cb.getAuthor(),cb.getContent(),cb.getLike(), sdf.format(date), cb.getArticle_id());
+        UserDAO ud=new UserDAO();
+        ArticleDAO ad=new ArticleDAO();
+        if(ud.getUserById(cb.getAuthor_id())==null){
+            System.out.println("ERR:user not exist");
+            return false;
+        }
+        if(ad.getArticleById(cb.getArticle_id())==null){
+            System.out.println("ERR:article not exist");
+            return false;
+        }
+        mapper.addComment(cb.getAuthor_id(),cb.getContent(),cb.getLike(), sdf.format(date), cb.getArticle_id());
+        return true;
     }
     public List<CommentBean> getCommentByArticleId(int article_id){
         return mapper.getAllCommentByArticleId(article_id);
