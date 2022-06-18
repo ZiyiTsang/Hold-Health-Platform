@@ -17,17 +17,17 @@ public class EmailCode extends HttpServlet {
         System.out.println("the serlvet is working!");
         request.setCharacterEncoding("UTF-8");
         String email = request.getParameter("email");
-        int code = 0;
+        int ecode = 0;
         email mail = new email();
         HttpSession session= request.getSession();
 
 
-        code = (int) ((Math.random()*9+1)*1000+(Math.random()*9+1)*100+(Math.random()*9+1)*10+(Math.random()*9+1));
-        System.out.println(code);
+        ecode = (int)(Math.random()*(9999-1000+1))+1000;
+        System.out.println(ecode);
         try {
-            mail.sendEmail(email, code, true);//1034337098@qq.com
+            mail.sendEmail(email, ecode, true);//1034337098@qq.com
 
-            session.setAttribute("code",String.valueOf(code));
+            session.setAttribute("ecode",String.valueOf(ecode));
             session.setAttribute("email",email);
         } catch (MessagingException e) {
             throw new RuntimeException(e);

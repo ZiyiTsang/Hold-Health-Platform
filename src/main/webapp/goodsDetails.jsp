@@ -118,7 +118,12 @@
 	<div class="box-quantity btn_form product-qty">
 		<form action="#">
 			<label style="margin-right: 10px;">Quantity</label>
-			<input type="number" value="1" style="width: 45px; margin-right: 30px;"/>
+			<input type="number" name="num" id="num" value="1" style="width: 45px; margin-right: 30px;"/>
+			<%
+
+			session.setAttribute("good id", id);
+		%>
+
 			<button type="submit" class="btn btn-outline-warning">add to cart</button>
 		</form>
 	</div>

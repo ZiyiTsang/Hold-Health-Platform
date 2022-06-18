@@ -42,13 +42,17 @@
                 <%
                 }else{
                     //发送code之后
+                    String code = null;
+                    code = (String) session1.getAttribute("code");
+                    //action="register.jsp"
                 %>
+                <form onsubmit="return code();" method="post">
                 <input class="form-control " type="text" name="emailCode" id="emailCode" placeholder="Code" required style="width:  100px; margin-top: 15px;">
                 <div style="margin-top: 10px;">
                     <a href="register-email.jsp" style="font-size: 12px;">refill the email</a>
                 </div>
-                <a type="submit" href="register.jsp" value="register" class="btn btn-success pull-right" style="margin-left: 120px;margin-top: 20px;">Submit</a>
-
+                    <button type="submit" value="register" class="btn btn-success pull-right" style="margin-left: 120px;margin-top: 20px;">Submit</button>
+                </form>
                 <%
                 }
                 %>
@@ -82,11 +86,7 @@
     //validate when submit
     function validate(){
         //get those value
-        let company =document.getElementById("company").value;
-        let countryCode= document.getElementById("countryCode").value;
-        let phone = document.getElementById("phone").value;
         let email =document.getElementById("email").value;
-        let message =document.getElementById("message").value;
 
         let error_message =document.getElementById("error_message");
         //use Regular Expression to check email address
@@ -105,6 +105,28 @@
         //submit information
         alert ("The code is sending to your email!");
         return true;
+    }
+
+    //validate the code
+    function code(){
+        let ecode = '<%=session.getAttribute("ecode")%>';
+        let emailCode = document.getElementById("emailCode");
+        let error_message = document.getElementById("error_message");
+
+        let text;
+
+        error_message.style.padding = "10px";
+        error_message.style.color = "#FF0000";
+
+        if(ecode != emailCode){
+            text="Wrong code!";
+            error_message.innerHTML = text;
+            return false;
+        }
+
+        alert("The code is correct!");
+        return true;
+
     }
 </script>
 
