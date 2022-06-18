@@ -9,18 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="发送邮件的done了">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/AddToCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/login.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Assignment_war_exploded.xml" beforeDir="false" />
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="很多只写了一丢丢">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CheckEmailCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/css/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/goodsDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/goodsDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register-email.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/register-email.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/goodsDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/goodsDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register-email.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register-email.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -375,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655482318866</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="很多只写了一丢丢">
+      <created>1655522558231</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1655522558231</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +394,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -417,22 +418,8 @@
     <MESSAGE value="updated" />
     <MESSAGE value="在shop.jsp里加入了login之后展示用户头像与用户名称的功能（但是用参数代替" />
     <MESSAGE value="发送邮件的done了" />
-    <option name="LAST_COMMIT_MESSAGE" value="发送邮件的done了" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/servlet/AddToCart.java</url>
-          <line>14</line>
-          <properties class="com.servlet.AddToCart" method="doGet">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="很多只写了一丢丢" />
+    <option name="LAST_COMMIT_MESSAGE" value="很多只写了一丢丢" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

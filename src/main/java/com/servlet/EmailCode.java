@@ -32,9 +32,8 @@ public class EmailCode extends HttpServlet {
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
-        String id = "1";
-        session.setAttribute("id",id);
-        request.getRequestDispatcher("register-email.jsp").forward(request,response);
+
+        response.sendRedirect(request.getContextPath()+"/register-email.jsp?id=3");
     }
 
     @Override

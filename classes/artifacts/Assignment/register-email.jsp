@@ -25,12 +25,29 @@
                 <p style="font-family: Times; font-size: 18px;margin-left: 5px;">Email validation</p>
             <%
                 String id = null;
+                id = request.getParameter("id");
                 HttpSession session1 = (HttpSession) request.getSession();
-                id = (String) session1.getAttribute("id");
-                session.removeAttribute("id");
-                if(id != "1"){
+                System.out.println("the id is "+id);
+
+                int num_id = 0;
+
+                try {
+                    num_id = Integer.parseInt(id);
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+
+
+                if(num_id != 3){
+                    System.out.println("the email page is working!");
+                    System.out.println("the id is"+id);
                     //  发送了code之前
+                    if(num_id==2){
             %>
+                <p style="color: red;">The code was wrong! Try again!</p>
+                <%
+                    }
+                %>
                 <form onsubmit="return validate();" class="form-group" action="${pageContext.request.contextPath}/emailCode" method="post" style="margin-left: 15px;margin-bottom: 20px;">
                     <i class="fa fa-key" aria-hidden="true"></i>
                     <p style="margin-left: 0px;color: #0f5132; font-size: 16px;" >
@@ -40,13 +57,15 @@
 
                 </form>
                 <%
-                }else{
+                }
+
+                if(num_id == 3){
                     //发送code之后
                     String code = null;
                     code = (String) session1.getAttribute("code");
                     //action="register.jsp"
                 %>
-                <form onsubmit="return code();" method="post">
+                <form method="post" action="${pageContext.request.contextPath}/checkEmailCode">
                 <input class="form-control " type="text" name="emailCode" id="emailCode" placeholder="Code" required style="width:  100px; margin-top: 15px;">
                 <div style="margin-top: 10px;">
                     <a href="register-email.jsp" style="font-size: 12px;">refill the email</a>
@@ -107,27 +126,6 @@
         return true;
     }
 
-    //validate the code
-    function code(){
-        let ecode = '<%=session.getAttribute("ecode")%>';
-        let emailCode = document.getElementById("emailCode");
-        let error_message = document.getElementById("error_message");
-
-        let text;
-
-        error_message.style.padding = "10px";
-        error_message.style.color = "#FF0000";
-
-        if(ecode != emailCode){
-            text="Wrong code!";
-            error_message.innerHTML = text;
-            return false;
-        }
-
-        alert("The code is correct!");
-        return true;
-
-    }
 </script>
 
 </body>
