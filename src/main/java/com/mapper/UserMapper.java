@@ -9,6 +9,6 @@ public interface UserMapper {
     List<UserBean> selectAll();
     UserBean selectById(int id);
     UserBean selectByUserName(String username);
-    int addUser(@Param("username") String username, @Param("password") String password, @Param("profile") String profile, @Param("email") String email);
+    int addUser(@Param("username") String username, @Param("password") String password, @Param("profile") String profile, @Param("email") String email,@Param("gender")boolean gender);
     int updatePassword(@Param("username") String username,@Param("password") String password, @Param("profile") String profile, @Param("email") String email);
 }

@@ -1,6 +1,6 @@
 /*设置背景图片*/
 body {
-    background: url(../img/carback.jpg) no-repeat;
+    background: url(../img/login.jpeg) no-repeat;
     background-size:cover;font-size: 15px;
 }
 /*给表单的边框设置大小,颜色和不透明度*/

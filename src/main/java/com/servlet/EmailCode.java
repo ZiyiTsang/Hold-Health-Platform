@@ -26,7 +26,6 @@ public class EmailCode extends HttpServlet {
         System.out.println(code);
         try {
             mail.sendEmail(email, code, true);//1034337098@qq.com
-
             session.setAttribute("code",String.valueOf(code));
             session.setAttribute("email",email);
         } catch (MessagingException e) {

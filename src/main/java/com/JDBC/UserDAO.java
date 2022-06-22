@@ -10,17 +10,53 @@ import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
+import java.util.Random;
 
 public class UserDAO extends BaseDAO {
     private final UserMapper mapper;
     private final SqlSession sqlSession;
     private final RedisOps ro;
 
+    String profile;
+
     public UserDAO() throws IOException {
         sqlSession=getSqlSession();
         mapper= sqlSession.getMapper(UserMapper.class);
         ro=new RedisOps();
+
     }
+    public void profileGenerator(boolean boy){
+        Random r = new Random();
+        int num=r.nextInt(4);
+        if(boy){
+            switch (num) {
+                case 0 -> profile = "https://s1.328888.xyz/2022/06/16/0uGfR.jpg";
+                case 1 -> profile = "https://s1.328888.xyz/2022/06/16/0uuMS.jpg";
+                case 2 -> profile = "https://s1.328888.xyz/2022/06/16/0ug0i.jpg";
+                case 3 -> profile = "https://s1.328888.xyz/2022/06/16/0u9Fv.jpg";
+            }
+        }else{
+            switch (num) {
+                case 0 -> profile = "https://s1.328888.xyz/2022/06/16/0uLG0.jpg";
+                case 1 -> profile = "https://s1.328888.xyz/2022/06/16/0uXtJ.jpg";
+                case 2 -> profile = "https://s1.328888.xyz/2022/06/16/0ufOF.jpg";
+                case 3 -> profile = "https://s1.328888.xyz/2022/06/16/0uixW.jpg";
+            }
+        }
+    }
+    /*
+ 男生头像
+https://s1.328888.xyz/2022/06/16/0uGfR.jpg
+https://s1.328888.xyz/2022/06/16/0uuMS.jpg
+https://s1.328888.xyz/2022/06/16/0ug0i.jpg
+https://s1.328888.xyz/2022/06/16/0u9Fv.jpg
+
+女生头像
+https://s1.328888.xyz/2022/06/16/0uLG0.jpg
+https://s1.328888.xyz/2022/06/16/0uXtJ.jpg
+https://s1.328888.xyz/2022/06/16/0ufOF.jpg
+https://s1.328888.xyz/2022/06/16/0uixW.jpg
+* */
     public UserBean getUserById(int id){
         return mapper.selectById(id);
     }
@@ -51,10 +87,17 @@ public class UserDAO extends BaseDAO {
     public List<UserBean> getAllUser(){
         return mapper.selectAll();
     }
-    public int newUser(String username,String password,String profile,String email){
+    public int newUser(String username,String password,boolean boy,String email){
         String passwd=SHA(password);
         ro.setUserNameAndPassword(username, password);
-        return mapper.addUser(username,passwd,profile,email);
+        this.profileGenerator(boy);
+        if(boy){
+            return mapper.addUser(username,passwd,this.profile,email,true);
+        }
+        else{
+            return mapper.addUser(username,passwd,this.profile,email,false);
+        }
+
     }
     public int updateUser(String username,String password,String profile,String email){
         ro.deleteUser(username);

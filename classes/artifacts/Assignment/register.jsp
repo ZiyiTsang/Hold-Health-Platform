@@ -16,16 +16,7 @@
     <link rel="stylesheet" href="./css/register.css">
 </head>
 
-<%--<div class="mb-3">--%>
-<%--    <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted"><small>返回首页</small></a>--%>
-<%--    <a href="${pageContext.request.contextPath}/" class="text-sm text-muted float-right"><small>登录</small></a>--%>
-<%--</div>--%>
-<%--<script src="./js/bootstrap.min.js"></script>--%>
-<%--<script>--%>
-<%--    document.getElementById("change").onclick=function () {--%>
-<%--        document.getElementById("checkcodeimg").src="${pageContext.request.contextPath}/CodeServlet?"+Math.ceil(Math.random()*10000);--%>
-<%--    }--%>
-<%--</script>--%>
+
 
 
 <%--</body>--%>

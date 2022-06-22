@@ -13,8 +13,8 @@
         select * from user where username=#{username};
     </select>
     <insert id="addUser"  keyProperty="id">
-        insert into user(username, password,profile,email)
-        VALUES (#{username},#{password},#{profile},#{email});
+        insert into user(username, password,profile,email,gender)
+        VALUES (#{username},#{password},#{profile},#{email},#{gender});
     </insert>
     <update id="updatePassword">
         update user
