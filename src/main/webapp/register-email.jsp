@@ -25,12 +25,29 @@
                 <p style="font-family: Times; font-size: 18px;margin-left: 5px;">Email validation</p>
             <%
                 String id = null;
+                id = request.getParameter("id");
                 HttpSession session1 = (HttpSession) request.getSession();
-                id = (String) session1.getAttribute("id");
-                session.removeAttribute("id");
-                if(id != "1"){
+                System.out.println("the id is "+id);
+
+                int num_id = 0;
+
+                try {
+                    num_id = Integer.parseInt(id);
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+
+
+                if(num_id != 3){
+                    System.out.println("the email page is working!");
+                    System.out.println("the id is"+id);
                     //  发送了code之前
+                    if(num_id==2){
             %>
+                <p style="color: red;">The code was wrong! Try again!</p>
+                <%
+                    }
+                %>
                 <form onsubmit="return validate();" class="form-group" action="${pageContext.request.contextPath}/emailCode" method="post" style="margin-left: 15px;margin-bottom: 20px;">
                     <i class="fa fa-key" aria-hidden="true"></i>
                     <p style="margin-left: 0px;color: #0f5132; font-size: 16px;" >
@@ -40,15 +57,21 @@
 
                 </form>
                 <%
-                }else{
+                }
+
+                if(num_id == 3){
                     //发送code之后
+                    String code = null;
+                    code = (String) session1.getAttribute("code");
+                    //action="register.jsp"
                 %>
+                <form method="post" action="${pageContext.request.contextPath}/checkEmailCode">
                 <input class="form-control " type="text" name="emailCode" id="emailCode" placeholder="Code" required style="width:  100px; margin-top: 15px;">
                 <div style="margin-top: 10px;">
                     <a href="register-email.jsp" style="font-size: 12px;">refill the email</a>
                 </div>
-                <a type="submit" href="register.jsp" value="register" class="btn btn-success pull-right" style="margin-left: 120px;margin-top: 20px;">Submit</a>
-
+                    <button type="submit" value="register" class="btn btn-success pull-right" style="margin-left: 120px;margin-top: 20px;">Submit</button>
+                </form>
                 <%
                 }
                 %>
@@ -82,11 +105,7 @@
     //validate when submit
     function validate(){
         //get those value
-        let company =document.getElementById("company").value;
-        let countryCode= document.getElementById("countryCode").value;
-        let phone = document.getElementById("phone").value;
         let email =document.getElementById("email").value;
-        let message =document.getElementById("message").value;
 
         let error_message =document.getElementById("error_message");
         //use Regular Expression to check email address
@@ -106,6 +125,7 @@
         alert ("The code is sending to your email!");
         return true;
     }
+
 </script>
 
 </body>
