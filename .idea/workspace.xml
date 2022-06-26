@@ -9,109 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="debug register">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/login.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_14_23_22___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_6_14_23_22_取消提交了变更_[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="debug user">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/CartDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/AddCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/DeleteItemFromCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06___tanqianqian__.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06___tanqianqian__.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_13__23_48____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_13__23_48____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15_15_46____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_15_15_46____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__13_37____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__13_37____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__17_23____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__17_23____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/css/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/css/register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/img/carback.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register-email.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/register-email.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/AddToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/AddToCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/CheckEmailCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CheckEmailCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/carback.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/Cart-fill.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/ArticleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/CommentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/GoodMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/com/mapper/VideoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/article-page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/article.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/articles-details.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/checkout.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/Login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/Shop_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/cart-fill.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/checkout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/core.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/goods-page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/nivo-slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/pe-icon-7-stroke.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/plugins/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/plugins/etalage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/plugins/meanmenu.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/css/register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/Pe-icon-7-stroke.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/Pe-icon-7-stroke.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/Pe-icon-7-stroke.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/goodsDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/homepage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/1q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/1w.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/Shop.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/articles_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/bilibili.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/carback.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/cart-fill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/code.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/home1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/home2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/p6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/pic1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/pic2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/slide.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/workouts_fontIMG.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/img/youtube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/easyResponsiveTabs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/jquery.etalage.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/jquery.nivo.slider.pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/vendor/jquery-1.12.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/js/vendor/modernizr-2.8.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/shop.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/workout-page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Assignment-1.0/workouts.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/CheckCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/CheckCodeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register-email.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register-email.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +49,11 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ziyi" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
@@ -162,20 +83,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tanqianqian/git/PE_Assinment/src/main/webapp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.25172412&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.25172412",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
@@ -347,11 +269,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.TestUserDAO" />
-        <item itemvalue="应用程序.testRedis" />
         <item itemvalue="应用程序.testComment" />
         <item itemvalue="应用程序.testArticleDao" />
         <item itemvalue="应用程序.TestVideoDAO" />
+        <item itemvalue="应用程序.TestUserDAO" />
+        <item itemvalue="应用程序.testRedis" />
       </list>
     </recent_temporary>
   </component>
@@ -480,7 +402,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="ziyi" />
                       </list>
                     </value>
                   </entry>

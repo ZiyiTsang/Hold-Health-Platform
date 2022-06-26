@@ -50,6 +50,22 @@ public class RedisOps {
         jedis.flushAll();
         jedis.close();
     }
+    public int addCart(String userID,String GoodID,String GoodNumber){
+        Jedis jedis=pool.getResource();
+        int res=Math.toIntExact(jedis.hset("cart:" + userID, GoodID, GoodNumber));
+        jedis.close();
+        return res;
+    }
+    public void deleteOneItem(String userID,String GoodID){
+        Jedis jedis=pool.getResource();
+        jedis.hdel("cart:" + userID, GoodID);
+        jedis.close();
+    }
+    public void deleteHash(String key){
+        Jedis jedis=pool.getResource();
+        jedis.del(key);
+        jedis.close();
+    }
 
 
     private final JedisPool pool;

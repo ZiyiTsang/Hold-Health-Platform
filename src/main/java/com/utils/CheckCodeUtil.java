@@ -20,7 +20,7 @@ public class CheckCodeUtil {
     }
 
     public static final String VERIFY_CODES = "123456789";//ABCDEFGHIJKLMNOPQRSTUVWXYZ
-    private static Random random = new Random();
+    private static final Random random = new Random();
 
 
 

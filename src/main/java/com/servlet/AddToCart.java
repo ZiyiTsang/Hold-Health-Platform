@@ -11,6 +11,15 @@ import java.io.IOException;
 
 @WebServlet("/addToCart")
 public class AddToCart extends HttpServlet{
+    //不用这个了
+    //不用这个了
+    //不用这个了
+    //不用这个了
+    //不用这个了
+    //不用这个了
+    //不用这个了
+    //不用这个了
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("the serlvet is working!");

@@ -18,22 +18,21 @@ public class EmailCode extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String email = request.getParameter("email");
         int code = 0;
-        email mail = new email();
+//        email mail = new email();
         HttpSession session= request.getSession();
 
 
-        code = (int) ((Math.random()*9+1)*1000+(Math.random()*9+1)*100+(Math.random()*9+1)*10+(Math.random()*9+1));
+        code = (int) ((Math.random()*7+1)*1000+(Math.random()*9+1)*100+(Math.random()*9+1)*10+(Math.random()*9+1));
         System.out.println(code);
         try {
-            mail.sendEmail(email, code, true);//1034337098@qq.com
-            session.setAttribute("code",String.valueOf(code));
+            com.test.email.sendEmail(email, code, true);//1034337098@qq.com
+            session.setAttribute("ecode",String.valueOf(code));//String.valueOf(code)
             session.setAttribute("email",email);
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
-        String id = "1";
-        session.setAttribute("id",id);
-        request.getRequestDispatcher("register-email.jsp").forward(request,response);
+
+        response.sendRedirect(request.getContextPath()+"/register-email.jsp?id=3");
     }
 
     @Override

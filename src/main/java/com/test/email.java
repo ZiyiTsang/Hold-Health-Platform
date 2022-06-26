@@ -23,7 +23,7 @@ public class email {
 
     //public static final String RECEIVE_EMAIL_ACCOUNT = userEmail;
 
-    public static void sendEmail(String userEmail, int code, boolean id) throws AddressException, MessagingException {
+    public static void sendEmail(String userEmail, int code, boolean id) throws MessagingException {
         Properties p = new Properties();
         //String RECEIVE_EMAIL_ACCOUNT = userEmail;
         System.setProperty("java.net.preferIPv4Stack", "true");

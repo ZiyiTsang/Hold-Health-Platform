@@ -22,7 +22,7 @@
 
             <h3 class="form-title" style="margin-left: 160px; font-family: times; font-weight: bold; font-size:30px;">register</h3><br><br>
             <div class="col-sm-9 col-md-9" style="margin-left: 40px;">
-                <p style="font-family: Times; font-size: 18px;margin-left: 5px;">Email validation</p>
+                <p style="font-family: Times; font-size: 18px;margin-left: 5px;">Register</p>
             <%
                 String id = null;
                 id = request.getParameter("id");
