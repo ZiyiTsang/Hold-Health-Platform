@@ -10,24 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="debug user">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/CartDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/AddCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/DeleteItemFromCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06___tanqianqian__.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_12_23_06___tanqianqian__.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_13__23_48____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_13__23_48____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15_15_46____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_15_15_46____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__13_37____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__13_37____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__17_23____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__17_23____.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Assignment_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/checkout.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/wechat.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register-email.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/register-email.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/AddToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/AddToCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/CheckEmailCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CheckEmailCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/CheckCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/CheckCodeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register-email.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register-email.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/css/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/css/checkout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/checkout.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +82,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp",
+    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.25172412",
@@ -100,13 +92,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/img" />
       <recent name="$PROJECT_DIR$/src/main/webapp/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestUserDAO">
-    <configuration name="TestUserDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 10.0.13">
+    <configuration name="TestUserDAO" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.TestUserDAO" />
       <module name="Assignment" />
       <extension name="coverage">
@@ -171,7 +166,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.20" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 10.0.13" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.13" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Assignment/homepage.html" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -260,9 +256,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat 服务器.Tomcat 10.0.20" />
-      <item itemvalue="应用程序.testRedis" />
+      <item itemvalue="Tomcat 服务器.Tomcat 10.0.13" />
       <item itemvalue="应用程序.TestUserDAO" />
+      <item itemvalue="应用程序.testRedis" />
       <item itemvalue="应用程序.TestVideoDAO" />
       <item itemvalue="应用程序.testArticleDao" />
       <item itemvalue="应用程序.testComment" />
@@ -272,7 +268,6 @@
         <item itemvalue="应用程序.testComment" />
         <item itemvalue="应用程序.testArticleDao" />
         <item itemvalue="应用程序.TestVideoDAO" />
-        <item itemvalue="应用程序.TestUserDAO" />
         <item itemvalue="应用程序.testRedis" />
       </list>
     </recent_temporary>

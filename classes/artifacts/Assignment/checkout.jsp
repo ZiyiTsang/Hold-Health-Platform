@@ -20,92 +20,88 @@
     <link rel="stylesheet" href="css/checkout.css">
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-<body>
-<!-- header start -->
-<header class="header-pos" style="background-color: #f6b923">
-    <div class="header-area header-middle">
-        <div class="container-fluid">
-            <!-- navigation bar -->
-            <div class="row">
-                <!-- home button -->
-                <div class="col-md-2 col-sm-3 col-xs-12">
-                    <div style="padding-top: 30px;" >
-                        <a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
-                        <a href="Cart-fill.jsp"><img src="img/cart-fill.png" style="height:40px;margin-left: 20px;"/></a>
-                    </div>
-                </div>
-                <div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">
+<body background="img/checkout.jpeg">
 
-                    <div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
-                        <nav>
-                            <ul style="display:inline-block;">
-                                <li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
-                                <li style="display:inline-block;"><a href="article.jsp">Articles</a></li>
-                                <li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
-                                <li style="display:inline-block;"><a href="login.jsp">login</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
 <!-- header end -->
 <br><br><br><br><br><br>
-<div class="public-shop-account">
-    <div class="content">
-        <div class="shop-account-head"> Fill in and check the order form  </div>
+        <%
+            String id = null;
+            id = request.getParameter("id");
+            System.out.println("the id is "+id);
+
+            int num_id = 0;
+
+            try {
+                num_id = Integer.parseInt(id);
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
+
+            if(num_id == 1){
+        %>
+            <div class="cart-fill" style="padding-bottom: 55px;">
+                <div class="content">
+        <div class="c-title"> Payment (via WeChat) </div>
         <div class="shop-account-info">
             <div class="edit-address">
-                <div class="address-head">
-                    <span>Consignee information</span>
-                </div>
+
                 <div class="address-info">
-                    <form>
-                        <div class="col-md-4" style="margin-left: 50px;">
-                            Country:
-                            <input type="text" name="country" style="width: 150px;"><br><br>
-                            City:
-                            <input type="text" name="city">
+                    <form class="c-form">
+                        <div style="margin-left: 50px;">
+                            Total amount is xxx $<br><br>
                         </div>
 
-                        <div class="col-md-4" style="margin-left: 20px;">
-                            State:
-                            <input type="text" name="country"><br><br>
-                            Street:
-                            <input type="text" name="street">
-                        </div>
+                        <img src="img/wechat.JPG" style="width: 160px; margin-left: 50px;">
 
-                        <button class="btn btn-outline-danger" type="submit" value="Submit" style="margin-top:150px; float: right;">Submit</button>
+                        <a href="${pageContext.request.contextPath}/checkout.jsp" style="margin-top:180px; float: left" color="#ffae00">back</a>
+                        <button class="btn c-button" type="submit" value="Submit" style="margin-top:160px; margin-right: 20px; float: right;">Submit</button>
                     </form>
 
                 </div>
             </div>
-            <div class="edit-pay">
-                <div class="pay-head">Payment pattern</div>
-                <div class="pay-info">
-                    <span>Pay on delivery</span>
-                    <span>Online payment</span>
-                    <a href="">More>></a>
+
+        </div>
+
+        <%
+            }
+            else{
+        %>
+                    <div class="cart-fill" style="padding-bottom: 275px;">
+                        <div class="content">
+        <div class="c-title"> Fill in the address  </div>
+        <div class="shop-account-info">
+            <div class="edit-address">
+
+                <div class="address-info">
+                    <form class="c-form">
+                        <div class="col-md-2" style="margin-left: 50px;">
+                            Country:<br><br>
+                            City:   <br><br>
+                            State:  <br><br>
+                            Street:
+                        </div>
+
+                        <div class="col-md-9">
+                            <input type="text" name="country" style="margin-bottom: 12px;"><br>
+                            <input type="text" name="city" style="margin-bottom: 12px;"><br>
+                            <input type="text" name="country" style="margin-bottom: 12px;"><br>
+                            <input type="text" name="street" style="margin-bottom: 12px;"><br>
+                        </div>
+
+                        <a href="${pageContext.request.contextPath}/Cart-fill.jsp" style="margin-top:40px; float: left" color="#ffae00">back</a>
+                        <button class="btn c-button" type="submit" value="Submit" style="margin-top:30px; margin-right: 20px; float: right;">Submit</button>
+                    </form>
+
                 </div>
             </div>
+
         </div>
-        <div class="shop-account-detail">
-            <div class="account-address">
-                <span><i>3</i> products, total price:</span>
-                <span>$14797.00</span>
-                <span>Freight:</span>
-                <span><i>$0.00</i></span>
-                <span>Discount:</span>
-                <span>-$50.00</span>
-            </div>
-            <div class="account-pay">
-                <span> Amount <i>$14747.00 </i></span>
-            </div>
-            <div class="account-btn"><button>Submit order</button></div>
-        </div>
+        <%
+            }
+        %>
     </div>
 </div>
 </body>
+
 </html>

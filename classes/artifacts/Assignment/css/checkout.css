@@ -105,3 +105,54 @@
     font-weight: bold;
     margin: 10px 0;
 }
+
+.cart-fill{
+    border-radius: 25px;
+    background: rgba(255,255,255,0.5);
+    width:800px;
+    margin-left:120px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.c-title{
+    color: #ffae00;
+    font-family: "Times New Roman";
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    margin-top: 40px;
+}
+
+.c-form input{
+    outline-style: none ;
+    border: none;
+    background-color:transparent;
+    border-bottom: 1px solid black;
+    width: 140px;
+    height: 24px;
+    font-size: 14px;
+    font-family: "Times New Roman";
+}
+
+.c-form input:focus{
+    border-color: #ffae00;
+    background-color:transparent;
+    outline: 0;
+}
+
+.c-form{
+    font-family: "Times New Roman";
+    font-size: 24px;
+    color: #1c1f23;
+}
+
+.c-button{
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    background-color: #ffae00;
+}
