@@ -55,8 +55,25 @@ public class email {
             message.setContent("<h4>Welcome to register HEALTH !</h4>" +
                     "<p>Copy the code here to start your journey with us!</p>"+"<p>You validation code is </p>"+code, "text/html;charset=UTF-8");
         }else{
+
+
             message.setSubject("HEALTH：have new order");
-            //message.setContent("<h2>Welcome to register HEALTH !</h2>");
+            //message.setContent("<p></p>");
+            StringBuilder content = new StringBuilder("<html><head></head><body><h2>new order!</h2>");
+            content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+            for (int i=0; i < 4 ; i++ ) {
+                content.append("<tr>");
+                content.append("<td style=\"background-color: #428BCA; color:#ffffff\">第一列</td>"); //第一列
+                content.append("<td>第二列</td>"); //第二列
+                content.append("<td>第三列</td>"); //第三列
+                content.append("</tr>");
+            }
+            content.append("</table>");
+            content.append("<h3>description</h3>");
+            content.append("</body></html>");
+
+            message.setContent(content.toString(),"text/html;charset=utf-8");
+            System.out.println("at here");
         }
 
         message.setSentDate(new Date());
@@ -66,18 +83,5 @@ public class email {
     }
 }
 
-            /*
-            *Properties properties = System.getProperties();
-            properties .put("mail.smtp.starttls.enable", "true");
-            properties .put("mail.smtp.starttls.required", "true");
-            properties.setProperty("mail.smtp.ssl.enable","false");
-            properties.setProperty("mail.smtp.host", "smtp.163.com");//smtp协议地址
-            properties.setProperty("mail.smtp.port", "25");//端口号587
-            properties.setProperty("mail.smtp.auth", "true");//
-            *    props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-                props.setProperty("mail.smtp.socketFactory.fallback", "false");
-                * properties.setProperty("mail.smtp.socketFactory.port", "587");//设置ssl端口
-            properties.setProperty("mail.smtp.socketFactory.fallback", "false");
-            properties.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-             */
+
 
