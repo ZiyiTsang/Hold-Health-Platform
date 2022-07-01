@@ -23,8 +23,8 @@ public class TestUserDAO {
 //        ud.newUser("xianglong","xianglong7777");
         //System.out.println(ud.validation("ziyi","0000"));
 //        ud.updateUser("ziyi","0000")
-        com.test.email.sendEmail("swe2009514@xmu.edu.my", 1, false);
-        com.test.email.sendEmail("swe2009514@xmu.edu.my", 1, true);
+        com.test.email.sendEmail("swe2009514@xmu.edu.my", 1, false,null);
+        com.test.email.sendEmail("swe2009514@xmu.edu.my", 1, true,null);
 
 
         //id = true 发送验证码

@@ -47,7 +47,7 @@
             <div class="edit-address">
 
                 <div class="address-info">
-                    <form class="c-form">
+                    <form class="c-form" action="<%= request.getContextPath()%>/sendOrder" method="post">
                         <div style="margin-left: 50px;">
                             Total amount is xxx $<br><br>
                         </div>
@@ -74,7 +74,7 @@
             <div class="edit-address">
 
                 <div class="address-info">
-                    <form class="c-form">
+                    <form class="c-form" action="<%= request.getContextPath()%>/getAddress" method="post">
                         <div class="col-md-2" style="margin-left: 50px;">
                             Country:<br><br>
                             City:   <br><br>
@@ -85,7 +85,7 @@
                         <div class="col-md-9">
                             <input type="text" name="country" style="margin-bottom: 12px;"><br>
                             <input type="text" name="city" style="margin-bottom: 12px;"><br>
-                            <input type="text" name="country" style="margin-bottom: 12px;"><br>
+                            <input type="text" name="state" style="margin-bottom: 12px;"><br>
                             <input type="text" name="street" style="margin-bottom: 12px;"><br>
                         </div>
 
