@@ -1,7 +1,10 @@
 package com.test;
 
 
+import jakarta.servlet.http.HttpSession;
+
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 import javax.mail.Authenticator;
 import javax.mail.Message;
@@ -13,6 +16,7 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+
 public class email {
     public static final String MY_EMAIL_ACCOUNT = "13712685569@163.com";
     public static final String MY_EMAIL_PASSWORD = "AOTSZKAYMJAYRMTE";// 密码,是你自己的设置的授权码
@@ -23,9 +27,8 @@ public class email {
 
     //public static final String RECEIVE_EMAIL_ACCOUNT = userEmail;
 
-    public static void sendEmail(String userEmail, int code, boolean id) throws MessagingException {
+    public static void sendEmail(String userEmail, int code, boolean id, List address) throws MessagingException {
         Properties p = new Properties();
-        //String RECEIVE_EMAIL_ACCOUNT = userEmail;
         System.setProperty("java.net.preferIPv4Stack", "true");
         p.setProperty("mail.smtp.host", MEAIL_163_SMTP_HOST);
         p.setProperty("mail.smtp.port", SMTP_163_PORT);
@@ -41,7 +44,7 @@ public class email {
             }
         });
         session.setDebug(true);
-        System.out.println("创建邮件");
+        System.out.println("mail is created");
         MimeMessage message = new MimeMessage(session);
 
         message.setFrom(new InternetAddress(MY_EMAIL_ACCOUNT));
@@ -55,8 +58,49 @@ public class email {
             message.setContent("<h4>Welcome to register HEALTH !</h4>" +
                     "<p>Copy the code here to start your journey with us!</p>"+"<p>You validation code is </p>"+code, "text/html;charset=UTF-8");
         }else{
+
+
             message.setSubject("HEALTH：have new order");
-            //message.setContent("<h2>Welcome to register HEALTH !</h2>");
+            //message.setContent("<p></p>");
+            StringBuilder content = new StringBuilder("<html><head></head><body><h2>new order!</h2>");
+            content.append("<table style=\"font-size=14px;;font-size:18px;\">");
+
+            content.append("<tr>");
+            content.append("<td>user id</td>"); //第一列
+            content.append("<td>user email  </td>"); //第二列
+            content.append("<td>user name</td>"); //第三列
+            content.append("</tr>");
+            //写这里
+            content.append("<tr>");
+            content.append("<td>user id</td>"); //第一列
+            content.append("<td>user email  </td>"); //第二列
+            content.append("<td>user name</td>"); //第三列
+            content.append("</tr>");
+            content.append("</table>");
+
+            content.append("<table border=\"5\" style=\"font-size=14px;;font-size:18px;\">");
+            content.append("<h4>order</h4>");
+            content.append("<tr>");
+            content.append("<td >product name</td>"); //第一列
+            content.append("<td>number</td>"); //第二列
+            content.append("<td>price</td>"); //第三列
+            content.append("</tr>");
+
+            content.append("<tr>");
+            content.append("<td >product name</td>"); //第一列
+            content.append("<td>number</td>"); //第二列
+            content.append("<td>price</td>"); //第三列
+            content.append("</tr>");
+
+
+            content.append("</table>");
+            content.append("<h3>total price is</h3>");
+            content.append("<h3>The address is:</h3>");
+            content.append("<h3>"+address.get(0)+", "+address.get(1)+", "+address.get(2)+", "+address.get(3)+"</h3>");
+            content.append("</body></html>");
+
+            message.setContent(content.toString(),"text/html;charset=utf-8");
+            System.out.println("at here");
         }
 
         message.setSentDate(new Date());
@@ -66,18 +110,5 @@ public class email {
     }
 }
 
-            /*
-            *Properties properties = System.getProperties();
-            properties .put("mail.smtp.starttls.enable", "true");
-            properties .put("mail.smtp.starttls.required", "true");
-            properties.setProperty("mail.smtp.ssl.enable","false");
-            properties.setProperty("mail.smtp.host", "smtp.163.com");//smtp协议地址
-            properties.setProperty("mail.smtp.port", "25");//端口号587
-            properties.setProperty("mail.smtp.auth", "true");//
-            *    props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-                props.setProperty("mail.smtp.socketFactory.fallback", "false");
-                * properties.setProperty("mail.smtp.socketFactory.port", "587");//设置ssl端口
-            properties.setProperty("mail.smtp.socketFactory.fallback", "false");
-            properties.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-             */
+
 
