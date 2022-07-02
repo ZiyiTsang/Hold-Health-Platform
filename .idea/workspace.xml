@@ -9,17 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="submit email">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/GetAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/SendOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_6_15__17_23____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_6_15,_17_23_取消提交了变更_[变更]/shelved.patch" beforeDir="false" />
+    <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="okay">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home_article.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home_shop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home_workout.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/homepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment",
+    "last_opened_file_path": "/Users/tanqianqian/git/PE_Assinment/src/main/webapp/img",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.25172412",
@@ -290,7 +287,8 @@
       <workItem from="1655792566796" duration="694000" />
       <workItem from="1655865139230" duration="4142000" />
       <workItem from="1655880815423" duration="1866000" />
-      <workItem from="1656577766979" duration="5674000" />
+      <workItem from="1656577766979" duration="6073000" />
+      <workItem from="1656748184675" duration="3662000" />
     </task>
     <task id="LOCAL-00001" summary="import the img of article is done">
       <created>1655275767122</created>
@@ -404,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656513375410</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="okay">
+      <created>1656657870176</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1656657870176</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +443,8 @@
     <MESSAGE value="发送邮件的done了" />
     <MESSAGE value="checkout" />
     <MESSAGE value="submit email" />
-    <option name="LAST_COMMIT_MESSAGE" value="submit email" />
+    <MESSAGE value="okay" />
+    <option name="LAST_COMMIT_MESSAGE" value="okay" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

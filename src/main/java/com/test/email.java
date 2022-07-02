@@ -29,7 +29,6 @@ public class email {
 
     public static void sendEmail(String userEmail, int code, boolean id, List address) throws MessagingException {
         Properties p = new Properties();
-        //String RECEIVE_EMAIL_ACCOUNT = userEmail;
         System.setProperty("java.net.preferIPv4Stack", "true");
         p.setProperty("mail.smtp.host", MEAIL_163_SMTP_HOST);
         p.setProperty("mail.smtp.port", SMTP_163_PORT);
@@ -45,7 +44,7 @@ public class email {
             }
         });
         session.setDebug(true);
-        System.out.println("创建邮件");
+        System.out.println("mail is created");
         MimeMessage message = new MimeMessage(session);
 
         message.setFrom(new InternetAddress(MY_EMAIL_ACCOUNT));
