@@ -16,17 +16,36 @@ public class AddCart extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String GoodNum=request.getParameter("num");
         HttpSession session = request.getSession();
-        UserBean ub = (UserBean) session.getAttribute("ub");
-        if(ub==null){  //未登录
+        UserBean ub = null;
+        try{
+            ub = (UserBean) session.getAttribute("user");
+        }catch (java.lang.NullPointerException e){
             response.sendRedirect(request.getContextPath()+"/login.jsp");
         }
+        assert ub != null;
         int userid=ub.getId();
         String goodId= (String) session.getAttribute("goodId");
         CartDAO cd=new CartDAO();
-        if(cd.addCart(String.valueOf(userid),goodId,GoodNum)!=1){
-            System.out.println("add cart fail");
+        System.out.println(userid);
+        System.out.println(goodId);
+        System.out.println(GoodNum);
+
+        int id = 0;
+        try {
+
+            id = Integer.parseInt(goodId);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
         }
-        response.sendRedirect(request.getContextPath()+"/goodsDetail.jsp?id="+goodId);//跳转还没测试过
+        cd.addCart(String.valueOf(userid),goodId,GoodNum);
+//        if(cd.addCart(String.valueOf(userid),goodId,GoodNum)!=1){
+//            System.out.println("add cart fail");
+//            request.setAttribute("addCartMsg","Fail");
+//            response.sendRedirect(request.getContextPath()+"/goodsDetails.jsp?id="+id);//跳转还没测试过
+//        }
+        request.setAttribute("addCartMsg","Successful");
+        System.out.println("add cart successful");
+        response.sendRedirect(request.getContextPath()+"/goodsDetails.jsp?id="+id);//跳转还没测试过
     }
 
     @Override

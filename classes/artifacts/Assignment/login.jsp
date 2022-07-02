@@ -41,7 +41,7 @@
                 </div>
                 <div class="form-group smallText">
                     <br>
-                    <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted" style="float: right;">
+                    <a href="${pageContext.request.contextPath}/homepage.html" class="text-sm text-muted" style="float: right;">
                         <small>back</small>
                     </a>
                     <a href="register-email.jsp?id=1" class="text-sm text-muted " style="float: left;">

@@ -1,11 +1,11 @@
 package com.test;
 
 import com.redis.RedisOps;
+import redis.clients.jedis.Jedis;
 
 public class testRedis {
     public static void main(String[] args) {
         RedisOps redis=new RedisOps();
-        redis.setUserNameAndPassword("zzy","456");
-        System.out.println(redis.getUserNameAndPassword("zzy"));
+        System.out.println(redis.getAllItem("24"));
     }
 }

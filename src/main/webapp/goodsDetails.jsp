@@ -113,15 +113,17 @@
 		<span class="actual">$<%=good.getPrice()%></span>
 	</div>
 	<h2 class="quick">Quick Overview:</h2>
+	<div>${addCartMsg}</div>
 	<p class="quick_desc"> <%=good.getIntroduction()%></p>
 
 	<div class="box-quantity btn_form product-qty">
-		<form action="#">
+
+		<form action="<%= request.getContextPath()%>/addCart">
 			<label style="margin-right: 10px;">Quantity</label>
 			<input type="number" name="num" id="num" value="1" style="width: 45px; margin-right: 30px;"/>
 			<%
 
-			session.setAttribute("good id", id);
+			session.setAttribute("goodId", id);
 		%>
 
 			<button type="submit" class="btn btn-outline-warning">add to cart</button>

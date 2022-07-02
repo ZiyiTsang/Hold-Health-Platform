@@ -81,15 +81,20 @@
             <div class="cart-title">
                 <img src="img/p1.jpg" alt="">
                 <div>
-                    <a href="">Yoga legging</a>
+                    <a href="" style="width:200px;"><%=gb.getGoodName()%></a>
                 </div>
             </div>
-            <div class="cart-price">$4999.00</div>
-            <div class="cart-number">
+<%--            <div class="cart-price">$<%=price%></div>--%>
+
+            <div class="cart-number" style="margin-left: 730px;">
                 <span class="sub">-</span> <input type="text" id="number" value="1"><span class="plus">+</span>
             </div>
-            <div class="cart-subtotal">$4999.00</div>
-            <div class="cart-operate"><a href="">Delete</a></div>
+            <div class="cart-subtotal" style="margin-left: 40px;">$<%=price*((Integer)n.get(i))%></div>
+            <%
+                total = total + price*((Integer)n.get(i));
+            %>
+            <div class="cart-operate" style="margin-left: 30px;"><a href="">Delete</a></div>
+
         </div>
 
         <div class="cart-btn"><span>Total price:</span><span> $147 </span><button class="btn" style="text-align: center; width:120px; margin-left: 20px;">check out</button></div>

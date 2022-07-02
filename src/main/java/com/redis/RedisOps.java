@@ -3,6 +3,8 @@ package com.redis;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
+import java.util.Map;
+
 public class RedisOps {
     public RedisOps() {
         String address = "101.43.195.210";
@@ -52,14 +54,22 @@ public class RedisOps {
     }
     public int addCart(String userID,String GoodID,String GoodNumber){
         Jedis jedis=pool.getResource();
-        int res=Math.toIntExact(jedis.hset("cart:" + userID, GoodID, GoodNumber));
+        int res= Math.toIntExact(jedis.hset("cart:" +userID, GoodID, GoodNumber));
         jedis.close();
+
         return res;
     }
     public void deleteOneItem(String userID,String GoodID){
         Jedis jedis=pool.getResource();
         jedis.hdel("cart:" + userID, GoodID);
         jedis.close();
+    }
+    public Map<String, String> getAllItem(String userID){
+        Jedis jedis=pool.getResource();
+        jedis.auth("Zzy18950146872");
+        Map<String, String> result = jedis.hgetAll("cart:" + userID);
+        jedis.close();
+        return result;
     }
     public void deleteHash(String key){
         Jedis jedis=pool.getResource();
