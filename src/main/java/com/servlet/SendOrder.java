@@ -1,4 +1,5 @@
 package com.servlet;
+import com.JDBC.CartDAO;
 import com.POJO.UserBean;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -14,7 +15,7 @@ import java.util.List;
 public class SendOrder extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("the serlvet is working!");
+//        System.out.println("the serlvet is working!");
         request.setCharacterEncoding("UTF-8");
 
         List<String> address = new ArrayList<String>();
@@ -35,7 +36,8 @@ public class SendOrder extends HttpServlet{
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
-
+        CartDAO cd=new CartDAO();
+        cd.flushUserItem(String.valueOf(userTmp.getId()));
         response.sendRedirect(request.getContextPath()+"/shop.jsp");
     }
 

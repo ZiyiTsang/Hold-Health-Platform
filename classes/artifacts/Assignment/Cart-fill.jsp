@@ -1,4 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="com.POJO.UserBean" %>
+<%@ page import="com.JDBC.UserDAO" %>
+<%@ page import="com.POJO.GoodBean" %>
+<%@ page import="com.JDBC.GoodDAO" %>
+<%@ page import="com.JDBC.CartDAO" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.Map" %>
+<%@ page import="java.util.Collection" %>
+<%@ page import="java.util.ArrayList" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -21,7 +30,7 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 <body>
 <!-- header start -->
-<header class="header-pos" style="background-color: #f6b923">
+<header class="header-pos" style="background-color: #f6b923;">
     <div class="header-area header-middle">
         <div class="container-fluid">
             <!-- navigation bar -->
@@ -39,9 +48,27 @@
                         <nav>
                             <ul style="display:inline-block;">
                                 <li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
-                                <li style="display:inline-block;"><a href="article.jsp">Articles</a></li>
+                                <li style="display:inline-block;"><a href="article.jsp">Article</a></li>
                                 <li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+                                <%
+                                    HttpSession session1 = (HttpSession) request.getSession();
+                                    UserDAO ud = new UserDAO();
+                                    UserBean user = null;
+                                    user = (UserBean) session1.getAttribute("user");
+                                    if(user == null){
+
+                                %>
                                 <li style="display:inline-block;"><a href="login.jsp">login</a></li>
+                                <%
+                                }else{
+                                %>
+                                <li style="display:inline-block;"><a href="${pageContext.request.contextPath}/Logout">login out</a></li>
+                                <img src="<%=user.getProfile()%>" alt="" style="display:inline-block; width:40px;border-radius: 50px;">
+                                <li style="display:inline-block;"><p style="font-weight: bold; font-size:20px; margin-left:10px; color: #1a1e21;"><%=user.getUsername()%></p></li>
+
+                                <%
+                                    }
+                                %>
                             </ul>
                         </nav>
                     </div>
@@ -51,8 +78,32 @@
     </div>
 </header>
 <!-- header end -->
-<br><br><br><br><br><br>
-<div class="public-shop-cart">
+<br>
+<%
+    CartDAO cd = new CartDAO();
+    String id = null;
+    id = String.valueOf(user.getId());
+    Map<String,String> map = cd.getAll(id);
+    Collection<String> vs = map.values();
+    Collection<String> ds = map.keySet();
+    List n = new ArrayList<>();
+    List good = new ArrayList<>();
+    for(String v : vs){
+        int tmp = Integer.parseInt(v);
+        n.add(tmp);
+    }
+    for(String d : ds){
+        int tmp = Integer.parseInt(d);
+        good.add(tmp);
+    }
+
+    double total = 0;
+    GoodDAO gd = new GoodDAO();
+    if(n.size()==0){
+
+
+%>
+<div class="public-shop-cart" style="margin-top: 200px;">
     <div class="content">
         <h2>Shopping cart is empty</h2>
         <br>
@@ -60,46 +111,62 @@
         <p>Click <a href="#">here</a> to continue shopping.</p>
     </div>
 </div>
-
+<%
+    }else{
+%>
 <div class="clearfix"> </div>
-<div class="public-shop-cart">
+<div class="public-shop-cart" style="margin-top: 160px;">
     <div class="content">
-        <span>All 3</span>
+        <span>All <%=n.size()%></span>
         <div class="cart-title">
-            <span>
-                <input type="checkbox" id="all">
-                <label for="all">Select all</label>
-            </span>
             <span>Products</span>
-            <span>Unit price</span>
+            <span></span>
             <span>Quantity</span>
+            <span>Unit price</span>
             <span>Subtotal</span>
             <span>Operation</span>
         </div>
+
+        <%
+
+
+            for(int i = 0; i < n.size(); i++){
+
+//                GoodBean gb = gd.getGoodsById((Integer) good.get(i));
+                int tmp = (Integer) good.get(i);
+                GoodBean gb = gd.getGoodsById(tmp);
+                double price = gb.getPrice();
+        %>
         <div class="cart-detail">
-            <input type="checkbox">
             <div class="cart-title">
-                <img src="img/p1.jpg" alt="">
-                <div>
-                    <a href="" style="width:200px;"><%=gb.getGoodName()%></a>
-                </div>
+                <img src="<%=gb.getImage()%>" alt="">
+                <div class="cart-subtotal" style="width:400px;"><%=gb.getGoodName()%></div>
             </div>
 <%--            <div class="cart-price">$<%=price%></div>--%>
 
-            <div class="cart-number" style="margin-left: 730px;">
-                <span class="sub">-</span> <input type="text" id="number" value="1"><span class="plus">+</span>
+            <div class="cart-number" style="margin-left: 670px;">
+                <div class="cart-subtotal" style="margin-left: 120px;"><%=n.get(i)%></div>
             </div>
+            <div class="cart-subtotal" style="margin-left: 40px;">$<%=price%></div>
             <div class="cart-subtotal" style="margin-left: 40px;">$<%=price*((Integer)n.get(i))%></div>
             <%
                 total = total + price*((Integer)n.get(i));
             %>
-            <div class="cart-operate" style="margin-left: 30px;"><a href="">Delete</a></div>
+            <div class="cart-operate" style="margin-left: 30px;"><a href="${pageContext.request.contextPath}/DeleteItemFromCart?GoodID=<%=gb.getGoodId()%>">Delete</a></div>
 
         </div>
+        <%
+            }
 
-        <div class="cart-btn"><span>Total price:</span><span> $147 </span><button class="btn" style="text-align: center; width:120px; margin-left: 20px;">check out</button></div>
+            session1.setAttribute("total",total);
+        %>
+
+        <div class="cart-btn"><span>Total price:</span><span> $<%=total%> </span><a type="button" href="checkout.jsp" class="btn" style="text-align: center; width:120px; margin-left: 20px;">Check out</a></div>
     </div>
 </div>
+<%
+    }
+%>
 
 <br><br><br>
 <div class="public-shop-cart">
@@ -108,35 +175,34 @@
         <br>
         <table>
             <tr>
+
+                <%
+                    GoodBean gb;
+                    for(int i=1; i<9; i+=2){
+                        gb = gd.getGoodsById(i);
+                %>
                 <td>
-                    <img src="img/p1.jpg" style="height: 200px;width: 200px;border:0px">
+                    <a href="goodsDetails.jsp?id=<%=gb.getGoodId()%>" ><img src="<%=gb.getImage()%>" style="height: 200px;width: 200px;border:0px"></a>
                     <br><br>
-                    <h4 style="float: left;">T-shirt</h4>
-                    <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
+                    <a href="goodsDetails.jsp?id=<%=gb.getGoodId()%>" style="float: left;"><%=gb.getGoodName()%>></a>
+                    <h4 style="float: contour;margin-left:7em;color:firebrick">$<%=gb.getPrice()%></h4>
                 </td>
-                <td>
-                    <img src="img/p1.jpg" style="height: 200px;width: 200px;">
-                    <br><br>
-                    <h4 style="float: left;">T-shirt</h4>
-                    <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
-                </td>
-                <td>
-                    <img src="img/p1.jpg" style="height: 200px;width: 200px;">
-                    <br><br>
-                    <h4 style="float: left;">T-shirt</h4>
-                    <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
-                </td>
-                <td>
-                    <img src="img/p1.jpg" style="height: 200px;width: 200px;">
-                    <br><br>
-                    <h4 style="float: left;">T-shirt</h4>
-                    <h4 style="float: contour;margin-left:7em;color:firebrick">$140</h4>
-                </td>
+                <%
+                    }
+                %>
+
             </tr>
         </table>
 
 
     </div>
 </div>
+
+<script type="text/javascript">
+    function validate(){
+        alert("Add successful!");
+        return true;
+    }
+</script>
 </body>
 </html>

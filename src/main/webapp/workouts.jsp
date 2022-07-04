@@ -10,7 +10,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Health</title>
+<title>Workout</title>
 
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,8 +30,6 @@
 <link rel="stylesheet" href="css/Shop_style.css">
 </head>
 <body>
-
-
 <!-- header start -->
 <header class="header-pos">
 	<div class="header-area header-middle">
@@ -41,6 +39,7 @@
 				<!-- home button -->
 				<div class="col-md-2 col-sm-3 col-xs-12">
 					<div style="padding-top: 30px;" >
+
 						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
 					</div>
 				</div>

@@ -13,6 +13,7 @@ import java.io.IOException;
 public class AddCart extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("add cart didn't work");
         request.setCharacterEncoding("UTF-8");
         String GoodNum=request.getParameter("num");
         HttpSession session = request.getSession();
@@ -23,12 +24,9 @@ public class AddCart extends HttpServlet {
             response.sendRedirect(request.getContextPath()+"/login.jsp");
         }
         assert ub != null;
-        int userid=ub.getId();
         String goodId= (String) session.getAttribute("goodId");
         CartDAO cd=new CartDAO();
-        System.out.println(userid);
-        System.out.println(goodId);
-        System.out.println(GoodNum);
+
 
         int id = 0;
         try {
@@ -37,12 +35,7 @@ public class AddCart extends HttpServlet {
         } catch (NumberFormatException e) {
             e.printStackTrace();
         }
-        cd.addCart(String.valueOf(userid),goodId,GoodNum);
-//        if(cd.addCart(String.valueOf(userid),goodId,GoodNum)!=1){
-//            System.out.println("add cart fail");
-//            request.setAttribute("addCartMsg","Fail");
-//            response.sendRedirect(request.getContextPath()+"/goodsDetails.jsp?id="+id);//跳转还没测试过
-//        }
+        cd.addCart(String.valueOf(ub.getId()),goodId,GoodNum);
         request.setAttribute("addCartMsg","Successful");
         System.out.println("add cart successful");
         response.sendRedirect(request.getContextPath()+"/goodsDetails.jsp?id="+id);//跳转还没测试过

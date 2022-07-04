@@ -20,8 +20,9 @@
 <div class="container">
     <div class="form row" style="margin-top: 240px;">
         <form class="form-horizontal col-sm-offset-3 col-md-offset-3" action="<%= request.getContextPath()%>/loginServlet" method="post">
-            <div>${loginMsg}${Msg}</div>
-            <h3 class="form-title" style="margin-left: 70px; font-family: times; font-weight: bold; font-size:30px;">login</h3><br><br>
+
+            <h3 class="form-title" style="margin-left: 70px; font-family: times; font-weight: bold; font-size:30px;">Login</h3>
+            <div style="color: red;margin-left: 60px;">${loginMsg}${Msg}</div><br><br>
             <div class="col-sm-9 col-md-9">
                 <div class="form-group">
                     <!--        用户名图标和用户名输入框            -->
@@ -45,7 +46,7 @@
                         <small>back</small>
                     </a>
                     <a href="register-email.jsp?id=1" class="text-sm text-muted " style="float: left;">
-                        <small>register</small>
+                        <small>Register</small>
                     </a>
                 </div><br>
             </div>

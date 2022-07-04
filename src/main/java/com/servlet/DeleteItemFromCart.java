@@ -18,7 +18,7 @@ public class DeleteItemFromCart extends HttpServlet {
         // request.setCharacterEncoding("UTF-8");
         String GoodID=request.getParameter("GoodID");
         HttpSession session = request.getSession();
-        UserBean ub = (UserBean) session.getAttribute("ub");
+        UserBean ub = (UserBean) session.getAttribute("user");
         if(ub==null){  //未登录
             response.sendRedirect(request.getContextPath()+"/login.jsp");
         }
@@ -26,7 +26,7 @@ public class DeleteItemFromCart extends HttpServlet {
         //String goodId= (String) session.getAttribute("goodId");
         CartDAO cd=new CartDAO();
         cd.deleteItem(String.valueOf(userid),GoodID); //删除特定商品
-        response.sendRedirect(request.getContextPath());//跳转还没测试过
+        response.sendRedirect(request.getContextPath()+"/Cart-fill.jsp");
     }
 
     @Override

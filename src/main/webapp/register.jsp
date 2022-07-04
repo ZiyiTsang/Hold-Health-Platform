@@ -9,7 +9,7 @@
 <html lang="en">
 
 <head>
-    <title>register</title>
+    <title>Register</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -78,8 +78,8 @@
                 </div>
                 <div class="form-group">
                     <br>
-                    <a href="${pageContext.request.contextPath}/workout-page.css" class="text-sm text-muted"><small>back</small></a>
-                    <a href="${pageContext.request.contextPath}/" class="text-sm text-muted"  style="margin-left: 320px;"><small>login</small></a>
+                    <a href="${pageContext.request.contextPath}/homepage.html" class="text-sm text-muted"><small>back</small></a>
+                    <a href="${pageContext.request.contextPath}/login.jsp" class="text-sm text-muted"  style="margin-left: 320px;"><small>login</small></a>
                 </div>
             </div><br>
 

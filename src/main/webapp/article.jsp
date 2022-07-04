@@ -65,16 +65,14 @@
                                     if(user == null){
 
                                 %>
-								<li style="display:inline-block;"><a href="">login</a></li>
+								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
                                 <%
                                     }else{
                                         %>
                                 <img src="<%=user.getProfile()%>" alt="" style="display:inline-block; width:40px;border-radius: 50px;">
                                 <li style="display:inline-block;"><p style="font-weight: bold; font-size:20px; margin-left:10px; color: #1a1e21;"><%=user.getUsername()%></p></li>
+
                                 <%
-                                        /**user.getProfile()
-                                         * user.getProfile()
-                                         */
 
                                     }
                                 %>
@@ -250,7 +248,7 @@
                                 </div>
                                 <p><%=articles.get(0).getAbstract()%></p>
                                 <div class="read-more">
-                                    <a href="articles-details.jsp?id=<%=articles.get(0).getId()%>">Read More </a>
+                                    <a href="CheckLogin?id=<%=articles.get(0).getId()%>">Read More </a>
                                 </div>
                             </div>
                         </div>

@@ -7,7 +7,9 @@ public class UserBean {
     private String profile;
     private String email;
 
-    public Integer getId() {
+    private Boolean gender;
+
+    public int getId() {
         return id;
     }
 
@@ -25,5 +27,12 @@ public class UserBean {
 
     public String getProfile() {
         return profile;
+    }
+
+    public String getGender() {
+        if(this.gender){
+            return "male";
+        }
+        return "female";
     }
 }
