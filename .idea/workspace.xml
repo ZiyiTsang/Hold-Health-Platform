@@ -10,35 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6629d78-00e1-4710-9765-a9e03ca47cf8" name="变更" comment="debug 2022/7/3">
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/img/home_article.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/img/home_shop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/img/home_workout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/img/unregistered.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CheckLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CheckLoginForGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Logout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/Cart-fill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/Cart-fill.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/goodsDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/goodsDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/Assignment/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JDBC/CartDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JDBC/CartDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/POJO/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/POJO/UserBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redis/RedisOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/AddCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/AddCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/CheckEmailCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CheckEmailCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/DeleteItemFromCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/DeleteItemFromCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/SendOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/SendOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testRedis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Cart-fill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Cart-fill.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/article.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register-email.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register-email.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shop.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" afterDir="false" />
     </list>
     <list id="c6776152-7c16-4af8-8e62-44cee65fc7b5" name="tanqianqian 进行的变更" comment="">
@@ -53,16 +34,12 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/CommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/CommentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/EmailCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/SendOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/SendOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TestUserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/email.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/testComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Cart-fill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Cart-fill.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/article.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/articles-details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/goodsDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/goodsDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workouts.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,66 +74,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/webapp/Cart-fill.jsp">
-      <ranges>
-        <range start1="32" end1="33" start2="32" end2="33" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="64" end1="64" start2="64" end2="65" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="66" end1="66" start2="67" end2="68" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="78" end1="120" start2="80" end2="98" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="121" end1="122" start2="99" end2="132" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="126" end1="127" start2="136" end2="136" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="133" end1="136" start2="142" end2="143" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="139" end1="141" start2="146" end2="148" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="142" end1="142" start2="149" end2="150" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="146" end1="147" start2="154" end2="155" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="151" end1="151" start2="159" end2="161" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="153" end1="154" start2="163" end2="164" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="156" end1="156" start2="166" end2="169" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="171" end1="172" start2="184" end2="185" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="173" end1="174" start2="186" end2="187" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="186" end1="186" start2="199" end2="206" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/webapp/workouts.jsp">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="6" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="12" end1="13" start2="14" end2="15" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="20" end1="20" start2="22" end2="23" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="21" end1="21" start2="24" end2="26" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="30" end1="30" start2="35" end2="36" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="32" end1="34" start2="38" end2="38" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="43" end1="43" start2="47" end2="48" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="51" end1="54" start2="56" end2="68" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="55" end1="55" start2="69" end2="80" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="72" end1="73" start2="97" end2="97" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="171" end1="172" start2="195" end2="196" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="194" end1="195" start2="218" end2="219" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/servlet/SendOrder.java">
-      <ranges>
-        <range start1="1" end1="1" start2="1" end2="2" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="6" end1="6" start2="7" end2="9" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="16" end1="17" start2="19" end2="20" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="31" end1="31" start2="34" end2="48" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="33" end1="34" start2="50" end2="51" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="37" end1="38" start2="54" end2="56" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/webapp/article.jsp">
-      <ranges>
-        <range start1="67" end1="68" start2="67" end2="68" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="71" end1="71" start2="71" end2="72" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="73" end1="73" start2="74" end2="75" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="74" end1="77" start2="76" end2="76" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-        <range start1="241" end1="242" start2="240" end2="241" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="243" end1="244" start2="242" end2="243" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="247" end1="249" start2="246" end2="248" changelist="c6776152-7c16-4af8-8e62-44cee65fc7b5" />
-        <range start1="252" end1="253" start2="251" end2="252" changelist="e6629d78-00e1-4710-9765-a9e03ca47cf8" />
-      </ranges>
-    </file>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -421,6 +338,8 @@
       <workItem from="1656836073111" duration="326000" />
       <workItem from="1656851473445" duration="18388000" />
       <workItem from="1656897944600" duration="11202000" />
+      <workItem from="1656989913969" duration="403000" />
+      <workItem from="1656990499515" duration="3252000" />
     </task>
     <task id="LOCAL-00001" summary="import the img of article is done">
       <created>1655275767122</created>

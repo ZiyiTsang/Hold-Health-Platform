@@ -69,6 +69,7 @@
                                 <%
                                     }else{
                                         %>
+                                <li style="display:inline-block;"><a href="${pageContext.request.contextPath}/Logout">login out</a></li>
                                 <img src="<%=user.getProfile()%>" alt="" style="display:inline-block; width:40px;border-radius: 50px;">
                                 <li style="display:inline-block;"><p style="font-weight: bold; font-size:20px; margin-left:10px; color: #1a1e21;"><%=user.getUsername()%></p></li>
 
@@ -237,14 +238,14 @@
                                 <a href="#"><img alt="" src="<%=articles.get(0).getArtIMG()%>"></a>
                             </div>
                             <div class="article-info">
-                                <h3><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><%=articles.get(0).getTitle()%></a></h3>
+                                <h3><a ><%=articles.get(0).getTitle()%></a></h3>
                                 <div class="article-meta article-large">
-                                    <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-tags" aria-hidden="true"></i> <%=articles.get(0).getTag()%></a></span>
+                                    <span><a ><i class="fa fa-tags" aria-hidden="true"></i> <%=articles.get(0).getTag()%></a></span>
                                     <%
                                         CommentDAO cd = new CommentDAO();
                                     %>
-                                    <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-comment" aria-hidden="true"></i><%=cd.getCommentByArticleId(articles.get(0).getId()).size()%> comments</a></span>
-                                    <span><a href="articles-details.jsp?id=<%=articles.get(0).getId()%>"><i class="fa fa-eye" aria-hidden="true"></i> <%=articles.get(0).getView()%> views</a></span>
+                                    <span><a ><i class="fa fa-comment" aria-hidden="true"></i><%=cd.getCommentByArticleId(articles.get(0).getId()).size()%> comments</a></span>
+                                    <span><a ><i class="fa fa-eye" aria-hidden="true"></i> <%=articles.get(0).getView()%> views</a></span>
                                 </div>
                                 <p><%=articles.get(0).getAbstract()%></p>
                                 <div class="read-more">
@@ -276,7 +277,7 @@
                                 </div>
                                 <p><%=articles.get(i).getAbstract()%></p>
                                 <div class="read-more">
-                                    <a href="articles-details.jsp?id=<%=articles.get(i).getId()%>">Read More </a>
+                                    <a href="CheckLogin?id=<%=articles.get(0).getId()%>">Read More </a>
                                 </div>
                             </div>
                         </div>

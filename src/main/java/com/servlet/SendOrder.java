@@ -5,6 +5,8 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import com.test.email;
+import com.POJO.UserBean;
+import com.JDBC.UserDAO;
 
 import javax.mail.MessagingException;
 import java.io.IOException;
@@ -30,9 +32,23 @@ public class SendOrder extends HttpServlet{
         address.add(state);
         address.add(street);
 
+        List<String> user = new ArrayList<String>();
+        UserDAO ud = new UserDAO();
+        UserBean userTmp = null;
+        userTmp = (UserBean) session.getAttribute("user");
+        String total = String.valueOf(session.getAttribute("total"));
+        String id = String.valueOf(userTmp.getId());
+        String mail = userTmp.getEmail();
+        String name = userTmp.getUsername();
+
+        user.add(id);
+        user.add(mail);
+        user.add(name);
+        user.add(total);
+
 
         try {
-            email.sendEmail("swe2009514@xmu.edu.my", 1, false,address);
+            email.sendEmail("cme1909120@xmu.edu.my", 1, false,address,user);
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }

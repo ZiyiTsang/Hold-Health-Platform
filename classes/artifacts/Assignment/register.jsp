@@ -24,7 +24,7 @@
 <div class="container">
     <div class="form row" style="margin-top: 120px;">
         <div style="color: red; text-align: center; margin-top: 10px;">${loginMsg}${Msg}</div>
-        <h3 class="form-title" style="margin-left: 260px; font-family: times; font-weight: bold; font-size:30px;">register</h3><br><br>
+        <h3 class="form-title" style="margin-left: 260px; font-family: times; font-weight: bold; font-size:30px;">Register</h3><br><br>
 
 
         <form style="margin-left: 110px;" action="<%= request.getContextPath()%>/registerServlet" method="post">
@@ -74,7 +74,7 @@
 
                 <!--         register button           -->
                 <div class="form-group" style="margin-top: 50px; margin-left: 320px;">
-                    <input type="submit" value="register" class="btn btn-success">
+                    <input type="submit" value="Register" class="btn btn-success">
                 </div>
                 <div class="form-group">
                     <br>

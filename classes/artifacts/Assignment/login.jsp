@@ -22,7 +22,9 @@
         <form class="form-horizontal col-sm-offset-3 col-md-offset-3" action="<%= request.getContextPath()%>/loginServlet" method="post">
 
             <h3 class="form-title" style="margin-left: 70px; font-family: times; font-weight: bold; font-size:30px;">Login</h3>
-            <div style="color: red;margin-left: 60px;">${loginMsg}${Msg}</div><br><br>
+            <div style="color: red;margin-left:40px;">${loginMsg}${Msg}</div>
+            <div style="color: red;margin-left:50px;">${Msg2}</div>
+            <br>
             <div class="col-sm-9 col-md-9">
                 <div class="form-group">
                     <!--        用户名图标和用户名输入框            -->

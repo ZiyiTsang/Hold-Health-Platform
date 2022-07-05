@@ -24,6 +24,7 @@ public class Register extends HttpServlet {
         if (username == null || password == null || passwordRepeat == null) {
             request.setAttribute("Msg", "should not be empty");
             request.getRequestDispatcher("register.jsp").forward(request, response);
+            return;
         }
         session = request.getSession();
         String code1 = (String) session.getAttribute("code");
@@ -31,22 +32,27 @@ public class Register extends HttpServlet {
         if (!code1.equals(code)) {
             request.setAttribute("Msg", "code wrong❌");
             request.getRequestDispatcher("register.jsp").forward(request, response);
+            return;
         }
         UserDAO ud = new UserDAO();
         if (ud.getUserByUsername(username) != null) {
             request.setAttribute("Msg", "User already exist");
             request.getRequestDispatcher("register.jsp").forward(request, response);
+            return;
         }
         if (!passwordRepeat.equals(password)) {
             request.setAttribute("Msg", "password different from repeat one");
             request.getRequestDispatcher("register.jsp").forward(request, response);
+            return;
         }
         if (passwordRepeat.length() < 5) {
             request.setAttribute("Msg", "password too short(ensure >5)");
             request.getRequestDispatcher("register.jsp").forward(request, response);
+            return;
         }
         ud.newUser(username, password, true, email);
-        request.setAttribute("Msg", "Register Successful,Please Login");
+        request.setAttribute("Msg", "Register Successful");
+        request.setAttribute("Msg2", "Please Login");
         request.getRequestDispatcher("login.jsp").forward(request, response);
         response.sendRedirect(request.getContextPath() + "/homepage.html");
     }

@@ -62,6 +62,7 @@
                                 <%
                                 }else{
                                 %>
+                                <li style="display:inline-block;"><a href="${pageContext.request.contextPath}/Logout">login out</a></li>
                                 <img src="<%=user.getProfile()%>" alt="" style="display:inline-block; width:40px;border-radius: 50px;">
                                 <li style="display:inline-block;"><p style="font-weight: bold; font-size:20px; margin-left:10px; color: #1a1e21;"><%=user.getUsername()%></p></li>
 

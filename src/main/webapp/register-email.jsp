@@ -20,7 +20,7 @@
 <div class="container">
     <div class="form row" style="margin-top: 240px;">
 
-            <h3 class="form-title" style="margin-left: 160px; font-family: times; font-weight: bold; font-size:30px;">register</h3><br><br>
+            <h3 class="form-title" style="margin-left: 160px; font-family: times; font-weight: bold; font-size:30px;">Register</h3><br><br>
             <div class="col-sm-9 col-md-9" style="margin-left: 40px;">
                 <p style="font-family: Times; font-size: 18px;margin-left: 5px;">Register</p>
             <%
@@ -53,7 +53,7 @@
                     <p style="margin-left: 0px;color: #0f5132; font-size: 16px;" >
                         <input class="form-control " type="email" name="email" id="email" placeholder="email address" required style="width:  240px; " onblur="validate_email(this.value)">
                         <span id = "test_email" style="float: right;"></span>
-                        <button type="submit" value="register" class="btn btn-success pull-right" style="margin-left: 120px;margin-top: 20px;">Send the code</button>
+                        <button type="submit" value="Register" class="btn btn-success pull-right" style="margin-left: 120px;margin-top: 20px;">Send the code</button>
 
                 </form>
                 <%
