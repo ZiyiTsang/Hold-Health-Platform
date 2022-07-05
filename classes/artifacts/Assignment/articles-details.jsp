@@ -1,5 +1,7 @@
 <%@ page import="com.JDBC.ArticleDAO" %>
 <%@ page import="com.POJO.ArticleBean" %>
+<%@ page import="com.POJO.UserBean" %>
+<%@ page import="com.JDBC.UserDAO" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.POJO.CommentBean" %>
 <%@ page import="com.JDBC.CommentDAO" %>
@@ -48,10 +50,29 @@
 					<div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
 						<nav>
 							<ul style="display:inline-block;">
-								<li style="display:inline-block;"><a href="">Workouts</a></li>
-								<li style="display:inline-block;"><a href="">Health</a></li>
-								<li style="display:inline-block;"><a href="">Shop</a></li>
-								<li style="display:inline-block;"><a href="">login</a></li>
+								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
+								<li style="display:inline-block;"><a href="article.jsp">Article</a></li>
+								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+								<%
+									HttpSession session1 = (HttpSession) request.getSession();
+									UserDAO ud = new UserDAO();
+									UserBean user = null;
+									user = (UserBean) session1.getAttribute("user");
+									if(user == null){
+
+								%>
+								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
+								<%
+								}else{
+								%>
+								<li style="display:inline-block;"><a href="${pageContext.request.contextPath}/Logout">login out</a></li>
+								<img src="<%=user.getProfile()%>" alt="" style="display:inline-block; width:40px;border-radius: 50px;">
+								<li style="display:inline-block;"><p style="font-weight: bold; font-size:20px; margin-left:10px; color: #1a1e21;"><%=user.getUsername()%></p></li>
+
+								<%
+
+									}
+								%>
 							</ul>
 						</nav>
 					</div>				
@@ -123,9 +144,10 @@
 				</ul><br>
 
 				<div id="error_message"></div>
+
 				<form class="make-comment" onsubmit="return validate();" action="<%= request.getContextPath()%>/commentServlet?id=<%=id%>" method="post">
 					<div>${addCommentMsg}${Msg}</div>
-					<img src="img/bilibili.png" class="artDe-userPhoto">
+					<img src="<%=user.getProfile()%>" class="artDe-userPhoto">
 					<textarea id="content" rows="" cols="" name="content" placeholder="make a comment here ~ ~"></textarea>
 					<%
 						session.setAttribute("article id", id);
@@ -135,17 +157,23 @@
 
 				<%
 					for(int i = 0; i  < comments.size(); i++){
+						UserBean ub = ud.getUserById(comments.get(i).getAuthor_id());
 				%>
 				<div class="artDe-commentor1">
-					<p><img src="img/bilibili.png" class="artDe-userPhoto"><%=comments.get(i).getAuthor()%></p>
+					<p><img src="<%=ub.getProfile()%>" class="artDe-userPhoto"><%=ub.getUsername()%></p>
 					<div class="artDe-com-details">
 						<h5><%=comments.get(i).getContent()%></h5>
 						<p><%=comments.get(i).getTime()%>
+							<%
+								//session1.setAttribute("id",id);
+								int commentId = comments.get(i).getComment_id();
+							%>
 							<a style="margin-left:10px;">
-							<a href="<%= request.getContextPath()%>/commentLike?id=<%=id%>" style="margin-left:10px;">
+							<a href="<%= request.getContextPath()%>/commentLike?id=<%=commentId%>" style="margin-left:10px;">
 								<i class="pe-7s-like"></i>
 							</a>
 							<%=comments.get(i).getLike()%>
+
 						</p>
 					</div>
 				</div>
@@ -193,5 +221,6 @@
 <script src="js/plugins.js"></script>
 <!-- Main js file that contents all jQuery plugins activation. -->
 <script src="js/main.js"></script>
+
 </body>
 </html>

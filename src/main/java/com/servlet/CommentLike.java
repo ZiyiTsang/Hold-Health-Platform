@@ -13,18 +13,18 @@ public class CommentLike extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
-        String num_id = null;
-        num_id = request.getParameter("id");
-        //String num_id = String.valueOf(request.getSession().getAttribute("article id"));
+        int num_id = 0;
+
+        HttpSession session = request.getSession();
+        num_id = Integer.parseInt(String.valueOf(session.getAttribute("article id")));
+
         CommentDAO cd = new CommentDAO();
-        int id = 0;
-        try {
-            id = Integer.parseInt(num_id);
-        } catch (NumberFormatException e) {
-            e.printStackTrace();
-        }
-        cd.addLikes(id);
-        response.sendRedirect(request.getContextPath()+"/articles-details.jsp?id=" + id);
+
+//request.getParameter("num")
+        int comment = Integer.parseInt(request.getParameter("id"));
+        System.out.println("comment id = "+comment);
+        cd.addLikes(comment);
+        response.sendRedirect(request.getContextPath()+"/articles-details.jsp?id=" + num_id);
     }
 
     @Override

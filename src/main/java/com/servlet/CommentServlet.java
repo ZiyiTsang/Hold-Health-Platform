@@ -2,6 +2,8 @@ package com.servlet;
 
 import com.JDBC.CommentDAO;
 import com.POJO.CommentBean;
+import com.JDBC.UserDAO;
+import com.POJO.UserBean;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -14,7 +16,12 @@ public class CommentServlet extends HttpServlet{
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("the serlvet is working!");
         request.setCharacterEncoding("UTF-8");
-        //String author = request.getParameter("author");
+
+        HttpSession session1 = (HttpSession) request.getSession();
+        UserDAO ud = new UserDAO();
+        UserBean user = null;
+        user = (UserBean) session1.getAttribute("user");
+
         String content = request.getParameter("content");
         String num_id = String.valueOf(request.getSession().getAttribute("article id"));
         CommentDAO cd = new CommentDAO();
@@ -26,8 +33,8 @@ public class CommentServlet extends HttpServlet{
             } catch (NumberFormatException e) {
                 e.printStackTrace();
             }
-//            CommentBean cb = new CommentBean("commentTest", 0, id, content);
-//            cd.addComment(cb);
+            CommentBean cb = new CommentBean(user.getId(), 0, id, content);
+            cd.addComment(cb);
 
             response.sendRedirect(request.getContextPath()+"/articles-details.jsp?id=" + id);
         } else {

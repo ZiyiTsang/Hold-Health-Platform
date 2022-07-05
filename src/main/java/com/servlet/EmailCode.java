@@ -18,14 +18,14 @@ public class EmailCode extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String email = request.getParameter("email");
         int code = 0;
-//        email mail = new email();
+
         HttpSession session= request.getSession();
 
 
         code = (int) ((Math.random()*7+1)*1000+(Math.random()*9+1)*100+(Math.random()*9+1)*10+(Math.random()*9+1));
         System.out.println(code);
         try {
-            com.test.email.sendEmail(email, code, true,null);//1034337098@qq.com
+            com.test.email.sendEmail(email, code, true,null,null);//1034337098@qq.com
             session.setAttribute("ecode",String.valueOf(code));//String.valueOf(code)
             session.setAttribute("email",email);
         } catch (MessagingException e) {

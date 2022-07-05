@@ -38,7 +38,9 @@
                 e.printStackTrace();
             }
 
+
             if(num_id == 1){
+                String total = String.valueOf(request.getSession().getAttribute("total"));
         %>
             <div class="cart-fill" style="padding-bottom: 55px;">
                 <div class="content">
@@ -47,9 +49,9 @@
             <div class="edit-address">
 
                 <div class="address-info">
-                    <form class="c-form" action="<%= request.getContextPath()%>/sendOrder" method="post">
+                    <form class="c-form" action="<%= request.getContextPath()%>/sendOrder" method="post" onsubmit="return validate();">
                         <div style="margin-left: 50px;">
-                            Total amount is xxx $<br><br>
+                            Total amount is <%=total%> $<br><br>
                         </div>
 
                         <img src="img/wechat.JPG" style="width: 160px; margin-left: 50px;">
@@ -102,6 +104,25 @@
         %>
     </div>
 </div>
+
+
+ <script type="text/javascript">
+     function validate(){
+        alert("Order submitted successfully!");
+        return true;
+     }
+</script>
+
+<!-- jquery latest version -->
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap framework js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- jquery.nivo.slider js -->
+<script src="js/jquery.nivo.slider.pack.js"></script>
+<!-- All js plugins included in this file.  -->
+<script src="js/plugins.js"></script>
+<!-- Main js file that contents all jQuery plugins activation. -->
+<script src="js/main.js"></script>
 </body>
 
 </html>

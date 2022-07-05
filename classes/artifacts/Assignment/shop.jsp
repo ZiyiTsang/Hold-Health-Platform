@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
 <%@ page import="com.POJO.GoodBean" %>
 <%@ page import="com.JDBC.GoodDAO" %>
+<%@ page import="com.POJO.UserBean" %>
+<%@ page import="com.JDBC.UserDAO" %>
 <%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -39,7 +41,18 @@
 				<div class="col-md-2 col-sm-3 col-xs-12">
 					<div style="padding-top: 30px;" >
 						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
+						<%
+							HttpSession session1 = (HttpSession) request.getSession();
+							UserDAO ud = new UserDAO();
+							UserBean user = null;
+							user = (UserBean) session1.getAttribute("user");
+
+							if(user != null){
+						%>
 						<a href="Cart-fill.jsp"><img src="img/cart.png" style="height:40px;margin-left: 20px;"/></a>
+						<%
+							}
+						%>
 					</div>
 				</div>				
 				<div class="col-md-10 col-sm-9 col-xs-12 text-right xs-center">
@@ -50,7 +63,22 @@
 								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
 								<li style="display:inline-block;"><a href="article.jsp">Articles</a></li>
 								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+								<%
+									if(user == null){
+
+								%>
 								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
+								<%
+								}else{
+								%>
+								<li style="display:inline-block;"><a href="${pageContext.request.contextPath}/Logout">login out</a></li>
+								<img src="<%=user.getProfile()%>" alt="" style="display:inline-block; width:40px;border-radius: 50px;">
+								<li style="display:inline-block;"><p style="font-weight: bold; font-size:20px; margin-left:10px; color: #1a1e21;"><%=user.getUsername()%></p></li>
+
+								<%
+
+									}
+								%>
 							</ul>
 						</nav>
 					</div>				
@@ -67,7 +95,6 @@
 	GoodDAO gd = new GoodDAO();
 
 	List<GoodBean> gTitle = null, gTag = null, goods = null;
-	HttpSession session1 = (HttpSession) request.getSession();
 	goods = (List<GoodBean>) session1.getAttribute("gTitle");
 	gTag= (List<GoodBean>) session1.getAttribute("gTag");
 	gTitle = goods;
@@ -188,7 +215,7 @@
 						<p><%=goods.get(i).getGoodName()%></p>
 						<span class="dollar">$<%=goods.get(i).getPrice()%></span>
 						<div class="details-in">
-							<a href="goodsDetails.jsp?id=<%=1+2*i%>" class="details">Details</a>
+							<a href="CheckLoginForGoods?id=<%=1+2*i%>" class="details">Details</a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>

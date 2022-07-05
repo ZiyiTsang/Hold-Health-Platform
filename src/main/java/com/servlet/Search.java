@@ -61,7 +61,6 @@ public class Search extends HttpServlet{
             session.setAttribute("gTag", gTag);
             response.sendRedirect(request.getContextPath()+"/shop.jsp");
         }
-       // response.sendRedirect(request.getContextPath()+"/articles-details.jsp?id=" + id);
     }
 
     @Override

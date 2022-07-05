@@ -2,6 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ page import="com.POJO.VideoBean" %>
 <%@ page import="com.JDBC.VideoDAO" %>
+<%@ page import="com.POJO.UserBean" %>
+<%@ page import="com.JDBC.UserDAO" %>
 <%@ page import="java.util.List" %>
 <%@ page import="org.apache.ibatis.jdbc.Null" %>
 <%@ page import="jakarta.servlet.http.HttpSession" %>
@@ -10,7 +12,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Health</title>
+<title>Workout</title>
 
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +20,10 @@
 
 <!-- All css files are included here. -->
 <!-- Bootstrap framework main css -->
+<link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
 <!-- This core.css file contents all plugings css file. -->
 <link rel="stylesheet" href="css/core.css">
 <!-- Theme main style -->
@@ -28,10 +33,9 @@
 <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 <!-- this page css -->
 <link rel="stylesheet" href="css/Shop_style.css">
+
 </head>
 <body>
-
-
 <!-- header start -->
 <header class="header-pos">
 	<div class="header-area header-middle">
@@ -41,6 +45,7 @@
 				<!-- home button -->
 				<div class="col-md-2 col-sm-3 col-xs-12">
 					<div style="padding-top: 30px;" >
+
 						<a href="homepage.html"><img src="img/home2.png" style="height:40px;"/></a>
 					</div>
 				</div>
@@ -49,10 +54,30 @@
 					<div class="main-menu hidden-sm hidden-xs" style="display:inline-block;">
 						<nav>
 							<ul style="display:inline-block;">
-								<li style="display:inline-block;"><a href="workouts.jsp">Workouts</a></li>
-								<li style="display:inline-block;"><a href="article.jsp">Article</a></li>
-								<li style="display:inline-block;"><a href="shop.jsp">Shop</a></li>
+								<li style="display:inline-block; "><a href="workouts.jsp">Workouts</a></li>
+								<li style="display:inline-block; "><a href="article.jsp">Article</a></li>
+								<li style="display:inline-block; "><a href="shop.jsp">Shop</a></li>
+
+								<%
+									HttpSession session1 = (HttpSession) request.getSession();
+									UserDAO ud = new UserDAO();
+									UserBean user = null;
+									user = (UserBean) session1.getAttribute("user");
+									if(user == null){
+
+								%>
 								<li style="display:inline-block;"><a href="login.jsp">login</a></li>
+								<%
+								}else{
+								%>
+								<li style="display:inline-block;"><a href="${pageContext.request.contextPath}/Logout">login out</a></li>
+								<img src="<%=user.getProfile()%>" alt="" style="display:inline-block; width:40px;border-radius: 50px; margin-right: 10px;">
+								<li style="display:inline-block;"><p style="font-size:20px; margin-left:10px; color: #1a1e21;"><%=user.getUsername()%></p></li>
+
+								<%
+
+									}
+								%>
 							</ul>
 						</nav>
 					</div>				
@@ -70,7 +95,6 @@
 	//List<VideoBean> videos = null;
 
 	List<VideoBean> vTitle = null, vTag = null, vAuthor = null,videos = null;
-	HttpSession session1 = request.getSession();
 	videos = (List<VideoBean>) session1.getAttribute("vTitle");
 	vTag= (List<VideoBean>) session1.getAttribute("vTag");
 	vAuthor = (List<VideoBean>) session1.getAttribute("vAuthor");
@@ -169,7 +193,7 @@
 					</div>
 				</div>
 
-				<div>
+
 					<div class="col-md-3 col-sm-3">
 						<div>
 						<h3 class="menu1">Catalog</h3>
@@ -192,7 +216,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+
 
 				<div class="col-md-9 col-sm-9">
 					<br><br>
