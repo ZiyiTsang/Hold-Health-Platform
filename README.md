@@ -2,7 +2,7 @@
 
 ## Website Access
 
-Online Demo:Online access:http://pleasegivemehighmark.jellon.top:8080/Assignment/homepage.html <br>
+Online Demo:http://pleasegivemehighmark.jellon.top:8080/Assignment/homepage.html <br>
 Local debug:Follow the step at "Quick start" below.
 
 ## Simply description
@@ -16,19 +16,19 @@ The main propose of this website is to inspire people into doing exercise & keep
 
 ✅ User Log-in & Log-out<br>
 ✅ User registration-auth by email & dynamic code<br>
-✅ Workout video remoondation <br>
+✅ Workout video recommendation <br>
 ✅ Article showcase<br>
 ✅ Online Shop with virtual buying process<br>
 ✅ Waiting you to discover......
 
 ## Framework Details
 
-### front-end:
+### Front-end:
 
 * Bootstrap 5
 * Jsp
 
-### back-end:
+### Back-end:
 
 * DB: Mybatis
 * Redis: Jedis
@@ -69,10 +69,14 @@ Replace the fields in file
 
 ```java
 //line 10
-public RedisOps(){
-    String address="Your_Redis_Adress";
-    passwd="Your_Redis_Password";
-    //       
+public class RedisOps {
+    private final String passwd;
+    public RedisOps() {
+        String address = "Your_Redis_Address";
+        passwd = "Your_Redis_Password";
+        //...
+    }
+    //...
 }
 ```
 
