@@ -6,20 +6,20 @@ import redis.clients.jedis.JedisPool;
 import java.util.Map;
 
 public class RedisOps {
+    private final String passwd;
     public RedisOps() {
-        String address = "101.43.195.210";
-        passwd = "Zzy18950146872";
+        String address = "666.666.666.666";
+        passwd = "6666666666";
 //        System.out.println("Redis:Staring");
         JedisPool pool = new JedisPool(address, 6379);
-        Jedis jedis=pool.getResource();
+        Jedis jedis = pool.getResource();
         jedis.auth(passwd);
 
 //        System.out.printf("Redis:%s\n",jedis.ping());
 
         jedis.close();
-        this.pool=pool;
+        this.pool = pool;
     }
-    private String passwd;
     public void setArticleIdAndTitle(String id, String title){
         Jedis jedis=pool.getResource();
         jedis.auth(this.passwd);
@@ -87,10 +87,11 @@ public class RedisOps {
         jedis.del("cart:" + userID);
         jedis.close();
     }
+
     public Map<String, String> getAllItem(String userID){
         Jedis jedis=pool.getResource();
         jedis.auth(this.passwd);
-        jedis.auth("Zzy18950146872");
+        jedis.auth("xxxxxxxxxx");
         Map<String, String> result = jedis.hgetAll("cart:" + userID);
         jedis.close();
         return result;
