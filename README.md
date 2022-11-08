@@ -2,7 +2,7 @@
 
 ## Website Access
 
-Online Demo:http://pleasegivemehighmark.jellon.top:8080/Assignment/homepage.html <br>
+Online Demo:http://pleasegivemehighmark.jellon.top:8080/Assignment/homepage.html [this seems can not use now... waiting for fixing]<br>
 Local debug:Follow the step at "Quick start" below.
 
 ## Simply description
@@ -38,7 +38,7 @@ The main propose of this website is to inspire people into doing exercise & keep
 
 * MySQL
 * Redis
-* Windows
+* Windows/MacOS
 * Linux Server(Optional)
 
 ## Quick start
